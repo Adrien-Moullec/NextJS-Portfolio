@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ProjectCard = ({number, Title, Description} : {number:number, Title:string, Description:string}) => {
     return (
-        <div
+        <div key={number}
         className="place-items-center border-1 flex flex-col p-5 mx-auto
         border-pink-400 hover:bg-amber-300 text-center">
             <Image alt="project image" src="/Pictures/cat.png" width={150} height={150}

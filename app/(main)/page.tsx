@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Footer } from "../footer";
 import ProjectCard from "@/components/LayoutChunks/ProjectCard";
 
 export default function Home() {
