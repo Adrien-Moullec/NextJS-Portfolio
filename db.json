@@ -1,0 +1,22 @@
+{
+    "information": {
+        "name": "Adrien Moullec",
+        "email": "amoullec1@gmail.com",
+        "linkedInName": "Undefined",
+        "githubName": "None"
+    },
+    "ProjectPage": [
+        {
+            "id": 1,
+            "projectImage": "axolotl.png",
+            "projectName": "Cute bean",
+            "projectDescription": "he very smol :3"
+        },
+        {
+            "id": 2,
+            "projectImage": "cat.png",
+            "projectName": "Da Cat",
+            "projectDescription": "Da boi is here >:3"
+        }
+    ]
+}
