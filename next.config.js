@@ -1,11 +1,9 @@
-/**
-* @type {import('next').NextConfig}
-*/
+import('next').NextConfig
 
 const isProd = process.env.NODE_ENV = 'production';
 
 const nextConfig = {
-  basePath: isProd ? '/NextJS-Portfolio' : '',
+  basePath: '/NextJS-Portfolio',
   output:'export',
   distDir:'dist',
   images: {
