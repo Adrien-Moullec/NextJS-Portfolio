@@ -1,6 +1,8 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import Image from "next/image"
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const Header = () => {
     return (
         <header className="bg-linear-to-br from-teal-400 to-teal-600 h-[200px] border-b-3 border-teal-300 flex flex-row">
@@ -19,7 +21,7 @@ export const Header = () => {
                 <div id="Contact info" className="flex flex-col text-sm pt-3s">
                     <div className="flex flex-row place-items-center pb-2">
                         <Image 
-                        alt="mail icon" src="/Icons/email-icon.png" width={50} height={50}
+                        alt="mail icon" src={basePath+"/Icons/email-icon.png"} width={50} height={50}
                         className="pr-3"
                         />
                         amoullec1@gmail.com
@@ -27,13 +29,13 @@ export const Header = () => {
                     <div className="flex flex-row place-items-center pb-2">
                         <Image 
                         className="pr-3"
-                        alt="LinkedIn Icon" src = "/Icons/linkedin-icon.png" width={50} height={50}
+                        alt="LinkedIn Icon" src = {basePath+"/Icons/linkedin-icon.png"} width={50} height={50}
                         />
                         Linkedin
                     </div>
                     <div className="flex flex-row place-items-center pb-2">
-                        <Image 
-                        alt="Github Icon" src = "/Icons/github-logo.png" width={50} height={50}
+                        <img 
+                        alt="Github Icon" src = {basePath+"/Icons/github-logo.png"} width={50} height={50}
                         className="pr-3"
                         />
                         GitHub
