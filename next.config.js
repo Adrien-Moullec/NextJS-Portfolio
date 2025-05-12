@@ -7,7 +7,10 @@ const nextConfig = {
   output: 'export',
   assetPrefix: isProd ? `/${repo}` : '',
   basePath: isProd ? `/${repo}` : '',
-  images: { unoptimized: true }
+  images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? `https://adrienmoullec.github.io/${repo}` : ''
+  }
 };
 
 export default nextConfig;
