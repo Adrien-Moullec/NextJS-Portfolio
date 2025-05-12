@@ -1,11 +1,12 @@
-import('next').NextConfig
+/** @type {import('next').NextConfig} */
 
 const isProd = process.env.NODE_ENV === 'production';
+const repo = 'NextJS-Portfolio';
 
 const nextConfig = {
-  output:'export',
-  assetPrefix: isProd ? '/NextJS-Portfolio' : '',
-  basePath: isProd ? '/NextJS-Portfolio' : '',
+  output: 'export',
+  assetPrefix: isProd ? `/${repo}` : '',
+  basePath: isProd ? `/${repo}` : '',
   images: { unoptimized: true }
 };
 

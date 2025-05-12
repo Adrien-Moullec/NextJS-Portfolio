@@ -24,7 +24,7 @@ export const Header = () => {
                         alt="mail icon" src={basePath+"/Icons/email-icon.png"} width={50} height={50}
                         className="pr-3"
                         />
-                        amoullec1@gmail.com
+                        amoullec1@gmail.com {basePath}
                     </div>
                     <div className="flex flex-row place-items-center pb-2">
                         <Image 
@@ -34,7 +34,7 @@ export const Header = () => {
                         Linkedin
                     </div>
                     <div className="flex flex-row place-items-center pb-2">
-                        <img 
+                        <Image 
                         alt="Github Icon" src = {basePath+"/Icons/github-logo.png"} width={50} height={50}
                         className="pr-3"
                         />
