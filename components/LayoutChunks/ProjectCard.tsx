@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const basePath = process.env.NODE_ENV || '';
 
 const ProjectCard = ({number, Title, Description} : {number:number, Title:string, Description:string}) => {
     return (
