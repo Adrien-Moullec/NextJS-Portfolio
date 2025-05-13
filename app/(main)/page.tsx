@@ -15,12 +15,9 @@ export default function Home() {
         <div id="PROJECT GRID" 
         className="pt-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 p-1 gap-4 border-1 border-yellow-400 min-w-13/24 max-w-14/24">
           {Array.from({ length: 6 }).map((_, i) => (
-            <ProjectCard key={i} number={i} Title="The Project" Description="This is cat" />
+            <ProjectCard key={i} number={i} Title="The Project" Description="This is cat"/>
           ))}
         </div>
-      </div> 
-      <div id="PROFILE" className="place-items-center border-1 gap-x-3 w-3/4 flex flex-row pl-5 mx-auto">     
-        aaaaaaaaaaa
       </div>
     </div>
   );
