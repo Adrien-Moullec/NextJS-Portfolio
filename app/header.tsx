@@ -1,12 +1,12 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import Image from "next/image"
-import {
+{/*import {
     Carousel,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel" */}
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
