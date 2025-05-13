@@ -8,15 +8,15 @@
     "ProjectPage": [
         {
             "id": 1,
-            "projectImage": "axolotl.png",
-            "projectName": "Cute bean",
-            "projectDescription": "he very smol :3"
+            "image": "/Pictures/axolotl.png",
+            "project": "Cute bean",
+            "description": "he very smol :3"
         },
         {
             "id": 2,
-            "projectImage": "cat.png",
-            "projectName": "Da Cat",
-            "projectDescription": "Da boi is here >:3"
+            "image": "/Pictures/cat.png",
+            "project": "Da Cat",
+            "description": "Da boi is here >:3"
         }
     ]
 }

@@ -15,8 +15,8 @@ export const Header = () => {
         <header className="bg-linear-to-r from-black to-cyan-950 h-[200px] border-b-3 border-teal-300 flex flex-row text-white">
 
             <div id="Profile section"
-                className="place-items-center border-1 gap-x-3 w-1/4 flex flex-row pl-10 mx-auto text-xl">
-                <div id="" className="flex flex-col place-items-center pr-8">
+                className="place-items-center border-1 gap-x-3 w-1/4 flex flex-row pl-10 mx-auto text-xl container overflow-x-clip">
+                <div id="Main ID" className="flex flex-col place-items-center pr-8">
                     <Avatar className="w-23 h-23">
                         <AvatarImage src="https://github.com/shadcn.png" />
                         <AvatarFallback>CN</AvatarFallback>
@@ -50,10 +50,8 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div id="Other Info" className="flex flex-row w-3/4 border-2 border-red-900 place-items-start mx-auto">
-                <p className="pl-5 pr-5 border-2 border-red-900"> HAHAHA </p>
-                <p className="pl-5 pr-5 border-2 border-red-900"> HAHAHA </p>
-                <p className="pl-5 pr-5 border-2 border-red-900"> HAHAHA </p>
+            <div id="Other Info" className="flex flex-col w-3/4 border-2 border-red-900 place-items-start mx-auto">
+
             </div>
         </header>
     )

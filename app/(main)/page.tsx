@@ -1,9 +1,10 @@
 import ProjectCard from "@/components/LayoutChunks/ProjectCard";
+import data from '../../data/db.json';
 
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] pb-100">
-      <div className= "flex-1 flex flex-row border-1 border-pink-900">
+      <div id="First section" className= "flex-1 flex flex-row border-1 border-pink-900 ">
 
         <div id="ABOUT ME" className="flex items-center border-1 p-5 pt-10 space-y-5 border-red-700 flex-col min-w-2/5 max-w-2/5">
           <h1 className="text-2xl bold border-1 border-black">About Me</h1>
@@ -14,8 +15,8 @@ export default function Home() {
 
         <div id="PROJECT GRID" 
         className="pt-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 p-1 gap-4 border-1 border-yellow-400 min-w-13/24 max-w-14/24">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <ProjectCard key={i} number={i} Title="The Project" Description="This is cat"/>
+          {data.ProjectPage.map(projectX => (
+            <ProjectCard key={projectX.id} Title={projectX.project} Description={projectX.description} ProjImage={projectX.image}/>
           ))}
         </div>
       </div>

@@ -11,7 +11,7 @@ const MainLayout = ({ children }: Props) => {
       <body>
         <div className="min-h-screen">
           <Header/>
-          <div className="bg-gradient-to-bl from-teal-200 to-teal-500">            
+          <div className="bg-gradient-to-b to-teal-400 from-0% to-50% from-cyan-500">            
             {children}
           </div>
           <Footer/>
