@@ -7,6 +7,18 @@ import Image from "next/image"
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel" */}
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuIndicator,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    NavigationMenuViewport,
+    navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu"
+import Link from "next/link";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -15,7 +27,8 @@ export const Header = () => {
         <header className="bg-linear-to-r from-black to-cyan-950 h-[200px] border-b-3 border-teal-300 flex flex-row text-white">
 
             <div id="Profile section"
-                className="place-items-center border-1 gap-x-3 w-1/4 flex flex-row pl-10 mx-auto text-xl container overflow-x-clip">
+                className="place-items-center border-1 border-pink-900 gap-x-3 w-screen flex flex-row pl-10 text-xl overflow-x-clip 
+                sm:border-pink-700 md:min-w-[400px] md:max-w-[400px]">
                 <div id="Main ID" className="flex flex-col place-items-center pr-8">
                     <Avatar className="w-23 h-23">
                         <AvatarImage src="https://github.com/shadcn.png" />
@@ -50,8 +63,21 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div id="Other Info" className="flex flex-col w-3/4 border-2 border-red-900 place-items-start mx-auto">
+            <div id="Other Info"
+                className="hidden w-screen border-2 border-red-900 place-items-start mx-auto 
+            md:flex md:flex-col">
+                <NavigationMenu>
+                    <NavigationMenuList>
 
+                        <NavigationMenuItem>
+                            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+
+                            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+                        </NavigationMenuItem>
+                    </NavigationMenuList>
+                </NavigationMenu>
             </div>
         </header>
     )
