@@ -9,7 +9,7 @@ const nextConfig = {
   basePath: isProd ? `/${repo}` : '',
   images: { unoptimized: true },
   env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? `https://adrienmoullec.github.io/${repo}` : ''
+    NEXT_PUBLIC_BASE_PATH: isProd ? `https://adrien-moullec.github.io/${repo}` : ''
   }
 };
 
