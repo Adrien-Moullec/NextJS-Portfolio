@@ -9,9 +9,9 @@ const MainLayout = ({ children }: Props) => {
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen">
+        <div>
           <Header/>
-          <div className="bg-gradient-to-b to-teal-400 from-0% to-50% from-cyan-500">            
+          <div className="bg-gradient-to-b from-cyan-500 to-blue-400">            
             {children}
           </div>
           <Footer/>
