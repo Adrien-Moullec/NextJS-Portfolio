@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         <div className="w-250 h-170 border-yellow-400 border-4 invisible xl:visible">
             <iframe
-            src= {basePath+"/index.html"}
+            src = {basePath+"/StarMap/index.html"}
             width="100%"
             height="100%"
             style={{border:"border-yellow-400 border:5", position:"relative", top:0, left:0,right:0,bottom:0}}
