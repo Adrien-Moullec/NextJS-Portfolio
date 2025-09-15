@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/LayoutChunks/ProjectCard";
+import Card from "@/components/InformationLayout/ProjectCard";
 import data from '../../data/db.json';
 import Image from "next/image";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -19,9 +19,6 @@ export default function Home() {
 
         <div id="PROJECT GRID" 
         className="pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 p-1 gap-4 border-1 border-yellow-400 w-screen">
-          {data.ProjectPage.map(projectX => (
-            <ProjectCard key={projectX.id} Title={projectX.project} Description={projectX.description} ProjImage={projectX.image}/>
-          ))}
         </div>
       </div>
   );
