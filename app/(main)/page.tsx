@@ -1,5 +1,3 @@
-import Card from "@/components/InformationLayout/ProjectCard";
-import data from '../../data/db.json';
 import Image from "next/image";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
