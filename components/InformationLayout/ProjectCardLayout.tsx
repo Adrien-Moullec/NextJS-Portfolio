@@ -3,8 +3,6 @@ import { Category } from "../Presets/ProjectCardInterfaces";
 import ProjectCard from "./ProjectCard";
 import { CategoryFont } from "../Presets/MyFonts";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 interface ProjectCardLayoutProps {
     category: Category
 }
