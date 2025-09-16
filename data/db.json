@@ -8,9 +8,19 @@
     "Projects": [
         {
             "id": 0,
-            "name": "StarMaps",
-            "desc": "...",
-            "img": "s",
+            "main": {
+                "name": "StarMaps",
+                "description": "...",
+                "image": "s"
+            },
+            "game": {
+                "index": "/StarMap/index.html",
+                "build": "/Build/Starmap-WebGL.loader.js",
+                "description": "Star game thingyyyyy",
+                "controls": [
+                    "P to pause and open menu", "Mouse to look around", "Click to select stars"
+                ]
+            },
             "categories": [
                 {
                     "title": "Algorithms",
@@ -27,7 +37,7 @@
                         }
                     ]
                 },{
-                    "title": "Lil beans",
+                    "title": "UI",
                     "cards": [
                         {
                             "title": "s",
@@ -101,29 +111,6 @@
                             "title": "s",
                             "image": "/Pictures/axolotl.png",
                             "description": "s"
-                        }
-                    ]
-                }
-            ]
-    },
-        {
-            "id": 1,
-            "name": "StarMaps",
-            "desc": "...",
-            "img": "/Pictures/axolotl.png",
-            "categories": [
-                {
-                    "title": "Algorithms",
-                    "cards": [
-                        {
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "g"
-                        },
-                        {
-                            "title": "sdg",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "wqerf"
                         }
                     ]
                 }

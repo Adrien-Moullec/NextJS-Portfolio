@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "../Types/ProjectCardInterfaces";
+import { Card } from "../Presets/ProjectCardInterfaces";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
