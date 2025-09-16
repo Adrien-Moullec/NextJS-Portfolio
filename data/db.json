@@ -9,8 +9,8 @@
         {
             "id": 0,
             "main": {
-                "name": "StarMaps",
-                "description": "...",
+                "name": "Star Map",
+                "description": "This project is a showcase on different pathfinding algorithms in a randomly generated star map.",
                 "image": "s"
             },
             "game": {
