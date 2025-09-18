@@ -14,9 +14,9 @@ const ProjectCardLayout:React.FC<ProjectCardLayoutProps> = ({category}) => {
             <div id="PROJECT GRID" 
             className="grid 
             gap-4 
-            w-15/16
+            w-screen
             p-4
-            grid-cols-[repeat(auto-fit,minmax(100px,1fr))]
+            grid-cols-[repeat(auto-fit,minmax(500px,1fr))]
             justify-items-center">
                 {category.cards.map((card,index) => (<ProjectCard key={index} card={card}/>))}
             </div>

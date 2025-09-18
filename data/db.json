@@ -14,8 +14,8 @@
                 "image": "s"
             },
             "game": {
-                "index": "/StarMap/index.html",
-                "build": "/Build/Starmap-WebGL.loader.js",
+                "index": "/StarMap/GameFiles/index.html",
+                "build": "/StarMap/GameFiles/Build/Starmap-WebGL.loader.js",
                 "description": "Star game thingyyyyy",
                 "controls": [
                     "P to pause and open menu", "Mouse to look around", "Click to select stars"
@@ -23,93 +23,59 @@
             },
             "categories": [
                 {
-                    "title": "Algorithms",
+                    "title": "Introduction",
                     "cards": [
                         {
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
+                            "title": "Star Generation Menu",
+                            "image": "/StarMap/Viewings/Introduction/Pause menu.PNG",
+                            "description": ""
+                        },
+                        {
+                            "title": "t",
+                            "image": "/StarMap/Viewings/Introduction/PathsExample.png",
+                            "description": "things"
                         },
                         {
                             "title": "s",
-                            "image": "/Pictures/axolotl.png",
+                            "image": "/StarMap/Viewings/Introduction/LoadingPathExample.png",
                             "description": "s"
+                        },
+                        {
+                            "title": "t",
+                            "image": "/StarMap/Viewings/Introduction/LoadingManyStars.PNG",
+                            "description": "things"
+                        },
+                        {
+                            "title": "s",
+                            "image": "/StarMap/Viewings/Introduction/BestPath.png",
+                            "description": "s"
+                        },                        
+                        {
+                            "title": "t",
+                            "image": "/StarMap/Viewings/Introduction/StarGenerationMenu.PNG",
+                            "description": "things"
                         }
                     ]
                 },{
-                    "title": "UI",
+                    "title": "Star Generation",
                     "cards": [
                         {
                             "title": "s",
-                            "image": "/Pictures/axolotl.png",
+                            "image": "https://drive.google.com/uc?export=view&id=/1mos4xnycw9OOxbTL4E6a7iqEi4eAb2RZ",
                             "description": "s"
                         },
                         {
                             "title": "s",
-                            "image": "/Pictures/axolotl.png",
+                            "image": "https://drive.google.com/uc?export=view&id=/1mos4xnycw9OOxbTL4E6a7iqEi4eAb2RZ",
                             "description": "s"
                         },{
                             "title": "s",
-                            "image": "/Pictures/axolotl.png",
+                            "image": "https://drive.google.com/uc?export=view&id=/1mos4xnycw9OOxbTL4E6a7iqEi4eAb2RZ",
                             "description": "s"
                         },
                         {
                             "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },{
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },
-                        {
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },{
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },
-                        {
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },{
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },
-                        {
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },{
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },
-                        {
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },{
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },
-                        {
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },{
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
-                            "description": "s"
-                        },
-                        {
-                            "title": "s",
-                            "image": "/Pictures/axolotl.png",
+                            "image": "https://drive.google.com/uc?export=view&id=/1mos4xnycw9OOxbTL4E6a7iqEi4eAb2RZ",
                             "description": "s"
                         }
                     ]

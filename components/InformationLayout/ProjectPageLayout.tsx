@@ -12,7 +12,7 @@ interface PageLayoutProps {
 
 const ProjectPageLayout:React.FC<PageLayoutProps> = ({page}) => {
    
-     useEffect(() => {
+    useEffect(() => {
         const script = document.createElement("script");
         script.src = basePath+page.game.build;
         script.async = true;
