@@ -21,7 +21,7 @@ const ProjectCard:React.FC<CardProps> = ({card}) => {
             <div className="place-content-center-safe">
                 <p className={CardTitle}>{card.title}</p>
 
-                <img alt="project image"
+                <Image alt="project image"
                 src={basePath+card.image}
                 className={CardDesc}
                 style={{objectFit:'contain'}}
