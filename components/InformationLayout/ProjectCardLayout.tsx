@@ -10,7 +10,8 @@ interface ProjectCardLayoutProps {
 const ProjectCardLayout:React.FC<ProjectCardLayoutProps> = ({category}) => {
     return (
         <div className="flex flex-col items-center">
-            <h1 className={CategoryFont}>{category.title}</h1>
+            <div className="h-40"/>
+            <h1 className={CategoryFont}>{category.categoryTitle}</h1>
             <div id="PROJECT GRID" 
             className="grid 
             gap-4 

@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
+import Link from "next/link";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -10,27 +10,31 @@ interface CardProps {
 
 const ProjectCard:React.FC<CardProps> = ({card}) => {
     return (
-        <div
+        <Link
         id="Individual Card"
-        className="place-items-center flex flex-col p-5 mx-auto text-center hover:underline hover:underline-offset-4 hover:bg-amber-50 rounded-4xl"
+        href={card.cardHref}
+        scroll={false}
+        target={card.cardHrefPage}
+        className="p-5 mx-auto text-center hover:underline hover:bg-amber-50 rounded-4xl"
         style={{
-            overflow: 'hidden', // clips anything outside
+            overflow: 'hidden',
             position: 'relative'
             }}
         >
-            <div className="place-content-center-safe">
-                <p className={CardTitle}>{card.title}</p>
-
-                <Image alt="project image"
-                src={basePath+card.image}
-                className={CardDesc}
-                style={{objectFit:'contain'}}
-                />
+            <div className="flex flex-col justify-items-center">
+                <p className={CardTitle+" pb-1"}>{card.cardTitle}</p>
                 
-                <p>{card.description}</p>
+                {card.cardImage!=="" ? (
+                <img alt="project image"
+                src={basePath+card.cardImage}
+                className="rounded-2xl border-3"
+                style={{objectFit:'contain'}}
+                />) : null}
+                
+                <p className={CardDesc}>{card.cardDescription}</p>
             </div>
             
-        </div>
+        </Link>
         
     );
 }

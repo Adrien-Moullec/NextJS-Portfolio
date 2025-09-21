@@ -6,8 +6,7 @@ export default function Home() {
     
     return (
         <div className="flex flex-col items-center">            
-            <ProjectPageLayout page={data.Projects[0]}/>
-        </div>
-        
-  )
+            <ProjectPageLayout page={data.Projects[2]}/>
+        </div>        
+    )
 }

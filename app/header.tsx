@@ -1,25 +1,7 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import Image from "next/image"
 import Link from "next/link";
-{/*import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel" 
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
-    navigationMenuTriggerStyle
-} from "@/components/ui/navigation-menu"
-import Link from "next/link";*/}
+import data from "@/data/db.json"
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -27,10 +9,17 @@ export const Header = () => {
     return (
         <header className="bg-linear-to-r from-black to-black h-[200px] border-b-3 border-teal-300 flex flex-row text-white">
 
-            <div className="hidden md:flex flex-row items-center justify-center border-1 w-screen">
-                <div className="mx-auto flext flex-col text-2xl">                    
-                    <div><Link className="hover:underline hover:underline-offset-4" href="/">Portfolio</Link></div>
-                    <div className="hover:underline hover:underline-offset-4 pt-2"><Link href="/ProjectList">Projects</Link></div>
+            <div id="Website Links" className="hidden md:flex flex-row items-center justify-center border-1 w-screen">
+                <div className="mx-auto flex text-center flex-col text-2xl">                    
+                    <Link className="hover:underline hover:underline-offset-4" href="/">
+                        About Me
+                    </Link>
+                    <Link className="hover:underline hover:underline-offset-4" href="/Projects">
+                        Projects
+                    </Link>
+                    <Link className="hover:underline hover:underline-offset-4" href="/Projects/Portfolio">
+                        About This Website
+                    </Link>
                 </div>
             </div>
 
@@ -43,8 +32,7 @@ export const Header = () => {
                         <AvatarImage src={basePath + "/Icons/images/definitely_me.png"} />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
-                    <p className="text-">Adrien</p>
-                    <p className="text-">Moullec</p>
+                    <p>{data.information.name}</p>
                 </div>
 
                 <div id="Contact info" className="flex flex-col text-sm pt-3s">
@@ -53,22 +41,22 @@ export const Header = () => {
                             alt="mail icon" src={basePath + "/Icons/email-icon.png"} width={50} height={50}
                             className="pr-3 invert"
                         />
-                        amoullec1@gmail.com
+                        {data.information.email}
                     </div>
-                    <div className="flex flex-row place-items-center pb-2">
+                    <Link href={data.information.linkedIn} className="flex flex-row place-items-center pb-2" target="_blank">                        
                         <Image
                             className="pr-3 invert"
                             alt="LinkedIn Icon" src={basePath + "/Icons/linkedin-icon.png"} width={50} height={50}
                         />
-                        Linkedin
-                    </div>
-                    <div className="flex flex-row place-items-center pb-2">
+                        LinkedIn
+                    </Link>
+                    <Link href={data.information.github} className="flex flex-row place-items-center pb-2" target="_blank">
                         <Image
                             alt="Github Icon" src={basePath + "/Icons/github-logo.png"} width={50} height={50}
                             className="pr-3 invert"
                         />
                         GitHub
-                    </div>
+                    </Link>
                 </div>
             </div>
 

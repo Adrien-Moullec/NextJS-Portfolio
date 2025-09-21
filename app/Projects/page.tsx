@@ -1,8 +1,10 @@
+import ProjectPageLayout from "@/components/InformationLayout/ProjectPageLayout";
+import data from "@/data/db.json"
 
 export default function Home() {
-  return (
-    <div id="PROJECT GRID"
-      className="pt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 p-1 gap-y-7 border-1 border-yellow-400 w-screen">
-    </div>
-  )
+   return (
+        <div className="flex flex-col items-center">            
+            <ProjectPageLayout page={data.Projects[0]}/>
+        </div>        
+    )
 }

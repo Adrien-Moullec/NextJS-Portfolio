@@ -1,24 +1,25 @@
 export interface Card {
-    title: string,
-    image: string,
-    description: string
+    cardTitle: string,
+    cardImage: string,
+    cardDescription: string,
+    cardHref: string,
+    cardHrefPage: string
 }
 export interface Category {
-    title: string,
+    categoryTitle: string,
     cards: Card[]
 }
 export interface MainData {
-    name: string,
-    description: string,
-    image: string,
+    projectName: string,
+    projectDescription: string,
+    projectImage: string,
 }
 export interface GameData {
-    index: string,
-    build: string,
-    description: string,
-    controls: string[]
+    gameIndex: string,
+    gameBuild: string,
+    gameDescription: string,
+    gameControls: string[]
 }
-
 export interface Page {
     id: number,
     main: MainData,
