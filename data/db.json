@@ -1,9 +1,9 @@
 {
-    "information": {
-        "name": "Adrien Moullec",
-        "email": "amoullec1@gmail.com",
-        "linkedIn": "https://www.linkedin.com/in/adrien-moullec-b2b203386",
-        "github": "https://github.com/Adrien-Moullec"
+    "devInfo": {
+        "devName": "Adrien Moullec",
+        "devEmail": "amoullec1@gmail.com",
+        "devLinkedIn": "https://www.linkedin.com/in/adrien-moullec-b2b203386",
+        "devGithub": "https://github.com/Adrien-Moullec"
     },
     "Projects": [
         {
@@ -225,7 +225,7 @@
                         },
                         {
                             "cardTitle": "Audio gameControls",
-                            "cardImage": "/StarMap/Content/SmallerThings/AudiogameControls.PNG",
+                            "cardImage": "/StarMap/Content/SmallerThings/AudioControls.PNG",
                             "cardDescription": "This is a very simple audio contol system that sets the audio of the music/sfx to active/not active and sets their volume.",
                             "cardHref": "#",
                             "cardHrefPage": ""
