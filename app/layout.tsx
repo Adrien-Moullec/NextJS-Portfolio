@@ -12,7 +12,7 @@ const MainLayout = ({ children }: Props) => {
       <body>
         <div>
           
-          <Toaster position="top-center"/>
+          <Toaster position="bottom-right"/>
           <Header/>
           <div className="bg-gradient-to-b from-cyan-500 to-blue-400">            
             {children}

@@ -1,6 +1,5 @@
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
-import Link from "next/link";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -10,12 +9,12 @@ interface CardProps {
 
 const ProjectCard:React.FC<CardProps> = ({card}) => {
     return (
-        <Link
+        <div
         id="Individual Card"
-        href={card.cardHref}
+        /*href={card.cardHref}
         scroll={false}
-        target={card.cardHrefPage}
-        className="p-5 mx-auto text-center hover:underline hover:bg-amber-50 rounded-4xl"
+        target={card.cardHrefPage}*/
+        className="text-center hover:underline rounded-4xl"
         style={{
             overflow: 'hidden',
             position: 'relative'
@@ -34,7 +33,7 @@ const ProjectCard:React.FC<CardProps> = ({card}) => {
                 <p className={CardDesc}>{card.cardDescription}</p>
             </div>
             
-        </Link>
+        </div>
         
     );
 }

@@ -10,7 +10,7 @@ export default function Home() {
         </div>
         <div id="ABOUT ME" className="flex items-center border-1 p-5 pt-10 space-y-5 border-red-700 flex-col min-w-2/5 max-w-2/5">
           <h1 className="text-2xl bold border-1 border-black">About Me</h1>
-          <p className="text-xl border-1 border-black"> I am the boi hhhhhhhhhhhhhhh a sas sa das da sds adas d  dsgfdg dfg </p>
+          <p className="text-xl border-1 border-black"> This is me, I am him </p>
         </div>
 
         <div className="bg-black min-w-2/1000 max-w-2/1000"/>
