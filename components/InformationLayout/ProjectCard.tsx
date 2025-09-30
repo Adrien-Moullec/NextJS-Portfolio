@@ -1,6 +1,5 @@
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
-import Image from "next/image";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
