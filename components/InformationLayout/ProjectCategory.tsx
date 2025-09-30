@@ -25,8 +25,8 @@ const ProjectCardLayout:React.FC<ProjectCardLayoutProps> = ({category}) => {
                 <Carousel>
                     <CarouselContent className="">
                     {category.cards.map((card,index) => (
-                        <CarouselItem 
-                        className="basis-1/1 sm:basis-1/1 lg:basis-1/2 2xl:basis-1/4" 
+                        <CarouselItem key={""+index}
+                        className="basis-1/1 sm:basis-1/1 lg:basis-1/2 2xl:basis-1/4"
                         >
                             <ProjectCard key={index} card={card}/>
                         </CarouselItem>

@@ -2,11 +2,8 @@
 import React from "react";
 import { Page } from "../Presets/ProjectCardInterfaces";
 import ProjectCardLayout from "./ProjectCategory";
-import { useEffect } from "react";
-import { TitleFont, TitleDescription as TitleDescription, GameTitleFont} from "../Presets/MyFonts";
+import { TitleFont, TitleDescription as TitleDescription} from "../Presets/MyFonts";
 import Link from "next/link";
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 interface PageLayoutProps {
     page: Page
