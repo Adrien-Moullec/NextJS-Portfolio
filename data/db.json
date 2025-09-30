@@ -78,7 +78,7 @@
         {
             "id": 2,
             "main": {
-                "projectName": "Star Map",
+                "projectName": "StarMap",
                 "projectDescription": "This project is a showcase on different pathfinding algorithms in a randomly generated star map.",
                 "projectImage": "s"
             },

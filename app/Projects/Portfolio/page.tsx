@@ -1,5 +1,4 @@
-"use client"
-import ProjectPageLayout from "@/components/InformationLayout/ProjectPageLayout";
+import ProjectPageLayout from "@/components/InformationLayout/ProjectPage";
 import data from "@/data/db.json"
 
 export default function Home() {   

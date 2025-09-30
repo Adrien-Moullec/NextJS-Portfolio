@@ -1,11 +1,12 @@
-import ProjectPageLayout from "@/components/InformationLayout/ProjectPage";
+"use client"
+import GameLayout from "@/components/InformationLayout/GamePage";
 import data from "@/data/db.json"
 
 export default function Home() {   
     
     return (
         <div className="flex flex-col items-center">            
-            <ProjectPageLayout page={data.Projects[2]}/>
+            <GameLayout page={data.Projects[2]}/>
         </div>        
     )
 }
