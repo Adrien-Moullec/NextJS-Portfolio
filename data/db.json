@@ -22,6 +22,7 @@
             "categories": [
                 {
                     "categoryTitle": "Projects",
+                    "categoryDescription" : "",
                     "cards": [
                         {
                             "cardTitle": "Website Portfolio",
@@ -38,8 +39,8 @@
                             "cardHrefPage": ""
                         },
                         {
-                            "cardTitle": "Website Portfolio",
-                            "cardImage": "/Portfolio/NextJSLogo.Png",
+                            "cardTitle": "Main Menu",
+                            "cardImage": "/MainMenu/PlayButton.Gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -47,7 +48,8 @@
                     ]
                 }
             ]
-        },{
+        },
+        {
             "id": 1,
             "main": {
                 "projectName": "Portfolio",
@@ -63,6 +65,7 @@
             "categories": [
                 {
                     "categoryTitle": "",
+                    "categoryDescription" : "",
                     "cards": [
                         {
                             "cardTitle": "Star Generation Menu",
@@ -95,6 +98,7 @@
             "categories": [
                 {
                     "categoryTitle": "Introduction",
+                    "categoryDescription" : "",
                     "cards": [
                         {
                             "cardTitle": "Star Generation Menu",
@@ -128,6 +132,7 @@
                 },
                 {
                     "categoryTitle": "Star Generation",
+                    "categoryDescription" : "",
                     "cards": [
                         {
                             "cardTitle": "Star Generation options",
@@ -182,6 +187,7 @@
                 },
                 {
                     "categoryTitle": "Pathfinding",
+                    "categoryDescription" : "",
                     "cards": [
                         {
                             "cardTitle": "Pathfinding Options",
@@ -215,6 +221,7 @@
                 },
                 {
                     "categoryTitle": "Other Mentions",
+                    "categoryDescription" : "",
                     "cards": [
                         {
                             "cardTitle": "The Ship",
@@ -234,6 +241,66 @@
                             "cardTitle": "Loading Symbol",
                             "cardImage": "/StarMap/Content/SmallerThings/LoadStarGif.Gif",
                             "cardDescription": "This loading icon prompted me to make a Coroutine Manager, that allows the developer to input multiple coroutines into a function to run. The purpose of this was to have better control of multiple, co-dependent functions. It appears when the player selects 2 stars or presses the generate button. While the process is going on the loading symbol will flash, and then stop when the main task ends.",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "main": {
+                "projectName": "MainMenu",
+                "projectDescription": "This project was a level 5 project to demonstrate our level scripting skills such as settings and scene change. I wanted to make a main menu integrated with the environment to make the player feel more immersed.",
+                "projectImage": ""
+            },
+            "game": {
+                "gameIndex": "",
+                "gameBuild": "",
+                "gameDescription": "",
+                "gameControls": []
+            },
+            "categories": [
+                {
+                    "categoryTitle": "Exploring main menu",
+                    "categoryDescription" : "These clips show the camera lerping between multiple points depending on what buttons the player clicks, using a simple ease in-out for the camera and sliding UI.",
+                    "cards": [
+                        {
+                            "cardTitle": "Play Button",
+                            "cardImage": "/MainMenu/PlayButton.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },
+                        {
+                            "cardTitle": "Settings Button",
+                            "cardImage": "/MainMenu/OptionsButton.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },
+                        {
+                            "cardTitle": "Exit Button",
+                            "cardImage": "/MainMenu/ExitButton.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        }
+                    ]
+                },{
+                    "categoryTitle": "Settings",
+                    "categoryDescription" : "",
+                    "cards": [
+                    ]
+                },{
+                    "categoryTitle": "Playing in different modes",
+                    "categoryDescription" : "These clips show the camera lerping between multiple points depending on what buttons the player clicks, using a simple ease in-out for the camera and sliding UI.",
+                    "cards": [
+                        {
+                            "cardTitle": "Star Generation Menu",
+                            "cardImage": "/StarMap/Content/Introduction/PauseMenu.PNG",
+                            "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         }

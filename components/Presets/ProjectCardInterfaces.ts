@@ -7,6 +7,7 @@ export interface Card {
 }
 export interface Category {
     categoryTitle: string,
+    categoryDescription: string,
     cards: Card[]
 }
 export interface MainData {

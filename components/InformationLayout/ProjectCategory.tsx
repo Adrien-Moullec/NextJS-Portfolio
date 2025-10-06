@@ -16,11 +16,11 @@ interface ProjectCardLayoutProps {
 
 const ProjectCardLayout:React.FC<ProjectCardLayoutProps> = ({category}) => {
     return (
-        <div className="border-1 justify-items-center">
+        <div className="border-1">
             <div className="h-30"/>
             <h1 className={CategoryFont}>{category.categoryTitle}</h1>
+            <h1 className="text-left">{category.categoryDescription}</h1>
             <div className="h-10"/>
-
             <div className="relative px-2 sm:px-4 w-1/2 lg:w-full border-1">
                 <Carousel>
                     <CarouselContent className="">

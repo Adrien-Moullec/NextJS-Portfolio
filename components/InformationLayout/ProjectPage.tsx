@@ -13,11 +13,11 @@ const ProjectPageLayout:React.FC<PageLayoutProps> = ({page}) => {
     
     return (
         <div className="flex flex-col items-center pt-10">
-            <Link href = {"/Games/"+page.main.projectName}>Play Game</Link>
+            {page.game.gameBuild!="" && <Link href = {"/Games/"+page.main.projectName}>Play Game</Link> }
             <div id="Main Description section" className="border-1 w-3/4 rounded-3xl text-center">
                 <h1 className={TitleFont+" pt-10 pb-10"}>{page.main.projectName}</h1>
                 <p className={TitleDescription+" pt-10 pb-10 pl-5"}>{page.main.projectDescription}</p>
-            </div>                   
+            </div>         
 
             {page.categories.map((category,index) => (<ProjectCardLayout key={index} category={category}/>))}
         </div>
