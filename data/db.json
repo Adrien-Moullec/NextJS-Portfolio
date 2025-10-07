@@ -244,7 +244,7 @@
                             "cardHrefPage": "_blank"
                         },
                         {
-                            "cardTitle": "Audio gameControls",
+                            "cardTitle": "Audio Controls",
                             "cardImage": "/StarMap/Content/SmallerThings/AudioControls.png",
                             "cardDescription": "This is a very simple audio contol system that sets the audio of the music/sfx to active/not active and sets their volume.",
                             "cardHref": "#",
