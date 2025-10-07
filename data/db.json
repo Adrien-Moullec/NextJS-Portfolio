@@ -27,28 +27,28 @@
                     "cards": [
                         {
                             "cardTitle": "Website Portfolio",
-                            "cardImage": "/Portfolio/NextJSLogo.Png",
+                            "cardImage": "/Portfolio/NextJSLogo.png",
                             "cardDescription": "",
                             "cardHref": "/Projects/Portfolio",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "StarMaps",
-                            "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.Gif",
+                            "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.gif",
                             "cardDescription": "",
                             "cardHref": "/Projects/StarMap",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Main Menu",
-                            "cardImage": "/MainMenu/PlayButton.Gif",
+                            "cardImage": "/MainMenu/PlayButton.gif",
                             "cardDescription": "",
                             "cardHref": "/Projects/MainMenu",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Ocean Boids",
-                            "cardImage": "/OceanBoids/TitleImageCrop.PNG",
+                            "cardImage": "/OceanBoids/TitleImageCrop.png",
                             "cardDescription": "",
                             "cardHref": "/Projects/OceanBoids",
                             "cardHrefPage": ""
