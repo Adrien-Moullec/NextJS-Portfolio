@@ -23,6 +23,7 @@
                 {
                     "categoryTitle": "Projects",
                     "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
                     "cards": [
                         {
                             "cardTitle": "Website Portfolio",
@@ -41,6 +42,13 @@
                         {
                             "cardTitle": "Main Menu",
                             "cardImage": "/MainMenu/PlayButton.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },
+                        {
+                            "cardTitle": "Ocean Boids",
+                            "cardImage": "/OceanBoids/TitleImage2.PNG",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -66,6 +74,7 @@
                 {
                     "categoryTitle": "",
                     "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
                     "cards": [
                         {
                             "cardTitle": "Star Generation Menu",
@@ -99,6 +108,7 @@
                 {
                     "categoryTitle": "Introduction",
                     "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
                     "cards": [
                         {
                             "cardTitle": "Star Generation Menu",
@@ -133,6 +143,7 @@
                 {
                     "categoryTitle": "Star Generation",
                     "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
                     "cards": [
                         {
                             "cardTitle": "Star Generation options",
@@ -188,6 +199,7 @@
                 {
                     "categoryTitle": "Pathfinding",
                     "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
                     "cards": [
                         {
                             "cardTitle": "Pathfinding Options",
@@ -222,6 +234,7 @@
                 {
                     "categoryTitle": "Other Mentions",
                     "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
                     "cards": [
                         {
                             "cardTitle": "The Ship",
@@ -265,6 +278,7 @@
                 {
                     "categoryTitle": "Exploring main menu",
                     "categoryDescription" : "These clips show the camera lerping between multiple points depending on what buttons the player clicks, using a simple ease in-out for the camera and sliding UI.",
+                    "categoryStyle" : "carousel",
                     "cards": [
                         {
                             "cardTitle": "Play Button",
@@ -290,16 +304,150 @@
                     ]
                 },{
                     "categoryTitle": "Settings",
-                    "categoryDescription" : "",
-                    "cards": [
-                    ]
-                },{
-                    "categoryTitle": "Playing in different modes",
-                    "categoryDescription" : "These clips show the camera lerping between multiple points depending on what buttons the player clicks, using a simple ease in-out for the camera and sliding UI.",
+                    "categoryDescription" : "This is a simple settings menu where you can adjust gameplay settings such as brightness, resolution and sound.",
+                    "categoryStyle" : "carousel",
                     "cards": [
                         {
-                            "cardTitle": "Star Generation Menu",
-                            "cardImage": "/StarMap/Content/Introduction/PauseMenu.PNG",
+                            "cardTitle": "Sliders",
+                            "cardImage": "/MainMenu/Sliders.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },
+                        {
+                            "cardTitle": "Dropdown",
+                            "cardImage": "/MainMenu/Dropdown.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        }
+                    ]
+                },{
+                    "categoryTitle": "Gameplay",
+                    "categoryDescription" : "This Main Menu project is a simple multiplayer example for unreal engine, either in 3rd or first person.",
+                    "categoryStyle" : "carousel",
+                    "cards": [
+                        {
+                            "cardTitle": "First Person",
+                            "cardImage": "/MainMenu/FirstPerson.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },                        
+                        {
+                            "cardTitle": "Third Person",
+                            "cardImage": "/MainMenu/ThirdPerson.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },                        
+                        {
+                            "cardTitle": "Exit to Menu",
+                            "cardImage": "/MainMenu/ReturnToMainMenu.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },                        
+                        {
+                            "cardTitle": "Multiplayer",
+                            "cardImage": "/MainMenu/Multiplayer.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        }
+                    ]
+                }
+            ]
+        },{
+            "id": 4,
+            "main": {
+                "projectName": "Ocean Boids",
+                "projectDescription": "This project was all about boid behaviour and how entities behave with simple, stackable behaviours.",
+                "projectImage": ""
+            },
+            "game": {
+                "gameIndex": "",
+                "gameBuild": "",
+                "gameDescription": "",
+                "gameControls": []
+            },
+            "categories": [
+                {
+                    "categoryTitle": "Arrival and Deptarture",
+                    "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
+                    "cards": [
+                        {
+                            "cardTitle": "Play Button",
+                            "cardImage": "/OceanBoids/Behaviours/ArrivalNDeparture.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        }
+                    ]
+                },
+                {
+                    "categoryTitle": "Avoid",
+                    "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
+                    "cards": [
+                        {
+                            "cardTitle": "Play Button",
+                            "cardImage": "/OceanBoids/Behaviours/Avoid.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        }
+                    ]
+                },                
+                {
+                    "categoryTitle": "Changing Behaviours Examples",
+                    "categoryDescription" : "",
+                    "categoryStyle" : "carousel",
+                    "cards": [
+                        {
+                            "cardTitle": "",
+                            "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },
+                        {
+                            "cardTitle": "",
+                            "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours2.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },
+                        {
+                            "cardTitle": "",
+                            "cardImage": "/OceanBoids/Behaviours/ChangeSpeed.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        }
+                    ]
+                },
+                {
+                    "categoryTitle": "Debug Examples",
+                    "categoryDescription" : "",
+                    "categoryStyle" : "flipflop",
+                    "cards": [
+                        {
+                            "cardTitle": "Boid Boundary",
+                            "cardImage": "/OceanBoids/Behaviours/Boundary.Gif",
+                            "cardDescription": "",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },{
+                            "cardTitle": "Boid Velocity",
+                            "cardImage": "/OceanBoids/Behaviours/Velocity.Gif",
+                            "cardDescription": "sadjhsiakjhd sa hd sakjh sahsakjdhbsakd hsakhd khd sakjhd sajhd sakjh dajshd sah dsakjh dksah d aks dhkj ahk ssda dsa d asd sa das dhsa jdhsa jhdsa hd ahdh sahd iakshdwah awh d wahd iwa",
+                            "cardHref": "#",
+                            "cardHrefPage": ""
+                        },{
+                            "cardTitle": "Boid Chase",
+                            "cardImage": "/OceanBoids/Behaviours/PursueNEvade.Gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""

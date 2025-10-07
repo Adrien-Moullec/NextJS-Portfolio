@@ -1,0 +1,38 @@
+import { Card } from "../Presets/ProjectCardInterfaces";
+import { CardDesc, CardTitle } from "../Presets/MyFonts";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+interface CardProps {
+    card: Card;
+    index: number;
+}
+
+const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
+    return (
+        <div
+            id="Individual Card"
+            className={`ps-20 pt-10 text-center rounded-4xl border-1 flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+            style={{
+                overflow: 'hidden',
+                position: 'relative'
+            }}
+        >
+            <div id="Text side" className="w-1/2 ps-10 pt-5">
+                <p className={CardTitle + " pb-1"}>{card.cardTitle}</p>
+                <p className={CardDesc}>{card.cardDescription}</p>
+            </div>
+            <div id="Picture side" className="w-1/2">
+                {card.cardImage !== "" ? (
+                    <img alt="project image"
+                        src={basePath + card.cardImage}
+                        className="rounded-2xl"
+                        style={{ objectFit: 'contain' }}
+                    />) : null}
+            </div>
+        </div>
+
+    );
+}
+
+export default FlipFlopInformation;
