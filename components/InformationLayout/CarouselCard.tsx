@@ -1,6 +1,7 @@
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
 import Link from "next/link";
+import Image from "next/image";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -8,7 +9,7 @@ interface CardProps {
     card:Card
 }
 
-const ProjectCard:React.FC<CardProps> = ({card}) => {
+const CarouselCard:React.FC<CardProps> = ({card}) => {
     return (
         <Link
         id="Individual Card"
@@ -23,7 +24,7 @@ const ProjectCard:React.FC<CardProps> = ({card}) => {
                 <p className={CardTitle+" pb-1"}>{card.cardTitle}</p>
                 
                 {card.cardImage!=="" ? (
-                <img alt="project image"
+                <Image alt="project image"
                 src={basePath+card.cardImage}
                 className="rounded-2xl"
                 style={{objectFit:'contain'}}
@@ -36,7 +37,7 @@ const ProjectCard:React.FC<CardProps> = ({card}) => {
     );
 }
 
-export default ProjectCard;
+export default CarouselCard;
 
 /*
 style={{

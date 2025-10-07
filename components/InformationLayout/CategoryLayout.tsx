@@ -1,6 +1,6 @@
 import React from "react";
 import { Category } from "../Presets/ProjectCardInterfaces";
-import ProjectCard from "./CarouselCard";
+import CarouselCard from "./CarouselCard";
 import { CategoryFont } from "../Presets/MyFonts";
 import {
     Carousel,
@@ -32,7 +32,7 @@ const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ category }) => {
                                     <CarouselItem key={"" + index}
                                         className="basis-1/1 sm:basis-1/1 lg:basis-1/2 2xl:basis-1/4"
                                     >
-                                        <ProjectCard key={index} card={card} />
+                                        <CarouselCard key={index} card={card} />
                                     </CarouselItem>
                                 )
                                 )}
