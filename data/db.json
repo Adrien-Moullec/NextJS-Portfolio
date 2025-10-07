@@ -78,7 +78,7 @@
                     "cards": [
                         {
                             "cardTitle": "Star Generation Menu",
-                            "cardImage": "/StarMap/Content/Introduction/PauseMenu.PNG",
+                            "cardImage": "/StarMap/Content/Introduction/PauseMenu.png",
                             "cardDescription": "This is the menu to change parameters for how pathfinding, star generation and inter-star paths spawn. You can select default values to reset everything and buttons to reset the whole stars or just the paths. Also there's audio control.",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -112,7 +112,7 @@
                     "cards": [
                         {
                             "cardTitle": "Star Generation Menu",
-                            "cardImage": "/StarMap/Content/Introduction/PauseMenu.PNG",
+                            "cardImage": "/StarMap/Content/Introduction/PauseMenu.png",
                             "cardDescription": "This is the menu to change parameters for how pathfinding, star generation and inter-star paths spawn. You can select default values to reset everything and buttons to reset the whole stars or just the paths. Also there's audio control.",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -147,49 +147,49 @@
                     "cards": [
                         {
                             "cardTitle": "Star Generation options",
-                            "cardImage": "/StarMap/Content/Generation/1StarGenerationMenu.PNG",
+                            "cardImage": "/StarMap/Content/Generation/1StarGenerationMenu.png",
                             "cardDescription": "These sliders control the amount of stars that generate and the distance between the stars. The generation stems from a pooling script so stars are summoned and de-summoned as needed.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Path Generation Options",
-                            "cardImage": "/StarMap/Content/Generation/2PathOptions.PNG",
+                            "cardImage": "/StarMap/Content/Generation/2PathOptions.png",
                             "cardDescription": "The top slider is the longest path that can be created. The other sliders are reference to a randomly generated 'Evil Region'. The stars and paths will turn red and will cost more if the toggle is selected.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Main Buttons",
-                            "cardImage": "/StarMap/Content/Generation/3MainButtons.PNG",
+                            "cardImage": "/StarMap/Content/Generation/3MainButtons.png",
                             "cardDescription": "These 4 buttons will reset the slider values, re-generate the stars and their paths, or just the paths and exit the game.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Generated Paths Examples",
-                            "cardImage": "/StarMap/Content/Generation/4GeneratedExamples.PNG",
+                            "cardImage": "/StarMap/Content/Generation/4GeneratedExamples.png",
                             "cardDescription": "These pictures show how paths can vary if you set the path distances to high, low and medium settings respectively. You get similar results by changing the star generation distance too.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Evil Paths",
-                            "cardImage": "/StarMap/Content/Generation/5EvilPaths.PNG",
+                            "cardImage": "/StarMap/Content/Generation/5EvilPaths.png",
                             "cardDescription": "If you toggle evil paths in the generation menu, it will look something like this, where evil stars and paths turn red. It will cost more to pass through these stars based on how you set the Evil Region Cost Multiplayer.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Calculated Path Example",
-                            "cardImage": "/StarMap/Content/Generation/6BestPath.PNG",
+                            "cardImage": "/StarMap/Content/Generation/6BestPath.png",
                             "cardDescription": "Final paths will take longer to calculate, with large quantities of stars, for some algorithms. For backtracking which checks each path and finds the absolute best path, this algorithm only works best for star maps with fewer paths.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Star Generation Showcase",
-                            "cardImage": "/StarMap/Content/Generation/7StarGenGif.Gif",
+                            "cardImage": "/StarMap/Content/Generation/7StarGenGif.gif",
                             "cardDescription": "This shows the stars generating and how you can reset just the paths.",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -203,28 +203,28 @@
                     "cards": [
                         {
                             "cardTitle": "Pathfinding Options",
-                            "cardImage": "/StarMap/Content/Pathfinding/1Menu.PNG",
+                            "cardImage": "/StarMap/Content/Pathfinding/1Menu.png",
                             "cardDescription": "These dropdown options in the Generation Menu allow you to select a pathfinding algorithm, a way to clean up the final found path and the ability to stop searching for better paths as soon as you find the destination.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Quick Backtrack",
-                            "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.Gif",
+                            "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.gif",
                             "cardDescription": "This version of backtracking visits each star a minimum of one time, and stops once each star has been checked. Normally backtracking brute forces every combination of paths, so this is much quicker but more inaccurate.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Dijkstra",
-                            "cardImage": "/StarMap/Content/Pathfinding/3DijkstraGif.Gif",
+                            "cardImage": "/StarMap/Content/Pathfinding/3DijkstraGif.gif",
                             "cardDescription": "This has proven to be one of the most efficient algorithms found. It's quick and accurate, compared to some other algorithms.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Skip Optimization",
-                            "cardImage": "/StarMap/Content/Pathfinding/4SkipsGif.Gif",
+                            "cardImage": "/StarMap/Content/Pathfinding/4SkipsGif.gif",
                             "cardDescription": "The 'Find Skips' option is very useful for quick, messy algorithms. When a path is found, it will iterate through the path and check if there are any shortcuts by skipping out any middle stars.",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -238,21 +238,21 @@
                     "cards": [
                         {
                             "cardTitle": "The Ship",
-                            "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.Gif",
+                            "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.gif",
                             "cardDescription": "I added in a ship model and generated the path for it using the tool 'Bezier Solution'.",
                             "cardHref": "https://assetstore.unity.com/packages/tools/level-design/bezier-solution-113074",
                             "cardHrefPage": "_blank"
                         },
                         {
                             "cardTitle": "Audio gameControls",
-                            "cardImage": "/StarMap/Content/SmallerThings/AudioControls.PNG",
+                            "cardImage": "/StarMap/Content/SmallerThings/AudioControls.png",
                             "cardDescription": "This is a very simple audio contol system that sets the audio of the music/sfx to active/not active and sets their volume.",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Loading Symbol",
-                            "cardImage": "/StarMap/Content/SmallerThings/LoadStarGif.Gif",
+                            "cardImage": "/StarMap/Content/SmallerThings/LoadStarGif.gif",
                             "cardDescription": "This loading icon prompted me to make a Coroutine Manager, that allows the developer to input multiple coroutines into a function to run. The purpose of this was to have better control of multiple, co-dependent functions. It appears when the player selects 2 stars or presses the generate button. While the process is going on the loading symbol will flash, and then stop when the main task ends.",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -282,21 +282,21 @@
                     "cards": [
                         {
                             "cardTitle": "Play Button",
-                            "cardImage": "/MainMenu/PlayButton.Gif",
+                            "cardImage": "/MainMenu/PlayButton.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Settings Button",
-                            "cardImage": "/MainMenu/OptionsButton.Gif",
+                            "cardImage": "/MainMenu/OptionsButton.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Exit Button",
-                            "cardImage": "/MainMenu/ExitButton.Gif",
+                            "cardImage": "/MainMenu/ExitButton.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -309,14 +309,14 @@
                     "cards": [
                         {
                             "cardTitle": "Sliders",
-                            "cardImage": "/MainMenu/Sliders.Gif",
+                            "cardImage": "/MainMenu/Sliders.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Dropdown",
-                            "cardImage": "/MainMenu/Dropdown.Gif",
+                            "cardImage": "/MainMenu/Dropdown.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -329,28 +329,28 @@
                     "cards": [
                         {
                             "cardTitle": "First Person",
-                            "cardImage": "/MainMenu/FirstPerson.Gif",
+                            "cardImage": "/MainMenu/FirstPerson.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },                        
                         {
                             "cardTitle": "Third Person",
-                            "cardImage": "/MainMenu/ThirdPerson.Gif",
+                            "cardImage": "/MainMenu/ThirdPerson.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },                        
                         {
                             "cardTitle": "Exit to Menu",
-                            "cardImage": "/MainMenu/ReturnToMainMenu.Gif",
+                            "cardImage": "/MainMenu/ReturnToMainMenu.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },                        
                         {
                             "cardTitle": "Multiplayer",
-                            "cardImage": "/MainMenu/Multiplayer.Gif",
+                            "cardImage": "/MainMenu/Multiplayer.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -379,7 +379,7 @@
                     "cards": [
                         {
                             "cardTitle": "Play Button",
-                            "cardImage": "/OceanBoids/Behaviours/ArrivalNDeparture.Gif",
+                            "cardImage": "/OceanBoids/Behaviours/ArrivalNDeparture.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -393,7 +393,7 @@
                     "cards": [
                         {
                             "cardTitle": "Play Button",
-                            "cardImage": "/OceanBoids/Behaviours/Avoid.Gif",
+                            "cardImage": "/OceanBoids/Behaviours/Avoid.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -407,21 +407,21 @@
                     "cards": [
                         {
                             "cardTitle": "",
-                            "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours.Gif",
+                            "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "",
-                            "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours2.Gif",
+                            "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours2.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "",
-                            "cardImage": "/OceanBoids/Behaviours/ChangeSpeed.Gif",
+                            "cardImage": "/OceanBoids/Behaviours/ChangeSpeed.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
@@ -435,19 +435,19 @@
                     "cards": [
                         {
                             "cardTitle": "Boid Boundary",
-                            "cardImage": "/OceanBoids/Behaviours/Boundary.Gif",
+                            "cardImage": "/OceanBoids/Behaviours/Boundary.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },{
                             "cardTitle": "Boid Velocity",
-                            "cardImage": "/OceanBoids/Behaviours/Velocity.Gif",
+                            "cardImage": "/OceanBoids/Behaviours/Velocity.gif",
                             "cardDescription": "sadjhsiakjhd sa hd sakjh sahsakjdhbsakd hsakhd khd sakjhd sajhd sakjh dajshd sah dsakjh dksah d aks dhkj ahk ssda dsa d asd sa das dhsa jdhsa jhdsa hd ahdh sahd iakshdwah awh d wahd iwa",
                             "cardHref": "#",
                             "cardHrefPage": ""
                         },{
                             "cardTitle": "Boid Chase",
-                            "cardImage": "/OceanBoids/Behaviours/PursueNEvade.Gif",
+                            "cardImage": "/OceanBoids/Behaviours/PursueNEvade.gif",
                             "cardDescription": "",
                             "cardHref": "#",
                             "cardHrefPage": ""
