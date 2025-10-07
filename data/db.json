@@ -36,21 +36,21 @@
                             "cardTitle": "StarMaps",
                             "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.Gif",
                             "cardDescription": "",
-                            "cardHref": "Projects/StarMap",
+                            "cardHref": "/Projects/StarMap",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Main Menu",
                             "cardImage": "/MainMenu/PlayButton.Gif",
                             "cardDescription": "",
-                            "cardHref": "#",
+                            "cardHref": "/Projects/MainMenu",
                             "cardHrefPage": ""
                         },
                         {
                             "cardTitle": "Ocean Boids",
-                            "cardImage": "/OceanBoids/TitleImage2.PNG",
+                            "cardImage": "/OceanBoids/TitleImageCrop.PNG",
                             "cardDescription": "",
-                            "cardHref": "#",
+                            "cardHref": "/Projects/OceanBoids",
                             "cardHrefPage": ""
                         }
                     ]
