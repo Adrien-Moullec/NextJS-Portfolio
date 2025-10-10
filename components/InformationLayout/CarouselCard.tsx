@@ -1,7 +1,7 @@
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
 import Link from "next/link";
-import Image from "next/image";
+//import Image from "next/image";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -24,7 +24,7 @@ const CarouselCard:React.FC<CardProps> = ({card}) => {
                 <p className={CardTitle+" pb-1"}>{card.cardTitle}</p>
                 
                 {card.cardImage!=="" ? (
-                <Image alt="project image"
+                <img alt="project image"
                 src={basePath+card.cardImage}
                 className="rounded-2xl"
                 style={{objectFit:'contain'}}
