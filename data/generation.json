@@ -19,7 +19,7 @@
             "cards": [                
                 {
                     "cardTitle": "Component Menu",
-                    "cardImage": "/Generation/Chunks/TerrainGeneratorInspector.png",
+                    "cardImage": "/Generation/Chunks/TerrainGeneratorInspector.PNG",
                     "cardDescription": "This is the main interface for this Terrain Chunk loader. You can set the dimensions and vertex density of the chunk, the textures to be used, the noise settings to get the type of terrain you want and the Render Terrain points to load chunks in and out depending on your coordinates. This script will procedurally generate landmass around the player, apply the terrain layers based on vertex height and minimalise chunk edge unalignment.",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -39,25 +39,25 @@
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Texture Mapping",
-                    "cardImage": "/Generation/Chunks/TextureMappingExample.png",
+                    "cardImage": "/Generation/Chunks/TextureMappingExample.PNG",
                     "cardDescription": "I currently have a simple procedural texture mapper in my Terrain Chunk script, which applies 3 different layers of Terrain materials depending on vertex height.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Noise Control",
-                    "cardImage": "/Generation/Chunks/Stalagmites.png",
+                    "cardImage": "/Generation/Chunks/Stalagmites.PNG",
                     "cardDescription": "I made a noise sampling script that allows the developer to input a list of instructions to get an output noise. This is an example of a specific noise setup that creates stalagmites.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Custom Made Perlin Noise",
-                    "cardImage": "/Generation/Chunks/SymmetricalPerlinNoise.png",
+                    "cardImage": "/Generation/Chunks/SymmetricalPerlinNoise.PNG",
                     "cardDescription": "During my terrain experiments, I realized that using the Unity Perlin function returnes symmetrical values past the x and y point. I created my own Perlin noise algorithm to combat this as shown in the other examples.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Chunk Loading Points",
-                    "cardImage": "/Generation/Chunks/TerrainLoadingPoints.png",
+                    "cardImage": "/Generation/Chunks/TerrainLoadingPoints.PNG",
                     "cardDescription": "Each segment of terrain is loaded in and out using 'Render Terrain Points' where the developer can select what area around the player can load terrain in or deactivate out of bounds terrain.",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -75,31 +75,31 @@
             "cards": [                
                 {
                     "cardTitle": "Spline Gizmos",
-                    "cardImage": "/Generation/Spline/SplinePoints.png",
+                    "cardImage": "/Generation/Spline/SplinePoints.PNG",
                     "cardDescription": "This is the base spline point system I made that the other spline scripts inherit from. The coloured squares represent the forward, up and side directions of each point.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Tracks",
-                    "cardImage": "/Generation/Spline/TrainTracks.png",
+                    "cardImage": "/Generation/Spline/TrainTracks.PNG",
                     "cardDescription": "This track script is more rigid compared to the other spline scripts since it used set object placement and few Object Prefab options. It still makes a good start to the spline scripts and a simple but cool looking track/ladder.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Wall Spline",
-                    "cardImage": "/Generation/Spline/WallSpline.png",
+                    "cardImage": "/Generation/Spline/WallSpline.PNG",
                     "cardDescription": "This spline script spawns objects in a tile-grid pattern warped to the spline's curvature. There are also certain fill rules such as Fill (Fill whole space), Perlin noise and Stagger. Each wall variant has its own priority and weight, as well as rules for which layer it can appear on.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Mesh Extrusion Spline",
-                    "cardImage": "/Generation/Spline/MeshExtrusion.png",
+                    "cardImage": "/Generation/Spline/MeshExtrusion.PNG",
                     "cardDescription": "With this spline script, you can set a list of Vector points and Mesh objects to write to. These Vector points form the starting edge of a mesh that will be extruded along the spline.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Combination",
-                    "cardImage": "/Generation/Spline/Combination.png",
+                    "cardImage": "/Generation/Spline/Combination.PNG",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -119,20 +119,20 @@
             "cards": [                
                 {
                     "cardTitle": "Mesh Output",
-                    "cardImage": "/Generation/Rock/ConvexHullGeneration.png",
+                    "cardImage": "/Generation/Rock/ConvexHullGeneration.PNG",
                     "cardDescription": "This is a result of the Convex Hull Mesh Generation. This method of mesh generation is known as shrink-wrapping, since the mesh expands from a starting tetrahedron until it has no more points on the outside of the mesh.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Mesh Generation Component Menu",
-                    "cardImage": "/Generation/Rock/ConvexHullSettings.png",
+                    "cardImage": "/Generation/Rock/ConvexHullSettings.PNG",
                     "cardDescription": "This is the basic interface for creating your own Convex Hull Mesh. You can generate a mesh around a custom set of points or use the 'Generate points in Sphere/Cube' buttons to randomly place points. The Dot Tolerance controls how soft/sharp the final shape's edges are because it limits the angle it joins vertices to each other.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Rock",
-                    "cardImage": "/Generation/Rock/RockMesh1.png",
+                    "cardImage": "/Generation/Rock/RockMesh1.PNG",
                     "cardDescription": "The output UVs are calculated using a Box-Mapping method, to try ensure as little amount of texture warping as possible.",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -146,37 +146,37 @@
             "cards": [                
                 {
                     "cardTitle": "Rock",
-                    "cardImage": "/Generation/Rock/RockMesh1.png",
+                    "cardImage": "/Generation/Rock/RockMesh1.PNG",
                     "cardDescription": "Cube points example",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Rock",
-                    "cardImage": "/Generation/Rock/RockMesh2.png",
+                    "cardImage": "/Generation/Rock/RockMesh2.PNG",
                     "cardDescription": "Cube points example",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Rock",
-                    "cardImage": "/Generation/Rock/RockMeshSphere1.png",
+                    "cardImage": "/Generation/Rock/RockMeshSphere1.PNG",
                     "cardDescription": "Sphere points example",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Rock",
-                    "cardImage": "/Generation/Rock/RockMeshSphere2.png",
+                    "cardImage": "/Generation/Rock/RockMeshSphere2.PNG",
                     "cardDescription": "Sphere points example",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Small Rock",
-                    "cardImage": "/Generation/Rock/SmallRock.png",
+                    "cardImage": "/Generation/Rock/SmallRock.PNG",
                     "cardDescription": "Shrunk Cube points example",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },{
                     "cardTitle": "Tetrahedron Rock",
-                    "cardImage": "/Generation/Rock/TetrahedronRock.png",
+                    "cardImage": "/Generation/Rock/TetrahedronRock.PNG",
                     "cardDescription": "High Dot Product example, and representation of the start of the process of Convex Hull Mesh Generation since it starts with a tetrahedron which then connects with all the outer points.",
                     "cardHref": "#",
                     "cardHrefPage": ""
