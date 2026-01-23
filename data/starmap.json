@@ -1,0 +1,174 @@
+{
+    "id": 2,
+    "main": {
+        "projectName": "StarMap",
+        "projectDescription": "This project is a showcase on different pathfinding algorithms in a randomly generated star map.",
+        "projectImage": "s"
+    },
+    "game": {
+        "gameIndex": "/StarMap/GameFiles/index.html",
+        "gameBuild": "/StarMap/GameFiles/Build/Starmap-WebGL.loader.js",
+        "gameDescription": "Using pathfinding techniques in custom generated project.",
+        "gameControls": [
+            "P to pause and open menu",
+            "Mouse to look around",
+            "Click to select stars"
+        ]
+    },
+    "categories": [
+        {
+            "categoryTitle": "Introduction",
+            "categoryDescription": "",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Star Generation Menu",
+                    "cardImage": "/StarMap/Content/Introduction/PauseMenu.png",
+                    "cardDescription": "This is the menu to change parameters for how pathfinding, star generation and inter-star paths spawn. You can select default values to reset everything and buttons to reset the whole stars or just the paths. Also there's audio control.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Example Star Generation",
+                    "cardImage": "/StarMap/Content/Introduction/PathsExample.png",
+                    "cardDescription": "When the button 'Reset Stars' is pressed, the result should be similar to this cardImage. Randomly placed stars will appear, then generated mesh paths.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "How to Pathfind",
+                    "cardImage": "/StarMap/Content/Introduction/LoadingPathExample.png",
+                    "cardDescription": "When you click 2 different stars, the pathfinding will happen automatically. The loading star here shows what percentage of the pathfinding is done. There is also the option to clean up the final path if you chose an imperfect/quick solution",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Final Path",
+                    "cardImage": "/StarMap/Content/Introduction/BestPath.png",
+                    "cardDescription": "The final path found will be shown as a green path between the 2 stars you selected. This path will disappear when you select another star again.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Star Generation",
+            "categoryDescription": "",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Star Generation options",
+                    "cardImage": "/StarMap/Content/Generation/1StarGenerationMenu.png",
+                    "cardDescription": "These sliders control the amount of stars that generate and the distance between the stars. The generation stems from a pooling script so stars are summoned and de-summoned as needed.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Path Generation Options",
+                    "cardImage": "/StarMap/Content/Generation/2PathOptions.png",
+                    "cardDescription": "The top slider is the longest path that can be created. The other sliders are reference to a randomly generated 'Evil Region'. The stars and paths will turn red and will cost more if the toggle is selected.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Main Buttons",
+                    "cardImage": "/StarMap/Content/Generation/3MainButtons.png",
+                    "cardDescription": "These 4 buttons will reset the slider values, re-generate the stars and their paths, or just the paths and exit the game.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Generated Paths Examples",
+                    "cardImage": "/StarMap/Content/Generation/4GeneratedExamples.png",
+                    "cardDescription": "These pictures show how paths can vary if you set the path distances to high, low and medium settings respectively. You get similar results by changing the star generation distance too.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Evil Paths",
+                    "cardImage": "/StarMap/Content/Generation/5EvilPaths.png",
+                    "cardDescription": "If you toggle evil paths in the generation menu, it will look something like this, where evil stars and paths turn red. It will cost more to pass through these stars based on how you set the Evil Region Cost Multiplayer.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Calculated Path Example",
+                    "cardImage": "/StarMap/Content/Generation/6BestPath.png",
+                    "cardDescription": "Final paths will take longer to calculate, with large quantities of stars, for some algorithms. For backtracking which checks each path and finds the absolute best path, this algorithm only works best for star maps with fewer paths.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Star Generation Showcase",
+                    "cardImage": "/StarMap/Content/Generation/7StarGenGif.gif",
+                    "cardDescription": "This shows the stars generating and how you can reset just the paths.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Pathfinding",
+            "categoryDescription": "",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Pathfinding Options",
+                    "cardImage": "/StarMap/Content/Pathfinding/1Menu.png",
+                    "cardDescription": "These dropdown options in the Generation Menu allow you to select a pathfinding algorithm, a way to clean up the final found path and the ability to stop searching for better paths as soon as you find the destination.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Quick Backtrack",
+                    "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.gif",
+                    "cardDescription": "This version of backtracking visits each star a minimum of one time, and stops once each star has been checked. Normally backtracking brute forces every combination of paths, so this is much quicker but more inaccurate.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Dijkstra",
+                    "cardImage": "/StarMap/Content/Pathfinding/3DijkstraGif.gif",
+                    "cardDescription": "This has proven to be one of the most efficient algorithms found. It's quick and accurate, compared to some other algorithms.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Skip Optimization",
+                    "cardImage": "/StarMap/Content/Pathfinding/4SkipsGif.gif",
+                    "cardDescription": "The 'Find Skips' option is very useful for quick, messy algorithms. When a path is found, it will iterate through the path and check if there are any shortcuts by skipping out any middle stars.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Other Mentions",
+            "categoryDescription": "",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "The Ship",
+                    "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.gif",
+                    "cardDescription": "I added in a ship model and generated the path for it using the tool 'Bezier Solution'.",
+                    "cardHref": "https://assetstore.unity.com/packages/tools/level-design/bezier-solution-113074",
+                    "cardHrefPage": "_blank"
+                },
+                {
+                    "cardTitle": "Audio Controls",
+                    "cardImage": "/StarMap/Content/SmallerThings/AudioControls.png",
+                    "cardDescription": "This is a very simple audio contol system that sets the audio of the music/sfx to active/not active and sets their volume.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Loading Symbol",
+                    "cardImage": "/StarMap/Content/SmallerThings/LoadStarGif.gif",
+                    "cardDescription": "This loading icon prompted me to make a Coroutine Manager, that allows the developer to input multiple coroutines into a function to run. The purpose of this was to have better control of multiple, co-dependent functions. It appears when the player selects 2 stars or presses the generate button. While the process is going on the loading symbol will flash, and then stop when the main task ends.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        }
+    ]
+}

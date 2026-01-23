@@ -1,10 +1,11 @@
 import Image from "next/image";
+import data from "@/data/db.json"
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function Home() {
   return (
-      <div id="First section" className= {" flex-1 flex flex-col border-1 border-pink-900 place-items-center text-4xl pt-5"}>
-        <p className="pb-10"> Adrien Moullec </p>
+      <div id="First section" className= {"text-white flex-1 flex flex-col border-1 border-pink-900 place-items-center text-4xl pt-5"}>
+        <p className="pb-10"> {data.devInfo.devName} </p>
         <div>
           <Image className="mx-auto border-1 w-3/9" alt="profile" src={basePath+"/Pictures/profile.png"} width={50} height={50}/>
         </div>

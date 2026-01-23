@@ -1,7 +1,7 @@
 import React from "react";
 import { Category } from "../Presets/ProjectCardInterfaces";
 import CarouselCard from "./CarouselCard";
-import { CategoryFont } from "../Presets/MyFonts";
+import { CategoryDescriptionFont, CategoryFont } from "../Presets/MyFonts";
 import {
     Carousel,
     CarouselContent,
@@ -23,7 +23,7 @@ const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ category }) => {
             content = (
                 <>
                     <h1 className={CategoryFont}>{category.categoryTitle}</h1>
-                    <h1 className="text-left ps-10 pt-5 text-2xl w-screen">{category.categoryDescription}</h1>
+                    <h1 className={CategoryDescriptionFont}>{category.categoryDescription}</h1>
                     <div className="h-10" />
                     <div className="relative px-2 sm:px-4 w-1/2 lg:w-full">
                         <Carousel>
@@ -46,14 +46,19 @@ const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ category }) => {
 
         case "flipflop":
             content = (
-                <div className="relative px-2 sm:px-4 w-1/2 lg:w-full">
-                    {category.cards.map((card, index) => (
-                        <FlipFlopInformation key={index} card={card} index={index} />
-                    )
-                    )}
-                </div>
+                <>
+                    <h1 className={CategoryFont}>{category.categoryTitle}</h1>
+                    <h1 className={CategoryDescriptionFont}>{category.categoryDescription}</h1>
+                    <div className="h-10" />
+                    <div className="relative px-2 sm:px-4 w-1/2">
+                        {category.cards.map((card, index) => (
+                            <FlipFlopInformation key={index} card={card} index={index} />
+                        )
+                        )}
+                    </div>
+                </>
             ); break;
-        
+
         default:
             content = <h1>Unknown Style Input</h1>
     }

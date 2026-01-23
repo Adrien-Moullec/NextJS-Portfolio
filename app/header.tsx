@@ -10,25 +10,11 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 export const Header = () => {
     return (
 
-        <header className="bg-linear-to-r from-black to-black h-[200px] border-b-3 border-teal-300 flex flex-row text-white">
-
-            <div id="Website Links" className="hidden md:flex flex-row items-center justify-center border-1 w-screen">
-                <div className="mx-auto flex text-center flex-col text-2xl">                    
-                    <Link className="hover:underline hover:underline-offset-4" href="/">
-                        About Me
-                    </Link>
-                    <Link className="hover:underline hover:underline-offset-4" href="/Projects">
-                        Projects
-                    </Link>
-                    <Link className="hover:underline hover:underline-offset-4" href="/Projects/Portfolio">
-                        About This Website
-                    </Link>
-                </div>
-            </div>
-
+        <header className="bg-linear-to-r from-black to-black h-[200px] border-1 flex flex-row text-white">
+            
             <div id="Profile section"
-                className="flex flex-row items-center justify-center mx-auto border-1 border-pink-900 gap-x-3 w-screen text-xl overflow-x-clip 
-                sm:border-pink-700 md:min-w-[500px] md:max-w-[1000px]">
+                className="flex flex-row items-center mx-auto gap-x-3 w-screen text-xl overflow-x-clip 
+                md:min-w-[500px] md:max-w-[1000px] pl-10">
                 <div id="Main ID" className="flex flex-col place-items-center pr-8">
                     <Avatar className="w-23 h-23">
                         <AvatarImage src={basePath + "/Icons/images/definitely_me.png"} />
@@ -63,8 +49,18 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div className="hidden md:flex flex-col items-center justify-center border-1 w-screen">
-                <p>hahahahaha</p>
+            <div id="Website Links" className="hidden md:flex flex-row items-center justify-center border-l-1 border-white mx-auto md:min-w-[500px] md:max-w-[1000px] ">
+                <div className="mx-auto flex text-center flex-col text-2xl">
+                    <Link className="hover:underline hover:underline-offset-4" href="/">
+                        About Me
+                    </Link>
+                    <Link className="hover:underline hover:underline-offset-4" href="/Projects">
+                        Projects
+                    </Link>
+                    <Link className="hover:underline hover:underline-offset-4" href="/Projects/Portfolio">
+                        About This Website
+                    </Link>
+                </div>
             </div>
 
         </header>

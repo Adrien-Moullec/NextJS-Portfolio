@@ -12,12 +12,12 @@ interface PageLayoutProps {
 const ProjectPageLayout:React.FC<PageLayoutProps> = ({page}) => {
     
     return (
-        <div className="flex flex-col items-center pt-10">
+        <div className="flex flex-col items-center pt-10 text-white">
             {page.game.gameBuild!="" && <Link href = {"/Games/"+page.main.projectName}>Play Game</Link> }
             <div id="Main Description section" className="w-3/4 rounded-3xl text-center">
                 <h1 className={TitleFont+" pt-10 pb-10"}>{page.main.projectName}</h1>
                 <p className={TitleDescription+" pt-10 pb-10 pl-5 text-left"}>{page.main.projectDescription}</p>
-            </div>         
+            </div>
 
             {page.categories.map((category,index) => (<ProjectCardLayout key={index} category={category}/>))}
         </div>

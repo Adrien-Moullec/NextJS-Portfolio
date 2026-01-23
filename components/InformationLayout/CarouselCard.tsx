@@ -26,7 +26,7 @@ const CarouselCard:React.FC<CardProps> = ({card}) => {
                 {card.cardImage!=="" ? (
                 <img alt="project image"
                 src={basePath+card.cardImage}
-                className="rounded-2xl"
+                className="border-black hover:border-white border-3"
                 style={{objectFit:'contain'}}
                 />) : null}
                 

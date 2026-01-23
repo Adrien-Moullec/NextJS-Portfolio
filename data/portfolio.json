@@ -1,0 +1,30 @@
+{
+    "id": 1,
+    "main": {
+        "projectName": "Portfolio",
+        "projectDescription": "This is my Portfolio. This project refers to this website and the research I have put into it.",
+        "projectImage": ""
+    },
+    "game": {
+        "gameIndex": "",
+        "gameBuild": "",
+        "gameDescription": "",
+        "gameControls": []
+    },
+    "categories": [
+        {
+            "categoryTitle": "",
+            "categoryDescription": "",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Star Generation Menu",
+                    "cardImage": "/StarMap/Content/Introduction/PauseMenu.png",
+                    "cardDescription": "This is the menu to change parameters for how pathfinding, star generation and inter-star paths spawn. You can select default values to reset everything and buttons to reset the whole stars or just the paths. Also there's audio control.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        }
+    ]
+}

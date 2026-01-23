@@ -1,0 +1,58 @@
+{
+    "id": 0,
+    "main": {
+        "projectName": "Project List",
+        "projectDescription": "This page contains a list of projects that I worked on.",
+        "projectImage": ""
+    },
+    "game": {
+        "gameIndex": "",
+        "gameBuild": "",
+        "gameDescription": "",
+        "gameControls": []
+    },
+    "categories": [
+        {
+            "categoryTitle": "Projects",
+            "categoryDescription": "",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Procedural/Mesh generation",
+                    "cardImage": "/Generation/Chunks/BasicTerrainGeneration.png",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/GenerationProject",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Website Portfolio",
+                    "cardImage": "/Portfolio/NextJSLogo.png",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/Portfolio",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "StarMaps",
+                    "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.gif",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/StarMap",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Main Menu",
+                    "cardImage": "/MainMenu/PlayButton.gif",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/MainMenu",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Ocean Boids",
+                    "cardImage": "/OceanBoids/TitleImageCrop.png",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/OceanBoids",
+                    "cardHrefPage": ""
+                }
+            ]
+        }
+    ]
+}

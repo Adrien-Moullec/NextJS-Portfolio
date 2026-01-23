@@ -1,0 +1,100 @@
+{
+    "id": 3,
+    "main": {
+        "projectName": "MainMenu",
+        "projectDescription": "This project was a level 5 project to demonstrate our level scripting skills such as settings and scene change. I wanted to make a main menu integrated with the environment to make the player feel more immersed.",
+        "projectImage": ""
+    },
+    "game": {
+        "gameIndex": "",
+        "gameBuild": "",
+        "gameDescription": "",
+        "gameControls": []
+    },
+    "categories": [
+        {
+            "categoryTitle": "Exploring main menu",
+            "categoryDescription": "These clips show the camera lerping between multiple points depending on what buttons the player clicks, using a simple ease in-out for the camera and sliding UI.",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Play Button",
+                    "cardImage": "/MainMenu/PlayButton.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Settings Button",
+                    "cardImage": "/MainMenu/OptionsButton.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Exit Button",
+                    "cardImage": "/MainMenu/ExitButton.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Settings",
+            "categoryDescription": "This is a simple settings menu where you can adjust gameplay settings such as brightness, resolution and sound.",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Sliders",
+                    "cardImage": "/MainMenu/Sliders.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Dropdown",
+                    "cardImage": "/MainMenu/Dropdown.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Gameplay",
+            "categoryDescription": "This Main Menu project is a simple multiplayer example for unreal engine, either in 3rd or first person.",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "First Person",
+                    "cardImage": "/MainMenu/FirstPerson.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Third Person",
+                    "cardImage": "/MainMenu/ThirdPerson.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Exit to Menu",
+                    "cardImage": "/MainMenu/ReturnToMainMenu.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Multiplayer",
+                    "cardImage": "/MainMenu/Multiplayer.gif",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        }
+    ]
+}
