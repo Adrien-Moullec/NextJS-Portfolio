@@ -63,7 +63,56 @@
                     "cardHrefPage": ""
                 }
             ]
-        },{
+        },
+        
+
+
+        
+        {
+            "categoryTitle": "Spline Generation",
+            "categoryDescription": "This group of scripts make snaking structures such as roads, walls and tracks easier to make and place into a game. They all use Unity's spline component to do the Maths on item and mesh vertex placement. I also had to pool all the objects that spawned to avoid the engine crashing from over-using the generation tool.",
+            "categoryStyle": "carousel",
+            "cards": [                
+                {
+                    "cardTitle": "Spline Gizmos",
+                    "cardImage": "/Generation/Spline/SplinePoints.png",
+                    "cardDescription": "This is the base spline point system I made that the other spline scripts inherit from. The coloured squares represent the forward, up and side directions of each point.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },{
+                    "cardTitle": "Tracks",
+                    "cardImage": "/Generation/Spline/TrainTracks.png",
+                    "cardDescription": "This track script is more rigid compared to the other spline scripts since it used set object placement and few Object Prefab options. It still makes a good start to the spline scripts and a simple but cool looking track/ladder.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },{
+                    "cardTitle": "Wall Spline",
+                    "cardImage": "/Generation/Spline/WallSpline.png",
+                    "cardDescription": "This spline script spawns objects in a tile-grid pattern warped to the spline's curvature. There are also certain fill rules such as Fill (Fill whole space), Perlin noise and Stagger. Each wall variant has its own priority and weight, as well as rules for which layer it can appear on.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },{
+                    "cardTitle": "Mesh Extrusion Spline",
+                    "cardImage": "/Generation/Spline/MeshExtrusion.png",
+                    "cardDescription": "With this spline script, you can set a list of Vector points and Mesh objects to write to. These Vector points form the starting edge of a mesh that will be extruded along the spline.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },{
+                    "cardTitle": "Combination",
+                    "cardImage": "/Generation/Spline/Combination.png",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        
+        
+        
+        
+        
+        
+        {
             "categoryTitle": "Convex Hull Mesh Generation",
             "categoryDescription": "I wanted to expand my knowledge on how certain types of mesh generation works. I started by looking at Convex Hull Mesh Generation, which is useful if you want to have a non-concave model. In these examples I used this tool to create rocks.",
             "categoryStyle": "flipflop",
