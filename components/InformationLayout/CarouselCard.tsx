@@ -25,7 +25,7 @@ const CarouselCard:React.FC<CardProps> = ({card}) => {
                 
                 {card.cardImage!=="" ? (
                 <img alt="project image"
-                src={'${process.env.NEXT_PUBLIC_BASE_PATH}'+card.cardImage}
+                src={process.env.NEXT_PUBLIC_BASE_PATH+card.cardImage}
                 className="border-black hover:border-white border-3"
                 style={{objectFit:'contain'}}
                 />) : null}
