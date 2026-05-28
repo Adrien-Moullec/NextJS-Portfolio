@@ -1,4 +1,7 @@
 
+const basePath = process.env.NODE_ENV === 'production'
+  ? '/NextJS-Portfolio'
+  : '';
 export const Footer = () => {
   return (
     <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center bg-gradient-to-l to-black from-teal-950 text-teal-300 border-1 border-pink-400">
@@ -10,7 +13,7 @@ export const Footer = () => {
       >
         <img
           aria-hidden
-          src="/file.svg"
+          src={basePath + "/file.svg"}
           alt="File icon"
           width={16}
           height={16}
@@ -25,7 +28,7 @@ export const Footer = () => {
       >
         <img
           aria-hidden
-          src="/window.svg"
+          src={basePath + "/window.svg"}
           alt="Window icon"
           width={16}
           height={16}
@@ -40,7 +43,7 @@ export const Footer = () => {
       >
         <img
           aria-hidden
-          src="/globe.svg"
+          src={basePath + "/globe.svg"}
           alt="Globe icon"
           width={16}
           height={16}
