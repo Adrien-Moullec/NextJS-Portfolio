@@ -19,7 +19,7 @@
             "cards": [
                 {
                     "cardTitle": "Procedural/Mesh generation",
-                    "cardImage": "/Generation/Chunks/BasicTerrainGeneration.webp",
+                    "cardImage": "/Generation/Spline/Combination.webp",
                     "cardDescription": "",
                     "cardHref": "/Projects/GenerationProject",
                     "cardHrefPage": ""

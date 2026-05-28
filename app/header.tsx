@@ -1,6 +1,5 @@
 "use client"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
-import Image from "next/image"
 import Link from "next/link";
 import data from "@/data/db.json"
 import CopyText from "@/components/ui/copy";
@@ -27,7 +26,7 @@ export const Header = () => {
 
                 <div id="Contact info" className="flex flex-col text-sm pt-3s">
                     <button onClick={() => CopyText(data.devInfo.devEmail)} className="flex flex-row place-items-center pb-2">
-                        <Image
+                        <img
                             alt="mail icon" src={basePath + "/Icons/email-icon.webp"} width={50} height={50}
                             className="pr-3 invert"
                         />
@@ -35,14 +34,14 @@ export const Header = () => {
                     </button>
 
                     <Link href={data.devInfo.devLinkedIn} className="flex flex-row place-items-center pb-2" target="_blank">
-                        <Image
+                        <img
                             className="pr-3 invert"
                             alt="LinkedIn Icon" src={basePath + "/Icons/linkedin-icon.webp"} width={50} height={50}
                         />
                         LinkedIn
                     </Link>
                     <Link href={data.devInfo.devGithub} className="flex flex-row place-items-center pb-2" target="_blank">
-                        <Image
+                        <img
                             alt="Github Icon" src={basePath + "/Icons/github-logo.webp"} width={50} height={50}
                             className="pr-3 invert"
                         />

@@ -9,7 +9,7 @@ export default function Home() {
     <div id="First section" className={"text-white flex-1 flex flex-col border-1 border-pink-900 place-items-center text-4xl pt-5"}>
       <p className="pb-10"> {data.devInfo.devName} </p>
       <div>
-        <Image className="mx-auto border-1 w-3/9" alt="profile" src={basePath + "/Pictures/profile.webp"} width={50} height={50} />
+        <img className="mx-auto border-1 w-3/9" alt="profile" src={basePath + "/Pictures/profile.webp"} width={50} height={50} />
       </div>
       <div id="ABOUT ME" className="flex items-center border-1 p-5 pt-10 space-y-5 border-red-700 flex-col min-w-2/5 max-w-2/5">
         <h1 className="text-2xl bold border-1 border-black">About Me</h1>
