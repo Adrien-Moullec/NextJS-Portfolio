@@ -1,4 +1,3 @@
-import Image from "next/image";
 import data from "@/data/db.json"
 const basePath = process.env.NODE_ENV === 'production'
   ? '/NextJS-Portfolio'
