@@ -1,5 +1,6 @@
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
+import Image from "next/image";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -24,10 +25,11 @@ const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
             </div>
             <div id="Picture side" className="w-1/2 ps-10 items-center">
                 {card.cardImage !== "" ? (
-                    <img alt="project image"
+                    <Image alt="project image"
                         src={basePath + card.cardImage}
                         className="rounded-3xl"
                         style={{ objectFit: 'contain' }}
+                        unoptimized
                     />) : null}
             </div>
         </div>
