@@ -5,13 +5,15 @@ import Link from "next/link";
 import data from "@/data/db.json"
 import CopyText from "@/components/ui/copy";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const basePath = process.env.NODE_ENV === 'production'
+    ? '/NextJS-Portfolio'
+    : '';
 
 export const Header = () => {
     return (
 
         <header className="bg-linear-to-r from-black to-black h-[200px] border-1 flex flex-row text-white">
-            
+
             <div id="Profile section"
                 className="flex flex-row items-center mx-auto gap-x-3 w-screen text-xl overflow-x-clip 
                 md:min-w-[500px] md:max-w-[1000px] pl-10">
@@ -32,7 +34,7 @@ export const Header = () => {
                         {data.devInfo.devEmail}
                     </button>
 
-                    <Link href={data.devInfo.devLinkedIn} className="flex flex-row place-items-center pb-2" target="_blank">                        
+                    <Link href={data.devInfo.devLinkedIn} className="flex flex-row place-items-center pb-2" target="_blank">
                         <Image
                             className="pr-3 invert"
                             alt="LinkedIn Icon" src={basePath + "/Icons/linkedin-icon.png"} width={50} height={50}

@@ -4,7 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 //import Image from "next/image";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const basePath = process.env.NODE_ENV === 'production'
+    ? '/NextJS-Portfolio'
+    : '';
 
 interface CardProps {
     card: Card

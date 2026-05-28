@@ -4,7 +4,9 @@ import { useEffect } from "react";
 import { Page } from "../Presets/ProjectCardInterfaces";
 import { TitleDescription } from "../Presets/MyFonts";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const basePath = process.env.NODE_ENV === 'production'
+    ? '/NextJS-Portfolio'
+    : '';
 
 interface PageLayoutProps {
     page: Page
