@@ -19,21 +19,21 @@
             "cards": [
                 {
                     "cardTitle": "Play Button",
-                    "cardImage": "/MainMenu/PlayButton.gif",
+                    "cardImage": "/MainMenu/PlayButton.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Settings Button",
-                    "cardImage": "/MainMenu/OptionsButton.gif",
+                    "cardImage": "/MainMenu/OptionsButton.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Exit Button",
-                    "cardImage": "/MainMenu/ExitButton.gif",
+                    "cardImage": "/MainMenu/ExitButton.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -47,14 +47,14 @@
             "cards": [
                 {
                     "cardTitle": "Sliders",
-                    "cardImage": "/MainMenu/Sliders.gif",
+                    "cardImage": "/MainMenu/Sliders.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Dropdown",
-                    "cardImage": "/MainMenu/Dropdown.gif",
+                    "cardImage": "/MainMenu/Dropdown.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -68,28 +68,28 @@
             "cards": [
                 {
                     "cardTitle": "First Person",
-                    "cardImage": "/MainMenu/FirstPerson.gif",
+                    "cardImage": "/MainMenu/FirstPerson.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Third Person",
-                    "cardImage": "/MainMenu/ThirdPerson.gif",
+                    "cardImage": "/MainMenu/ThirdPerson.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Exit to Menu",
-                    "cardImage": "/MainMenu/ReturnToMainMenu.gif",
+                    "cardImage": "/MainMenu/ReturnToMainMenu.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Multiplayer",
-                    "cardImage": "/MainMenu/Multiplayer.gif",
+                    "cardImage": "/MainMenu/Multiplayer.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""

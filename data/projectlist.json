@@ -19,35 +19,35 @@
             "cards": [
                 {
                     "cardTitle": "Procedural/Mesh generation",
-                    "cardImage": "/Generation/Chunks/BasicTerrainGeneration.png",
+                    "cardImage": "/Generation/Chunks/BasicTerrainGeneration.webp",
                     "cardDescription": "",
                     "cardHref": "/Projects/GenerationProject",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Website Portfolio",
-                    "cardImage": "/Portfolio/NextJSLogo.png",
+                    "cardImage": "/Portfolio/NextJSLogo.webp",
                     "cardDescription": "",
                     "cardHref": "/Projects/Portfolio",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "StarMaps",
-                    "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.gif",
+                    "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.webp",
                     "cardDescription": "",
                     "cardHref": "/Projects/StarMap",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Main Menu",
-                    "cardImage": "/MainMenu/PlayButton.gif",
+                    "cardImage": "/MainMenu/PlayButton.webp",
                     "cardDescription": "",
                     "cardHref": "/Projects/MainMenu",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Ocean Boids",
-                    "cardImage": "/OceanBoids/TitleImageCrop.png",
+                    "cardImage": "/OceanBoids/TitleImageCrop.webp",
                     "cardDescription": "",
                     "cardHref": "/Projects/OceanBoids",
                     "cardHrefPage": ""

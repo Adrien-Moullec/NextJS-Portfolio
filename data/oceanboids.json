@@ -19,7 +19,7 @@
             "cards": [
                 {
                     "cardTitle": "Play Button",
-                    "cardImage": "/OceanBoids/Behaviours/ArrivalNDeparture.gif",
+                    "cardImage": "/OceanBoids/Behaviours/ArrivalNDeparture.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -33,7 +33,7 @@
             "cards": [
                 {
                     "cardTitle": "Play Button",
-                    "cardImage": "/OceanBoids/Behaviours/Avoid.gif",
+                    "cardImage": "/OceanBoids/Behaviours/Avoid.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -47,21 +47,21 @@
             "cards": [
                 {
                     "cardTitle": "",
-                    "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours.gif",
+                    "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "",
-                    "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours2.gif",
+                    "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours2.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "",
-                    "cardImage": "/OceanBoids/Behaviours/ChangeSpeed.gif",
+                    "cardImage": "/OceanBoids/Behaviours/ChangeSpeed.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -75,21 +75,21 @@
             "cards": [
                 {
                     "cardTitle": "Boid Boundary",
-                    "cardImage": "/OceanBoids/Behaviours/Boundary.gif",
+                    "cardImage": "/OceanBoids/Behaviours/Boundary.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Boid Velocity",
-                    "cardImage": "/OceanBoids/Behaviours/Velocity.gif",
+                    "cardImage": "/OceanBoids/Behaviours/Velocity.webp",
                     "cardDescription": "sadjhsiakjhd sa hd sakjh sahsakjdhbsakd hsakhd khd sakjhd sajhd sakjh dajshd sah dsakjh dksah d aks dhkj ahk ssda dsa d asd sa das dhsa jdhsa jhdsa hd ahdh sahd iakshdwah awh d wahd iwa",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Boid Chase",
-                    "cardImage": "/OceanBoids/Behaviours/PursueNEvade.gif",
+                    "cardImage": "/OceanBoids/Behaviours/PursueNEvade.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
