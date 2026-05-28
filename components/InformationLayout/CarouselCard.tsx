@@ -1,7 +1,6 @@
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
 import Link from "next/link";
-import Image from "next/image";
 //import Image from "next/image";
 
 const basePath = process.env.NODE_ENV === 'production'
