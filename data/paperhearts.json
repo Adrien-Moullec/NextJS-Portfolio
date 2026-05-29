@@ -1,0 +1,121 @@
+{
+    "id": 4,
+    "main": {
+        "projectName": "Paper Hearts",
+        "projectDescription": "My final group assignment from the University of Gloucestershire. This game was created as a team by Folded-Realities, a fun adventure from the point of view of a small origami boy named Kuhaku trying to find his friends and reunite with his creator.",
+        "projectImage": "/PaperHearts/Bedroom.webp"
+    },
+    "game": {
+        "gameIndex": "",
+        "gameBuild": "",
+        "gameDescription": "",
+        "gameControls": []
+    },
+    "categories": [
+        {
+            "categoryTitle": "Transition Mechanics",
+            "categoryDescription": "During this project, I created an ability system. This is a code structure where abilities are interchangeable and can be stored in code objects to be used by any game entity. This was important in getting character transitions to work properly to switch between different characters with unique abilities. The protagonist can transform into a crane, a frog, a bear and a spider origami.",
+            "categoryStyle": "squarelayout",
+            "cards": [
+                {
+                    "cardTitle": "Bear Charge",
+                    "cardImage": "/PaperHearts/Transitions/BearCharge.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Crane Shapeshift",
+                    "cardImage": "/PaperHearts/Transitions/Crane.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Enemy Movement",
+                    "cardImage": "/PaperHearts/Transitions/EnemyChase.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Player Damage",
+                    "cardImage": "/PaperHearts/Transitions/EnemyDamagePlayer.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Frog and Crane",
+                    "cardImage": "/PaperHearts/Transitions/FrogAndCrane.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Frog Hop",
+                    "cardImage": "/PaperHearts/Transitions/FrogHop.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Scissor Defeat",
+                    "cardImage": "/PaperHearts/Transitions/ScissorDefeat.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Spider Ability",
+                    "cardImage": "/PaperHearts/Transitions/SpiderClimb.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Spider Parkour",
+                    "cardImage": "/PaperHearts/Transitions/SpiderAndCrane.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Spider Final Section",
+                    "cardImage": "/PaperHearts/Transitions/SpiderFinal.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Transitions",
+                    "cardImage": "/PaperHearts/Transitions/Transitions.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Boss mechanics",
+            "categoryDescription": "Using a custom made animator manager, I was able to control the use of custom abilities for the final boss, just like I did with the generic player and enemy characters.",
+            "categoryStyle": "squarelayout",
+            "cards": [
+                {
+                    "cardTitle": "Shredder Attack",
+                    "cardImage": "/PaperHearts/Transitions/ShredderAttack.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Shredder Damaged",
+                    "cardImage": "/PaperHearts/Transitions/ShredderDamageAndAttacks.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        }
+    ]
+}

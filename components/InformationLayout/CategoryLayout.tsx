@@ -1,6 +1,7 @@
 import React from "react";
 import { Category } from "../Presets/ProjectCardInterfaces";
 import CarouselCard from "./CarouselCard";
+import { CardTitle } from "../Presets/MyFonts";
 import { CategoryDescriptionFont, CategoryFont } from "../Presets/MyFonts";
 import {
     Carousel,
@@ -10,6 +11,11 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import FlipFlopInformation from "./FlipFlopCard";
+import Link from "next/link";
+
+const basePath = process.env.NODE_ENV === 'production'
+    ? '/NextJS-Portfolio'
+    : '';
 
 interface ProjectCardLayoutProps {
     category: Category
@@ -58,6 +64,41 @@ const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ category }) => {
                     </div>
                 </>
             ); break;
+
+        case "squarelayout": content = (
+            <>
+                <h1 className={CategoryFont}>{category.categoryTitle}</h1>
+                <h1 className={CategoryDescriptionFont}>{category.categoryDescription}</h1>
+                <div className="h-10" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-2 sm:px-4 w-full">
+
+                    {category.cards.map((card, index) => (
+                        <Link
+                            id="Individual Card"
+                            href={card.cardHref}
+                            className="text-center hover:underline rounded-4xl"
+                            style={{
+                                overflow: 'hidden',
+                                position: 'relative'
+                            }}
+                        >
+                            <div key={index} className="max-w-[500px] mx-auto">
+                                <p className={CardTitle + " pb-1"}>{card.cardTitle}</p>
+                                {card.cardImage !== "" ? (
+                                    <img alt="project image"
+                                        src={basePath + card.cardImage}
+                                        className="rounded-3xl border-black border-3"
+                                        style={{ objectFit: 'contain' }}
+                                    />) : null}
+                            </div>
+                        </Link>
+                    ))}
+
+                </div>
+            </>
+        );
+            break;
+
 
         default:
             content = <h1>Unknown Style Input</h1>

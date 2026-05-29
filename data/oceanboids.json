@@ -13,13 +13,20 @@
     },
     "categories": [
         {
-            "categoryTitle": "Arrival and Deptarture",
+            "categoryTitle": "Key Behaviours",
             "categoryDescription": "",
             "categoryStyle": "carousel",
             "cards": [
                 {
                     "cardTitle": "Play Button",
                     "cardImage": "/OceanBoids/Behaviours/ArrivalNDeparture.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Play Button",
+                    "cardImage": "/OceanBoids/Behaviours/Avoid.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -30,15 +37,7 @@
             "categoryTitle": "Avoid",
             "categoryDescription": "",
             "categoryStyle": "carousel",
-            "cards": [
-                {
-                    "cardTitle": "Play Button",
-                    "cardImage": "/OceanBoids/Behaviours/Avoid.webp",
-                    "cardDescription": "",
-                    "cardHref": "#",
-                    "cardHrefPage": ""
-                }
-            ]
+            "cards": []
         },
         {
             "categoryTitle": "Changing Behaviours Examples",

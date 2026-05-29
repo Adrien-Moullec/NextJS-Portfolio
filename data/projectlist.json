@@ -15,13 +15,13 @@
         {
             "categoryTitle": "Projects",
             "categoryDescription": "",
-            "categoryStyle": "carousel",
+            "categoryStyle": "squarelayout",
             "cards": [
                 {
-                    "cardTitle": "Procedural/Mesh generation",
-                    "cardImage": "/Generation/Spline/Combination.webp",
+                    "cardTitle": "Paper Hearts",
+                    "cardImage": "/PaperHearts/Bedroom.webp",
                     "cardDescription": "",
-                    "cardHref": "/Projects/GenerationProject",
+                    "cardHref": "/Projects/PaperHearts",
                     "cardHrefPage": ""
                 },
                 {
@@ -50,6 +50,13 @@
                     "cardImage": "/OceanBoids/TitleImageCrop.webp",
                     "cardDescription": "",
                     "cardHref": "/Projects/OceanBoids",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Procedural/Mesh generation",
+                    "cardImage": "/Generation/Spline/Combination.webp",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/GenerationProject",
                     "cardHrefPage": ""
                 }
             ]
