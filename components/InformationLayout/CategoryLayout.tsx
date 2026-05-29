@@ -75,6 +75,7 @@ const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ category }) => {
                     {category.cards.map((card, index) => (
                         <Link
                             id="Individual Card"
+                            key={index}
                             href={card.cardHref}
                             className="text-center hover:underline rounded-4xl"
                             style={{
