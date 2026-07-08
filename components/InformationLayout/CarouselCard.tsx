@@ -1,5 +1,4 @@
 import { Card as CardInterface } from "../Presets/ProjectCardInterfaces";
-import { CardDesc, CardTitle as MFCardTitle } from "../Presets/MyFonts";
 import Link from "next/link";
 //import Image from "next/image";
 import {
@@ -19,14 +18,19 @@ const basePath = process.env.NODE_ENV === 'production'
 interface CardProps {
     cardInterface: CardInterface
 }
+type Props = {
+    children: React.ReactNode;
+};
 
 const CarouselCard: React.FC<CardProps> = ({ cardInterface }) => {
     return (
-
+        
+        <Linkbox>
+        </Linkbox>
         <Link
             id="Individual Card"
             href={cardInterface.cardHref}
-            className="text-center hover:underline"
+            className={"text-center hover:underline "}
             style={{
                 overflow: 'hidden',
                 position: 'relative'
@@ -54,6 +58,31 @@ const CarouselCard: React.FC<CardProps> = ({ cardInterface }) => {
         </Link>
 
     );
+}
+
+const Linkbox = ({ children }: Props, { cardInterface }: CardProps) => {
+    let content;
+
+    switch (cardInterface.cardHref) {
+        case "":
+        case "#": content = (
+            <>
+            </>
+        ); break;
+
+        default:
+
+            break;
+    }
+    return (
+        <div className="bg-black">
+            <div className="bg-gradient-to-tl from-blue-950 to-black mx-[35px]">
+                <div className="h-20" />
+                {children}
+                <div className="h-20" />
+            </div>
+        </div>
+    )
 }
 
 export default CarouselCard;

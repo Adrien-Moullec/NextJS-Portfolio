@@ -1,0 +1,79 @@
+{
+    "id": 3,
+    "main": {
+        "projectName": "Music Tracker Sequencer",
+        "projectDescription": "My dissertation was about the legacy system music trackers and how they can be incorporated in a modern setting.",
+        "projectImage": "/TrackerSequencing/JSONTrackerEditorEx.webp"
+    },
+    "game": {
+        "gameIndex": "",
+        "gameBuild": "",
+        "gameDescription": "",
+        "gameControls": []
+    },
+    "categories": [
+        {
+            "categoryTitle": "Music Sequencer",
+            "categoryDescription": "MUSIC",
+            "categoryStyle": "flipflop",
+            "cards": [
+                {
+                    "cardTitle": "Editor menu",
+                    "cardImage": "/TrackerSequencing/JSONTrackerEditorEx.webp",
+                    "cardDescription": "THIS IS WINDOW",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Musical Sandbox",
+            "categoryDescription": "The practical implementation of this project allows the player to discover hidden events that plays corresponding music tracks.",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Chest",
+                    "cardImage": "/TrackerSequencing/Chest.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Damage Screen",
+                    "cardImage": "/TrackerSequencing/DamageScreen.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Knights",
+                    "cardImage": "/TrackerSequencing/Knights.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Level Up Screen",
+                    "cardImage": "/TrackerSequencing/LevelUpScreen.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Slime Enemies",
+                    "cardImage": "/TrackerSequencing/SlimeEnemies.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Thanos Sunglasses",
+                    "cardImage": "/TrackerSequencing/ThanosSunglasses.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        }
+    ]
+}

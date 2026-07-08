@@ -25,6 +25,13 @@
                     "cardHrefPage": ""
                 },
                 {
+                    "cardTitle": "Music Tracker",
+                    "cardImage": "/TrackerSequencing/JSONTrackerEditorEx.webp",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/MusicTracker",
+                    "cardHrefPage": ""
+                },
+                {
                     "cardTitle": "Website Portfolio",
                     "cardImage": "/Portfolio/NextJSLogo.webp",
                     "cardDescription": "",

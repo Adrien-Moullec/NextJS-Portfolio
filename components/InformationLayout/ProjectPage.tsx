@@ -28,16 +28,14 @@ interface PageLayoutProps {
 
 const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
     return (
-        <div className="border-1 border-amber-500 mx-15">
-            <div className="flex flex-col items-center pt-10 text-white mb-20">
-                {page.game.gameBuild != "" && <Link href={"/Games/" + page.main.projectName}>Play Game</Link>}
-                <h1 className={TitleFont + " pt-10 pb-10"}>{page.main.projectName}</h1>
-                <p className={TitleDescription + " pt-10 pb-10 pl-5 text-left"}>{page.main.projectDescription}</p>
+        <div className="flex flex-col items-center text-white">
+            {page.game.gameBuild != "" && <Link href={"/Games/" + page.main.projectName}>Play Game</Link>}
+            <h1 className={TitleFont + " pt-10 pb-10"}>{page.main.projectName}</h1>
+            <p className={TitleDescription + " pt-10 pb-20 pl-5 text-left w-4/5"}>{page.main.projectDescription}</p>
 
-                {page.categories.map((category, index) => (
-                    <ProjectCardLayout key={index} categoryInterface={category} />
-                ))}
-            </div>
+            {page.categories.map((category, index) => (
+                <ProjectCardLayout key={index} categoryInterface={category} />
+            ))}
         </div>
     )
 }
@@ -53,7 +51,11 @@ export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryIn
                     <div className="px-2 sm:px-4 w-full mb-10">
                         <Carousel>
                             <CarouselContent className="basis-1/4 sm:basis-1/1 lg:basis-1/2 2xl:basis-1/4 gap-4" >
-                                {categoryInterface.cards.map((card, index) => (<CarouselCard key={index} cardInterface={card} />))}
+                                {categoryInterface.cards.map((card, index) => (
+                                    <CarouselItem key={index} className="basis-1/4 ">
+                                        <CarouselCard cardInterface={card} />
+                                    </CarouselItem>)
+                                )}
                             </CarouselContent>
                             <CarouselNext className="absolute top-1/2 -translate-y-1/2 right-2 sm:right-4 z-10" />
                             <CarouselPrevious className="absolute top-1/2 -translate-y-1/2 left-2 sm:left-4 z-10" />
@@ -61,11 +63,6 @@ export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryIn
                     </div>
                 </>
             ); break;
-
-
-        //<CarouselItem key={"" + index} className="basis-1/1 sm:basis-1/1 lg:basis-1/2 2xl:basis-1/4">
-        //    <CarouselCard key={index} cardInterface={card} />
-        //</CarouselItem>
 
         case "flipflop":
             content = (
@@ -83,7 +80,7 @@ export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryIn
         case "squarelayout": content = (
             <>
                 <CategoryTitleLayout categoryInterface={categoryInterface} />
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-10">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-10 mx-5">
                     {categoryInterface.cards.map((card, index) => (<CarouselCard key={index} cardInterface={card} />))}
                 </div>
             </>

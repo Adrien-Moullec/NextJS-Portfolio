@@ -1,5 +1,5 @@
 import ProjectPageLayout from "@/components/InformationLayout/ProjectPage";
-import data from "@/data/mainmenu.json"
+import data from "@/data/musictracker.json"
 
 export default function Home() {
     return (
