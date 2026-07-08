@@ -13,11 +13,6 @@ import {
 import FlipFlopInformation from "./FlipFlopCard";
 import Link from "next/link";
 
-
-const basePath = process.env.NODE_ENV === 'production'
-    ? '/NextJS-Portfolio'
-    : '';
-
 interface ProjectCardLayoutProps {
     categoryInterface: Category
 }

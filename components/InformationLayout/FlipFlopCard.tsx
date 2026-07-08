@@ -1,5 +1,6 @@
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
+import Image from "next/image";
 //import Image from "next/image";
 
 const basePath = process.env.NODE_ENV === 'production'
@@ -27,7 +28,7 @@ const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
             </span>
             <div id="Picture side" className="w-1/2 mx-5 items-center">
                 {card.cardImage !== "" ? (
-                    <img alt="project image"
+                    <Image alt="project image"
                         src={basePath + card.cardImage}
                         className="rounded-3xl w-full"
                         style={{ objectFit: 'contain' }}

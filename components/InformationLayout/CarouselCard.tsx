@@ -1,6 +1,5 @@
 import { Card as CardInterface } from "../Presets/ProjectCardInterfaces";
 import Link from "next/link";
-//import Image from "next/image";
 import {
     Card,
     CardAction,
@@ -10,6 +9,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import Image from "next/image";
 
 const basePath = process.env.NODE_ENV === 'production'
     ? '/NextJS-Portfolio'
@@ -61,7 +61,7 @@ const CardLayout: React.FC<CardProps> = ({ cardInterface }) => {
             <CardContent>
                 {cardInterface.cardImage !== "" ? (
                     <div className="h-70">
-                        <img alt="project image"
+                        <Image alt="project image"
                             src={basePath + cardInterface.cardImage}
                             className={"rounded-xl border-black border-3 max-h-53"}
                             style={{ objectFit: 'contain' }}
@@ -71,24 +71,6 @@ const CardLayout: React.FC<CardProps> = ({ cardInterface }) => {
             <CardFooter> </CardFooter>
         </Card>
     )
-}
-
-const Linkbox = ({ cardInterface }: CardProps) => {
-    let content;
-
-    switch (cardInterface.cardHref) {
-        case "":
-        case "#": content = (
-            <>
-
-            </>
-        ); break;
-
-        default:
-
-            break;
-    }
-    return (<>{content}</>)
 }
 
 export default CarouselCard;

@@ -1,6 +1,3 @@
-const basePath = process.env.NODE_ENV === 'production'
-  ? '/NextJS-Portfolio'
-  : '';
 import data from "@/data/projectlist.json"
 import CarouselCard from "@/components/InformationLayout/CarouselCard";
 import {

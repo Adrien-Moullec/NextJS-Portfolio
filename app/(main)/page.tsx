@@ -3,6 +3,7 @@ const basePath = process.env.NODE_ENV === 'production'
   ? '/NextJS-Portfolio'
   : '';
 import { TitleFont } from "@/components/Presets/MyFonts";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
 
         <p className={"pb-10" + TitleFont}> {data.devInfo.devName} </p>
 
-        <img className="mx-auto w-3/9" alt="profile" src={basePath + "/Pictures/profile.webp"} width={50} height={50} />
+        <Image className="mx-auto w-3/9" alt="profile" src={basePath + "/Pictures/profile.webp"} width={50} height={50} />
 
         <div id="ABOUT ME" className="flex items-center p-5 pt-10 space-y-5 flex-col min-w-2/5 max-w-4/5">
           <h1 className="text-2xl bold">About Me</h1>
