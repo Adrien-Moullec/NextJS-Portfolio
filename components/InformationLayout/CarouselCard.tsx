@@ -63,6 +63,7 @@ const CardLayout: React.FC<CardProps> = ({ cardInterface }) => {
                     <div className="h-70">
                         <Image alt="project image"
                             src={basePath + cardInterface.cardImage}
+                            width={1000} height={1000}
                             className={"rounded-xl border-black border-3 max-h-53"}
                             style={{ objectFit: 'contain' }}
                         />

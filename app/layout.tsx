@@ -14,7 +14,7 @@ const MainLayout = ({ children }: Props) => {
         <div>
           <Toaster position="bottom-right" />
           <Header />
-          <Body children={children} />
+          <Body> {children} </Body>
           <Footer />
         </div>
       </body>
