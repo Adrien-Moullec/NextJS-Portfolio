@@ -27,26 +27,28 @@ const GameLayout: React.FC<PageLayoutProps> = ({ page }) => {
     }, [])
 
     return (
-        <div className="flex flex-col items-center pt-10">
-            export default ProjectPageLayout;<div>
-                <div id="Game section" className="flex flex-row justify-center items-center w-screen">
-                    <div className="w-1/16"></div>
-                    <div
-                        id="Game Window"
-                        className="w-12/16 h-164 invisible xl:visible">
+        <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center pt-10">
+                export default ProjectPageLayout;<div>
+                    <div id="Game section" className="flex flex-row justify-center items-center w-screen">
+                        <div className="w-1/16"></div>
+                        <div
+                            id="Game Window"
+                            className="w-12/16 h-164 invisible xl:visible">
 
-                        <iframe
-                            src={basePath + page.game.gameIndex}
-                            width="100%"
-                            height="100%"
-                            style={{ border: "border-yellow-400 border:5", position: "relative", top: 0, left: 0, right: 0, bottom: 0 }}
-                            allowFullScreen />
+                            <iframe
+                                src={basePath + page.game.gameIndex}
+                                width="100%"
+                                height="100%"
+                                style={{ border: "border-yellow-400 border:5", position: "relative", top: 0, left: 0, right: 0, bottom: 0 }}
+                                allowFullScreen />
 
-                    </div>
-                    <div className={TitleDescription + " w-1/16 text-xl"}>
-                        {page.game.gameControls.map((nextControl, index) => (
-                            <li key={index}>{nextControl}</li>
-                        ))}
+                        </div>
+                        <div className={TitleDescription + " w-1/16 text-xl"}>
+                            {page.game.gameControls.map((nextControl, index) => (
+                                <li key={index}>{nextControl}</li>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

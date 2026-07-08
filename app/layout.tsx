@@ -1,5 +1,6 @@
 import { Header } from "./header"
 import "./globals.css";
+import Body from "./body"
 import { Footer } from "./footer";
 import { Toaster } from "sonner";
 
@@ -11,13 +12,10 @@ const MainLayout = ({ children }: Props) => {
     <html lang="en">
       <body>
         <div>
-          
-          <Toaster position="bottom-right"/>
-          <Header/>
-          <div className="bg-gradient-to-b from-gray-900 to-gray-900">            
-            {children}
-          </div>
-          <Footer/>
+          <Toaster position="bottom-right" />
+          <Header />
+          <Body children={children} />
+          <Footer />
         </div>
       </body>
     </html>

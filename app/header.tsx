@@ -1,7 +1,7 @@
 "use client"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import Link from "next/link";
-import data from "@/data/db.json"
+import data from "@/data/devInfo.json"
 import CopyText from "@/components/ui/copy";
 
 const basePath = process.env.NODE_ENV === 'production'
@@ -16,13 +16,15 @@ export const Header = () => {
             <div id="Profile section"
                 className="flex flex-row items-center mx-auto gap-x-3 w-screen text-xl overflow-x-clip 
                 md:min-w-[500px] md:max-w-[1000px] pl-10">
-                <div id="Main ID" className="flex flex-col place-items-center pr-8">
-                    <Avatar className="w-23 h-23">
-                        <AvatarImage src={basePath + "/Icons/images/definitely_me.webp"} />
-                        <AvatarFallback>CN</AvatarFallback>
-                    </Avatar>
-                    <p>{data.devInfo.devName}</p>
-                </div>
+                <Link className="hover:underline hover:underline-offset-4" href="/">
+                    <div id="Main ID" className="flex flex-col place-items-center pr-8">
+                        <Avatar className="w-23 h-23">
+                            <AvatarImage src={basePath + "/Icons/images/definitely_me.webp"} />
+                            <AvatarFallback>CN</AvatarFallback>
+                        </Avatar>
+                        <p>{data.devInfo.devName}</p>
+                    </div>
+                </Link>
 
                 <div id="Contact info" className="flex flex-col text-sm pt-3s">
                     <button onClick={() => CopyText(data.devInfo.devEmail)} className="flex flex-row place-items-center pb-2">

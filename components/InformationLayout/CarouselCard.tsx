@@ -1,39 +1,56 @@
-import { Card } from "../Presets/ProjectCardInterfaces";
-import { CardDesc, CardTitle } from "../Presets/MyFonts";
+import { Card as CardInterface } from "../Presets/ProjectCardInterfaces";
+import { CardDesc, CardTitle as MFCardTitle } from "../Presets/MyFonts";
 import Link from "next/link";
 //import Image from "next/image";
+import {
+    Card,
+    CardAction,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
 
 const basePath = process.env.NODE_ENV === 'production'
     ? '/NextJS-Portfolio'
     : '';
 
 interface CardProps {
-    card: Card
+    cardInterface: CardInterface
 }
 
-const CarouselCard: React.FC<CardProps> = ({ card }) => {
+const CarouselCard: React.FC<CardProps> = ({ cardInterface }) => {
     return (
+
         <Link
             id="Individual Card"
-            href={card.cardHref}
-            className="text-center hover:underline rounded-4xl"
+            href={cardInterface.cardHref}
+            className="text-center hover:underline"
             style={{
                 overflow: 'hidden',
                 position: 'relative'
             }}
         >
-            <div className="flex flex-col justify-items-center">
-                <p className={CardTitle + " pb-1"}>{card.cardTitle}</p>
 
-                {card.cardImage !== "" ? (
-                    <img alt="project image"
-                        src={basePath + card.cardImage}
-                        className="border-black hover:border-white border-3"
-                        style={{ objectFit: 'contain' }}
-                    />) : null}
-
-                <p className={CardDesc}>{card.cardDescription}</p>
-            </div>
+            <Card className={`${cardInterface.cardDescription.length > 1 ? "h-110" : "h-80"} rounded-sm text-white bg-black`}>
+                <CardHeader>
+                    <CardTitle className={`text-2xl h-10`}>{cardInterface.cardTitle}</CardTitle>
+                    <CardDescription className={` ${cardInterface.cardDescription.length > 1 ? "h-30" : ""} rounded-t-xl`}>{cardInterface.cardDescription}</CardDescription>
+                    <CardAction></CardAction>
+                </CardHeader>
+                <CardContent>
+                    {cardInterface.cardImage !== "" ? (
+                        <div className="h-70">
+                            <img alt="project image"
+                                src={basePath + cardInterface.cardImage}
+                                className={"rounded-xl border-black border-3 max-h-53"}
+                                style={{ objectFit: 'contain' }}
+                            />
+                        </div>) : null}
+                </CardContent>
+                <CardFooter> </CardFooter>
+            </Card>
         </Link>
 
     );

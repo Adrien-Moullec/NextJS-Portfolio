@@ -14,8 +14,8 @@ interface CardProps {
 const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
     return (
         <div
-            id="Individual Card"
-            className={`justify-items-center w-screen pt-10 text-center rounded-4xl border-1 flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+            key={index}
+            className={`justify-items-center text-center rounded-4xl mb-5 flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
             style={{
                 overflow: 'hidden',
                 position: 'relative'

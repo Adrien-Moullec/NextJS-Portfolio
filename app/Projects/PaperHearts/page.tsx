@@ -4,7 +4,7 @@ import data from "@/data/paperhearts.json"
 export default function Home() {
 
     return (
-        <div className="flex flex-col items-center">
+        <div>
             <ProjectPageLayout page={data} />
         </div>
     )

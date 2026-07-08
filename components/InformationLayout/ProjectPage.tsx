@@ -1,26 +1,111 @@
 "use client"
 import React from "react";
-import { Page } from "../Presets/ProjectCardInterfaces";
-import ProjectCardLayout from "./CategoryLayout";
-import { TitleFont, TitleDescription as TitleDescription} from "../Presets/MyFonts";
+import { Page, Category } from "../Presets/ProjectCardInterfaces";
+import { TitleFont, TitleDescription as TitleDescription, CategoryDescriptionFont, CategoryFont } from "../Presets/MyFonts";
+import CarouselCard from "./CarouselCard";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+import FlipFlopInformation from "./FlipFlopCard";
 import Link from "next/link";
+
+
+const basePath = process.env.NODE_ENV === 'production'
+    ? '/NextJS-Portfolio'
+    : '';
+
+interface ProjectCardLayoutProps {
+    categoryInterface: Category
+}
 
 interface PageLayoutProps {
     page: Page
 }
 
-const ProjectPageLayout:React.FC<PageLayoutProps> = ({page}) => {
-    
+const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
     return (
-        <div className="flex flex-col items-center pt-10 text-white">
-            {page.game.gameBuild!="" && <Link href = {"/Games/"+page.main.projectName}>Play Game</Link> }
-            <div id="Main Description section" className="w-3/4 rounded-3xl text-center">
-                <h1 className={TitleFont+" pt-10 pb-10"}>{page.main.projectName}</h1>
-                <p className={TitleDescription+" pt-10 pb-10 pl-5 text-left"}>{page.main.projectDescription}</p>
-            </div>
+        <div className="border-1 border-amber-500 mx-15">
+            <div className="flex flex-col items-center pt-10 text-white mb-20">
+                {page.game.gameBuild != "" && <Link href={"/Games/" + page.main.projectName}>Play Game</Link>}
+                <h1 className={TitleFont + " pt-10 pb-10"}>{page.main.projectName}</h1>
+                <p className={TitleDescription + " pt-10 pb-10 pl-5 text-left"}>{page.main.projectDescription}</p>
 
-            {page.categories.map((category,index) => (<ProjectCardLayout key={index} category={category}/>))}
+                {page.categories.map((category, index) => (
+                    <ProjectCardLayout key={index} categoryInterface={category} />
+                ))}
+            </div>
         </div>
+    )
+}
+
+export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryInterface }) => {
+    let content;
+
+    switch (categoryInterface.categoryStyle) {
+        case "carousel":
+            content = (
+                <>
+                    <CategoryTitleLayout categoryInterface={categoryInterface} />
+                    <div className="px-2 sm:px-4 w-full mb-10">
+                        <Carousel>
+                            <CarouselContent className="basis-1/4 sm:basis-1/1 lg:basis-1/2 2xl:basis-1/4 gap-4" >
+                                {categoryInterface.cards.map((card, index) => (<CarouselCard key={index} cardInterface={card} />))}
+                            </CarouselContent>
+                            <CarouselNext className="absolute top-1/2 -translate-y-1/2 right-2 sm:right-4 z-10" />
+                            <CarouselPrevious className="absolute top-1/2 -translate-y-1/2 left-2 sm:left-4 z-10" />
+                        </Carousel>
+                    </div>
+                </>
+            ); break;
+
+
+        //<CarouselItem key={"" + index} className="basis-1/1 sm:basis-1/1 lg:basis-1/2 2xl:basis-1/4">
+        //    <CarouselCard key={index} cardInterface={card} />
+        //</CarouselItem>
+
+        case "flipflop":
+            content = (
+                <>
+                    <CategoryTitleLayout categoryInterface={categoryInterface} />
+                    <div className="w-full mx-auto mb-10 gap-3">
+                        {categoryInterface.cards.map((card, index) => (
+                            <FlipFlopInformation key={index} card={card} index={index} />
+                        )
+                        )}
+                    </div>
+                </>
+            ); break;
+
+        case "squarelayout": content = (
+            <>
+                <CategoryTitleLayout categoryInterface={categoryInterface} />
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-10">
+                    {categoryInterface.cards.map((card, index) => (<CarouselCard key={index} cardInterface={card} />))}
+                </div>
+            </>
+        ); break;
+
+        default:
+            content = <h1>Unknown Style Input</h1>
+    }
+
+    return (<>{content}</>)
+}
+
+const CategoryTitleLayout: React.FC<ProjectCardLayoutProps> = ({ categoryInterface }) => {
+    return (
+        <>
+            <h1 className={CategoryFont + " w-full mx-auto"}>
+                {categoryInterface.categoryTitle}
+            </h1>
+            <h1 className={CategoryDescriptionFont + " w-full mx-auto mb-10"}>
+                {categoryInterface.categoryDescription}
+            </h1>
+        </>
     )
 }
 
