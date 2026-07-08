@@ -18,55 +18,69 @@ const basePath = process.env.NODE_ENV === 'production'
 interface CardProps {
     cardInterface: CardInterface
 }
-type Props = {
-    children: React.ReactNode;
-};
 
 const CarouselCard: React.FC<CardProps> = ({ cardInterface }) => {
-    return (
-        
-        <Linkbox>
-        </Linkbox>
-        <Link
-            id="Individual Card"
-            href={cardInterface.cardHref}
-            className={"text-center hover:underline "}
-            style={{
+    let content;
+
+    switch (cardInterface.cardHref) {
+        case "":
+        case "#": content = (
+            <div style={{
                 overflow: 'hidden',
                 position: 'relative'
-            }}
-        >
+            }}>
+                <CardLayout cardInterface={cardInterface} />
+            </div>
+        ); break;
 
-            <Card className={`${cardInterface.cardDescription.length > 1 ? "h-110" : "h-80"} rounded-sm text-white bg-black`}>
-                <CardHeader>
-                    <CardTitle className={`text-2xl h-10`}>{cardInterface.cardTitle}</CardTitle>
-                    <CardDescription className={` ${cardInterface.cardDescription.length > 1 ? "h-30" : ""} rounded-t-xl`}>{cardInterface.cardDescription}</CardDescription>
-                    <CardAction></CardAction>
-                </CardHeader>
-                <CardContent>
-                    {cardInterface.cardImage !== "" ? (
-                        <div className="h-70">
-                            <img alt="project image"
-                                src={basePath + cardInterface.cardImage}
-                                className={"rounded-xl border-black border-3 max-h-53"}
-                                style={{ objectFit: 'contain' }}
-                            />
-                        </div>) : null}
-                </CardContent>
-                <CardFooter> </CardFooter>
-            </Card>
-        </Link>
-
-    );
+        default: content = (
+            <Link
+                id="Individual Card"
+                href={cardInterface.cardHref}
+                className={"text-center hover:underline "}
+                style={{
+                    overflow: 'hidden',
+                    position: 'relative'
+                }}
+            >
+                <CardLayout cardInterface={cardInterface} />
+            </Link>
+        )
+    }
+    return (<>{content}</>)
 }
 
-const Linkbox = ({ children }: Props, { cardInterface }: CardProps) => {
+const CardLayout: React.FC<CardProps> = ({ cardInterface }) => {
+    return (
+        <Card className={`${cardInterface.cardDescription.length > 1 ? "h-110" : "h-80"} rounded-sm text-white bg-black`}>
+            <CardHeader>
+                <CardTitle className={`text-2xl h-10`}>{cardInterface.cardTitle}</CardTitle>
+                <CardDescription className={` ${cardInterface.cardDescription.length > 1 ? "h-30" : ""} rounded-t-xl`}>{cardInterface.cardDescription}</CardDescription>
+                <CardAction />
+            </CardHeader>
+            <CardContent>
+                {cardInterface.cardImage !== "" ? (
+                    <div className="h-70">
+                        <img alt="project image"
+                            src={basePath + cardInterface.cardImage}
+                            className={"rounded-xl border-black border-3 max-h-53"}
+                            style={{ objectFit: 'contain' }}
+                        />
+                    </div>) : null}
+            </CardContent>
+            <CardFooter> </CardFooter>
+        </Card>
+    )
+}
+
+const Linkbox = ({ cardInterface }: CardProps) => {
     let content;
 
     switch (cardInterface.cardHref) {
         case "":
         case "#": content = (
             <>
+
             </>
         ); break;
 
@@ -74,29 +88,7 @@ const Linkbox = ({ children }: Props, { cardInterface }: CardProps) => {
 
             break;
     }
-    return (
-        <div className="bg-black">
-            <div className="bg-gradient-to-tl from-blue-950 to-black mx-[35px]">
-                <div className="h-20" />
-                {children}
-                <div className="h-20" />
-            </div>
-        </div>
-    )
+    return (<>{content}</>)
 }
 
 export default CarouselCard;
-
-/*
-style={{
-            width: '200px',   // max width
-            height: '200px',  // max height
-            overflow: 'hidden', // clips anything outside
-            position: 'relative'
-            }}
-
-
-            <div
-            id="Image Container"            
-            className="relative inline-block">
-*/

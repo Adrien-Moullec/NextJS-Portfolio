@@ -80,7 +80,7 @@ export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryIn
         case "squarelayout": content = (
             <>
                 <CategoryTitleLayout categoryInterface={categoryInterface} />
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-10 mx-5">
+                <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 mb-10 mx-[50px]">
                     {categoryInterface.cards.map((card, index) => (<CarouselCard key={index} cardInterface={card} />))}
                 </div>
             </>
@@ -99,7 +99,7 @@ const CategoryTitleLayout: React.FC<ProjectCardLayoutProps> = ({ categoryInterfa
             <h1 className={CategoryFont + " w-full mx-auto"}>
                 {categoryInterface.categoryTitle}
             </h1>
-            <h1 className={CategoryDescriptionFont + " w-full mx-auto mb-10"}>
+            <h1 className={CategoryDescriptionFont + " w-full mx-auto"}>
                 {categoryInterface.categoryDescription}
             </h1>
         </>

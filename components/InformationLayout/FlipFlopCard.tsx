@@ -15,21 +15,21 @@ const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
     return (
         <div
             key={index}
-            className={`justify-items-center text-center mb-5 flex ${index % 2 === 1 ? "flex-row" : "flex-row-reverse"}`}
+            className={`justify-items-center text-center my-10 flex ${index % 2 === 1 ? "flex-row" : "flex-row-reverse"}`}
             style={{
                 overflow: 'hidden',
                 position: 'relative'
             }}
         >
-            <span id="Text side" className="w-1/2 mx-5 pt-5">
-                <p className={CardTitle + " pb-1"}>{card.cardTitle}</p>
+            <span id="Text side" className="w-1/2 mx-5">
+                <p className={CardTitle + " my-10"}>{card.cardTitle}</p>
                 <p className={CardDesc}>{card.cardDescription}</p>
             </span>
             <div id="Picture side" className="w-1/2 mx-5 items-center">
                 {card.cardImage !== "" ? (
                     <img alt="project image"
                         src={basePath + card.cardImage}
-                        className="rounded-3xl"
+                        className="rounded-3xl w-full"
                         style={{ objectFit: 'contain' }}
                     />) : null}
             </div>

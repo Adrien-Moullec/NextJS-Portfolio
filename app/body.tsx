@@ -1,10 +1,7 @@
-const basePath = process.env.NODE_ENV === 'production'
-    ? '/NextJS-Portfolio'
-    : '';
-
 type Props = {
     children: React.ReactNode;
 };
+
 const Body = ({ children }: Props) => {
     return (
         <div className="bg-black">
