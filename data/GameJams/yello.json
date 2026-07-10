@@ -1,0 +1,72 @@
+{
+    "id": 2,
+    "main": {
+        "projectName": "Y'ello!",
+        "projectDescription": "This project was a small internal game jam for the start of our research year. The topic was 'Yellow' and we made a game about finding a phone amongst hundreds of generated yellow objects.",
+        "projectImage": "/Yello/House.webp"
+    },
+    "game": {
+        "gameIndex": "",
+        "gameBuild": "",
+        "gameDescription": "",
+        "gameControls": []
+    },
+    "categories": [
+        {
+            "categoryTitle": "",
+            "categoryDescription": "",
+            "categoryStyle": "flipflop",
+            "cards": [
+                {
+                    "cardTitle": "Hand Tracking",
+                    "cardImage": "/Yello/Hands.webp",
+                    "cardDescription": "This project uses a leap motion controller to interact with the environment. Each object can be nudged and grabbed with virtual hands. \n\n A leap motion package was used to setup the project, which had applicable scripts that can be added to objects. This allow custom events to occur on different interactions such as grabbing an object. Holding the phone by clenching your real hand will you win the game.",
+                    "cardHref": "",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "How the items are Generated",
+                    "cardImage": "/Yello/GenerationArea.webp",
+                    "cardDescription": "The generated objects come from a pool of random objects. One of them is the real phone that the player must find. \n\nThis image shows the tool made specifically for the project: a customizable area for objects to spawn on shown by the pink cubes. Multiple of these are used across the small map and each object doesn't spawn in if there are any obstructions.\n\nThere are multiple adjustments that can be made such as object density, rotation and collision check areas to create a more natural looking dispersion of objects.",
+                    "cardHref": "",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "",
+            "categoryDescription": "",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "",
+                    "cardImage": "/Yello/Items.webp",
+                    "cardDescription": "",
+                    "cardHref": "",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "",
+                    "cardImage": "/Yello/MicrowaveItems.webp",
+                    "cardDescription": "",
+                    "cardHref": "",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "",
+                    "cardImage": "/Yello/ShelfItems.webp",
+                    "cardDescription": "",
+                    "cardHref": "",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "",
+                    "cardImage": "/Yello/TVItems.webp",
+                    "cardDescription": "",
+                    "cardHref": "",
+                    "cardHrefPage": ""
+                }
+            ]
+        }
+    ]
+}

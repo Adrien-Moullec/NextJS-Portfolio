@@ -1,4 +1,4 @@
-import data from "@/data/devInfo.json"
+import data from "@/data/PersonalInfo/devInfo.json"
 const basePath = process.env.NODE_ENV === 'production'
   ? '/NextJS-Portfolio'
   : '';

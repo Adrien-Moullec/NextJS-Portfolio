@@ -13,82 +13,97 @@
     },
     "categories": [
         {
-            "categoryTitle": "Key Behaviours",
-            "categoryDescription": "",
-            "categoryStyle": "carousel",
-            "cards": [
-                {
-                    "cardTitle": "Play Button",
-                    "cardImage": "/OceanBoids/Behaviours/ArrivalNDeparture.webp",
-                    "cardDescription": "",
-                    "cardHref": "#",
-                    "cardHrefPage": ""
-                },
-                {
-                    "cardTitle": "Play Button",
-                    "cardImage": "/OceanBoids/Behaviours/Avoid.webp",
-                    "cardDescription": "",
-                    "cardHref": "#",
-                    "cardHrefPage": ""
-                }
-            ]
-        },
-        {
-            "categoryTitle": "Avoid",
-            "categoryDescription": "",
-            "categoryStyle": "carousel",
-            "cards": []
-        },
-        {
-            "categoryTitle": "Changing Behaviours Examples",
-            "categoryDescription": "",
-            "categoryStyle": "carousel",
-            "cards": [
-                {
-                    "cardTitle": "",
-                    "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours.webp",
-                    "cardDescription": "",
-                    "cardHref": "#",
-                    "cardHrefPage": ""
-                },
-                {
-                    "cardTitle": "",
-                    "cardImage": "/OceanBoids/Behaviours/ChangeBehaviours2.webp",
-                    "cardDescription": "",
-                    "cardHref": "#",
-                    "cardHrefPage": ""
-                },
-                {
-                    "cardTitle": "",
-                    "cardImage": "/OceanBoids/Behaviours/ChangeSpeed.webp",
-                    "cardDescription": "",
-                    "cardHref": "#",
-                    "cardHrefPage": ""
-                }
-            ]
-        },
-        {
-            "categoryTitle": "Debug Examples",
+            "categoryTitle": "",
             "categoryDescription": "",
             "categoryStyle": "flipflop",
             "cards": [
                 {
-                    "cardTitle": "Boid Boundary",
+                    "cardTitle": "Key Behaviours",
                     "cardImage": "/OceanBoids/Behaviours/Boundary.webp",
+                    "cardDescription": "This project contains a selection of entities in groups with settings that can be adjusted to affect the population's overall behavioural patters. \n\n The default behaviour is Wander, which every entity does, which is a random movement direction constantly applied to each entity. Each behaviour can be stacked, and the given value assigned to each behaviour will affect how much it will affect the entity's course.\n\nEntities will prioritise heading back to the centre of the environment the further out of bounds they go, giving a gradual turnaround effect rather than sharp turns.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "",
+            "categoryDescription": "",
+            "categoryStyle": "squarelayout",
+            "cards": [
+                {
+                    "cardTitle": "Avoid",
+                    "cardImage": "/OceanBoids/Behaviours/Avoid.webp",
+                    "cardDescription": "When an obstacle or entity affects another entity's travel path.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Chase & Flee",
+                    "cardImage": "/OceanBoids/Behaviours/ChaseNFlee.webp",
+                    "cardDescription": "Two complimentary behaviours. One entity will prioritise a direction towards a close-by target, while the other will choose the opposite direction to a predator entity.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Pursue & Evade",
+                    "cardImage": "/OceanBoids/Behaviours/PursueNEvade.webp",
+                    "cardDescription": "Similar to chase and flee, but slightly smarter since these behaviours try to predict future destinations instead of current target locations.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Flock",
+                    "cardImage": "/OceanBoids/Behaviours/Flock.webp",
+                    "cardDescription": "Entities that flock will aquire directions from other nearby entities and calculate an average velocity.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Arrival & Departure",
+                    "cardImage": "/OceanBoids/Behaviours/ArrivalNDeparture.webp",
+                    "cardDescription": "The acceleration and deceleration of entities as they travel towards/away from an entity in their group.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Changing Behaviours",
+            "categoryDescription": "",
+            "categoryStyle": "flipflop",
+            "cards": [
+                {
+                    "cardTitle": "GA",
+                    "cardImage": "/OceanBoids/Options/ChangeBehaviours2.webp",
+                    "cardDescription": "The menu allows the behaviours to be adjusted, as well as the ability to add behaviours to each entity. Each behaviour has a 0->1 value which will show more prominantly if they are greater than the other behaviours. \n\nIndependent of this are the velocities and turning speeds that impact how fluid the entities swim. The interaction range is the distance between entities that affect when certain behaviours are triggered.\n\nThere are also debug and boundary options that show when behaviours are in affect. Velocity debugs are handy for seeing pursue/evade behaviours because the end of these lines show the flee/chase positions.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "",
+            "categoryDescription": "",
+            "categoryStyle": "carousel",
+            "cards": [
+                {
+                    "cardTitle": "Switching Behaviours",
+                    "cardImage": "/OceanBoids/Options/ChangeBehaviours.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
-                    "cardTitle": "Boid Velocity",
-                    "cardImage": "/OceanBoids/Behaviours/Velocity.webp",
-                    "cardDescription": "sadjhsiakjhd sa hd sakjh sahsakjdhbsakd hsakhd khd sakjhd sajhd sakjh dajshd sah dsakjh dksah d aks dhkj ahk ssda dsa d asd sa das dhsa jdhsa jhdsa hd ahdh sahd iakshdwah awh d wahd iwa",
+                    "cardTitle": "Velocity Debugs",
+                    "cardImage": "/OceanBoids/Options/Velocity.webp",
+                    "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
-                    "cardTitle": "Boid Chase",
-                    "cardImage": "/OceanBoids/Behaviours/PursueNEvade.webp",
+                    "cardTitle": "Speed Adjustment",
+                    "cardImage": "/OceanBoids/Options/ChangeSpeed.webp",
                     "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""

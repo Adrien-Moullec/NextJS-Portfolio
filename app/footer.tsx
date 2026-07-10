@@ -18,7 +18,7 @@ export const Footer = () => {
         }}>
           <CarouselContent>
             {data.categories[0].cards.map((card, index) => (
-              <CarouselItem key={index} className="basis-1/6 ">
+              <CarouselItem key={index} className="basis-1/2 sm:basis-1/2 md:basis-1/4 lg:basis-1/5 ">
                 <CarouselCard cardInterface={card} />
               </CarouselItem>
             ))}

@@ -1,6 +1,7 @@
 import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
 import Image from "next/image";
+import DisplayParagraphs from "./DisplayParagraphs";
 //import Image from "next/image";
 
 const basePath = process.env.NODE_ENV === 'production'
@@ -16,21 +17,22 @@ const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
     return (
         <div
             key={index}
-            className={`justify-items-center text-center my-10 flex ${index % 2 === 1 ? "flex-row" : "flex-row-reverse"}`}
+            className={`text-center my-10 w-full border-1 md:flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
             style={{
                 overflow: 'hidden',
                 position: 'relative'
             }}
         >
-            <span id="Text side" className="w-1/2 mx-5">
+            <div id="Text side" className="md:w-1/2 mx-5">
                 <p className={CardTitle + " my-10"}>{card.cardTitle}</p>
-                <p className={CardDesc}>{card.cardDescription}</p>
-            </span>
-            <div id="Picture side" className="w-1/2 mx-5 items-center">
+                <DisplayParagraphs className={CardDesc} text={card.cardDescription} />
+            </div>
+            <div id="Picture side" className=" md:w-1/2 mx-5 items-center">
                 {card.cardImage !== "" ? (
                     <Image alt="project image"
                         src={basePath + card.cardImage}
-                        className="rounded-3xl w-full"
+                        width={1000} height={1000}
+                        className="rounded-3xl w-full max-h-240"
                         style={{ objectFit: 'contain' }}
                     />) : null}
             </div>

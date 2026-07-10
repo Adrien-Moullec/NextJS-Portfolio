@@ -1,7 +1,7 @@
 "use client"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import Link from "next/link";
-import data from "@/data/devInfo.json"
+import data from "@/data/PersonalInfo/devInfo.json"
 import CopyText from "@/components/ui/copy";
 import Image from "next/image";
 
