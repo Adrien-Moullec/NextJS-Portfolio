@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { Page, Category } from "../Presets/ProjectCardInterfaces";
-import { TitleFont, TitleDescription as TitleDescription, CategoryDescriptionFont, CategoryFont } from "../Presets/MyFonts";
+import { TitleFont, TitleDescription as TitleDescription, CategoryDescriptionFont } from "../Presets/MyFonts";
 import CarouselCard from "./CarouselCard";
 import {
     Carousel,
@@ -10,8 +10,14 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import FlipFlopInformation from "./FlipFlopCard";
 import Link from "next/link";
+import { crimsonPro } from "@/components/Presets/GoogleFonts"
+import Image from "next/image";
+import DisplayParagraphs from "./DisplayParagraphs";
+
+const basePath = process.env.NODE_ENV === 'production'
+    ? '/NextJS-Portfolio'
+    : '';
 
 interface ProjectCardLayoutProps {
     categoryInterface: Category
@@ -23,11 +29,13 @@ interface PageLayoutProps {
 
 const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
     return (
-        <div className="flex flex-col items-center text-white ">
-            {page.game.gameBuild != "" && <Link href={"/Games/" + page.main.projectName}>Play Game</Link>}
-            <h1 className={TitleFont + " pt-10 pb-10"}>{page.main.projectName}</h1>
-            <p className={TitleDescription + " pt-10 pb-20 pl-5 text-left w-4/5"}>{page.main.projectDescription}</p>
-
+        <div className="flex flex-col items-center text-white mb-5">
+            <h1 className={TitleFont + " pb-10"}>{page.main.projectName}</h1>
+            {DisplayParagraphs(page.main.projectDescription, "bg-slate-400 rounded-xl w-fit mx-[50px] border-1", TitleDescription + " items-center text-center w-4/5")}
+            <div className="my-5">
+                {page.game.gameBuild != "" && <Link href={"/Games/" + page.main.projectName}>Play Game</Link>}
+                <br />
+            </div >
             {page.categories.map((category, index) => (
                 <ProjectCardLayout key={index} categoryInterface={category} />
             ))}
@@ -37,12 +45,24 @@ const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
 
 export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryInterface }) => {
     let content;
+    let layoutList = categoryInterface.categoryStyle.split("-")
+    let layoutMode = (layoutList.length > 1 ? layoutList[1] : "")
 
-    switch (categoryInterface.categoryStyle) {
+    switch (layoutList[0]) {
+
+        case "squarelayout": content = (
+            <>
+                {CategoryTitleLayout(categoryInterface)}
+                <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 mx-[50px]">
+                    {categoryInterface.cards.map((card, index) => (<CarouselCard key={index} cardInterface={card} />))}
+                </div>
+            </>
+        ); break;
+
         case "carousel":
             content = (
                 <>
-                    <CategoryTitleLayout categoryInterface={categoryInterface} />
+                    {CategoryTitleLayout(categoryInterface)}
                     <Carousel className="px-2 sm:px-4 w-full">
                         <CarouselContent className="gap-4" >
                             {categoryInterface.cards.map((card, index) => (
@@ -51,51 +71,86 @@ export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryIn
                                 </CarouselItem>)
                             )}
                         </CarouselContent>
-                        <CarouselNext className="absolute top-1/2 -translate-y-1/2 right-2 sm:right-4 z-10" />
+                        <CarouselNext className="absolute top-1/2 -translate-y-1/2 right-2 sm:right-4 z-10 " />
                         <CarouselPrevious className="absolute top-1/2 -translate-y-1/2 left-2 sm:left-4 z-10" />
                     </Carousel>
                 </>
             ); break;
 
-        case "flipflop":
+        case "picture":
             content = (
                 <>
-                    <CategoryTitleLayout categoryInterface={categoryInterface} />
-                    <div className="mx-auto gap-3">
-                        {categoryInterface.cards.map((card, index) => (
-                            <FlipFlopInformation key={index} card={card} index={index} />
-                        )
-                        )}
-                    </div>
+                    {CategoryTitleLayout(categoryInterface)}
+                    {PictureGrid(categoryInterface, Math.ceil(categoryInterface.cards.length / 2))}
                 </>
             ); break;
 
-        case "squarelayout": content = (
-            <>
-                <CategoryTitleLayout categoryInterface={categoryInterface} />
-                <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 mx-[50px]">
-                    {categoryInterface.cards.map((card, index) => (<CarouselCard key={index} cardInterface={card} />))}
+        case "flipflop":
+        case "sideongrid":
+            content = (
+                <div className={"flex flex-row" + (layoutMode == "2" ? "-reverse" : "") + " mt-20 mx-[15px]"}>
+                    <div className="w-1/2">
+                        <div className="flex flex-col">
+                            <h1 className={crimsonPro.className + ` text-4xl font-bold underline text-left w-full ml-[50px] mx-auto`}>
+                                {categoryInterface.categoryTitle}
+                            </h1>
+                            {DisplayParagraphs(categoryInterface.categoryDescription, "bg-slate-400 rounded-xl border-1", CategoryDescriptionFont,)}
+                        </div>
+                    </div>
+                    <div className="w-1/2">
+                        {PictureGrid(categoryInterface, Math.ceil(Math.sqrt(categoryInterface.cards.length)))}
+                    </div>
                 </div>
-            </>
-        ); break;
+            ); break;
 
-        default:
-            content = <h1>Unknown Style Input</h1>
+        default: content = <h1>Unknown Style Input</h1>
     }
 
     return (<>{content}</>)
 }
 
-const CategoryTitleLayout: React.FC<ProjectCardLayoutProps> = ({ categoryInterface }) => {
+//content = (
+//    <>
+//        {CategoryTitleLayout(categoryInterface)}
+//        <div className="mx-auto gap-3">
+//            {categoryInterface.cards.map((card, index) => (
+//                <FlipFlopInformation key={index} card={card} index={index} />
+//            )
+//            )}
+//        </div>
+//    </>
+//); break;
+function CategoryTitleLayout(categoryInterface: Category) {
+    if (categoryInterface.categoryTitle || categoryInterface.categoryDescription) {
+        return (
+            <div className={`flex flex-col mx-[50px] bg-slate-700 rounded-2xl my-5`}>
+                <div className="m-[5px]">
+                    <h1 className={crimsonPro.className + ` text-4xl font-bold underline text-left w-full`}>
+                        {categoryInterface.categoryTitle}
+                    </h1>
+                    {DisplayParagraphs(categoryInterface.categoryDescription, CategoryDescriptionFont + " w-full", "")}
+                </div>
+            </div>
+        )
+    } else return <div className="mt-4" />
+}
+
+function PictureGrid(categoryInterface: Category, num: number) {
     return (
-        <>
-            <h1 className={CategoryFont + `w-full mx-auto ${categoryInterface.categoryTitle === "" ? "" : "mt-30"}`}>
-                {categoryInterface.categoryTitle}
-            </h1>
-            <h1 className={CategoryDescriptionFont + " w-full mx-auto"}>
-                {categoryInterface.categoryDescription}
-            </h1>
-        </>
+        <div className={"grid grid-cols-" + num + " gap-[5px] mx-5"} >
+            {
+                categoryInterface.cards.map((card, index) => (
+                    <div className="flex flex-col text-center w-full" key={index}>
+                        <h1 className="font-bold">{card.cardTitle}</h1>
+                        <Image alt="project image"
+                            src={basePath + card.cardImage}
+                            width={500} height={500}
+                            className={"w-full rounded-3xl"}
+                        />
+                    </div>
+                ))
+            }
+        </ div >
     )
 }
 

@@ -69,12 +69,12 @@
             ]
         },
         {
-            "categoryTitle": "Changing Behaviours",
+            "categoryTitle": "",
             "categoryDescription": "",
             "categoryStyle": "flipflop",
             "cards": [
                 {
-                    "cardTitle": "GA",
+                    "cardTitle": "Changing Behaviours",
                     "cardImage": "/OceanBoids/Options/ChangeBehaviours2.webp",
                     "cardDescription": "The menu allows the behaviours to be adjusted, as well as the ability to add behaviours to each entity. Each behaviour has a 0->1 value which will show more prominantly if they are greater than the other behaviours. \n\nIndependent of this are the velocities and turning speeds that impact how fluid the entities swim. The interaction range is the distance between entities that affect when certain behaviours are triggered.\n\nThere are also debug and boundary options that show when behaviours are in affect. Velocity debugs are handy for seeing pursue/evade behaviours because the end of these lines show the flee/chase positions.",
                     "cardHref": "#",

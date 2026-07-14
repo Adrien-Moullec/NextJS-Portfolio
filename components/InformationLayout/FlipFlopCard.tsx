@@ -17,16 +17,17 @@ const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
     return (
         <div
             key={index}
-            className={`text-center my-10 w-full border-1 md:flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+            className={`text-center my-10 w-full md:flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
             style={{
                 overflow: 'hidden',
                 position: 'relative'
             }}
         >
             <div id="Text side" className="md:w-1/2 mx-5">
-                <p className={CardTitle + " my-10"}>{card.cardTitle}</p>
-                <DisplayParagraphs className={CardDesc} text={card.cardDescription} />
+                <p className={CardTitle + " mt-2 mb-5"}>{card.cardTitle}</p>
+                {DisplayParagraphs(card.cardDescription, CardDesc)}
             </div>
+
             <div id="Picture side" className=" md:w-1/2 mx-5 items-center">
                 {card.cardImage !== "" ? (
                     <Image alt="project image"
@@ -37,7 +38,6 @@ const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
                     />) : null}
             </div>
         </div>
-
     );
 }
 

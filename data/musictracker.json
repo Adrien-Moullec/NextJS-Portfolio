@@ -2,7 +2,7 @@
     "id": 3,
     "main": {
         "projectName": "Music Tracker Sequencer",
-        "projectDescription": "My dissertation was about the legacy system music trackers and how they can be incorporated in a modern setting.",
+        "projectDescription": "A dissertation on the legacy system music trackers, and how they can be incorporated in a modern creative industry.",
         "projectImage": "/TrackerSequencing/JSONTrackerEditorEx.webp"
     },
     "game": {
@@ -13,63 +13,84 @@
     },
     "categories": [
         {
-            "categoryTitle": "Music Sequencer",
-            "categoryDescription": "MUSIC",
-            "categoryStyle": "flipflop",
+            "categoryTitle": "Editor menu",
+            "categoryDescription": "The Unity Editor window class assisted in creating a structured window that can edit a Music Sequencer track in a Json file format. The window allows settings such as tempo, instrument presets, note-press speed, note durations and the number of channels playing.\n\nThe playback script used in the Unity scene can be called to play as is or can have a tracker file passed through. The practical implementation of the project has trigger scenarios that each play their own track. Some samples of the audio playing in the engine are provided below.",
+            "categoryStyle": "sideongrid",
             "cards": [
                 {
-                    "cardTitle": "Editor menu",
+                    "cardTitle": "Editor",
                     "cardImage": "/TrackerSequencing/JSONTrackerEditorEx.webp",
-                    "cardDescription": "THIS IS WINDOW",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Tracker Playback Script",
+                    "cardImage": "/TrackerSequencing/TrackerPlaybackScript.webp",
+                    "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 }
             ]
         },
         {
-            "categoryTitle": "Musical Sandbox",
-            "categoryDescription": "The practical implementation of this project allows the player to discover hidden events that plays corresponding music tracks.",
+            "categoryTitle": "",
+            "categoryDescription": "",
             "categoryStyle": "carousel",
             "cards": [
                 {
-                    "cardTitle": "Chest",
+                    "cardTitle": "Treasure",
                     "cardImage": "/TrackerSequencing/Chest.webp",
-                    "cardDescription": "",
+                    "cardDescription": "/TrackerSequencing/audio/Treasure.mp3",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Damage Screen",
                     "cardImage": "/TrackerSequencing/DamageScreen.webp",
-                    "cardDescription": "",
+                    "cardDescription": "/TrackerSequencing/audio/GameOver.mp3",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Knights",
                     "cardImage": "/TrackerSequencing/Knights.webp",
-                    "cardDescription": "",
+                    "cardDescription": "/TrackerSequencing/audio/KingsHorns.mp3",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Level Up Screen",
                     "cardImage": "/TrackerSequencing/LevelUpScreen.webp",
-                    "cardDescription": "",
+                    "cardDescription": "/TrackerSequencing/audio/LevelUp.mp3",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Slime Enemies",
                     "cardImage": "/TrackerSequencing/SlimeEnemies.webp",
-                    "cardDescription": "",
+                    "cardDescription": "/TrackerSequencing/audio/Enemy.mp3",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Thanos Sunglasses",
                     "cardImage": "/TrackerSequencing/ThanosSunglasses.webp",
-                    "cardDescription": "",
+                    "cardDescription": "/TrackerSequencing/audio/GuitarRiff.mp3",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "",
+            "categoryDescription": "",
+            "categoryStyle": "picture",
+            "cards": [
+                {
+                    "cardTitle": "Treasure",
+                    "cardImage": "/TrackerSequencing/Chest.webp",
+                    "cardDescription": "/TrackerSequencing/audio/Treasure.mp3",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 }

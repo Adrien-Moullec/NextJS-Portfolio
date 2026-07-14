@@ -1,15 +1,15 @@
+export interface Category {
+    categoryTitle: string,
+    categoryDescription: string,
+    categoryStyle: string,
+    cards: Card[]
+}
 export interface Card {
     cardTitle: string,
     cardImage: string,
     cardDescription: string,
     cardHref: string,
     cardHrefPage: string
-}
-export interface Category {
-    categoryTitle: string,
-    categoryDescription: string,
-    categoryStyle: string,
-    cards: Card[]
 }
 export interface MainData {
     projectName: string,
