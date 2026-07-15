@@ -21,10 +21,9 @@ const basePath = process.env.NODE_ENV === 'production'
 
 interface PageLayoutProps {
     page: Page
-    splitCount: number
 }
 
-const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page, splitCount }) => {
+const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
     return (
         <div className="flex flex-col items-center text-white mb-5">
             <h1 className={TitleFont + " pb-10"}>{page.main.projectName}</h1>
@@ -49,8 +48,8 @@ const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page, splitCount }) => {
 //sideongrid
 function ProjectCardLayout(categoryInterface: Category) {
     let content;
-    let layoutList = categoryInterface.categoryStyle.split("-")
-    let layoutMode = (layoutList.length > 1 ? layoutList[1] : "")
+    const layoutList = categoryInterface.categoryStyle.split("-")
+    const layoutMode = (layoutList.length > 1 ? layoutList[1] : "")
 
     switch (layoutList[0]) {
         case "":
