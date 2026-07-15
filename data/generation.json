@@ -14,12 +14,12 @@
     "categories": [
         {
             "categoryTitle": "Terrain Chunk Loading",
-            "categoryDescription": "This is my attempt at creating Procedurally generating terrain, using chunks of landmass that load in and out around the player. I primarily experimented with mesh generation, but quickly saw the benefits of using Unity Terrain such as advanced texture splatmaps and automatic LOD meshing for further render distances.",
+            "categoryDescription": "\nThis is my scene creating procedurally generated terrain, using chunks of landmass that load in and out around the player. I primarily experimented with mesh generation, but quickly saw the benefits of using Unity Terrain such as advanced texture splatmaps and automatic LOD meshing for further render distances.",
             "categoryStyle": "flipflop",
             "cards": [
                 {
-                    "cardTitle": "Component Menu",
-                    "cardImage": "/Generation/Chunks/TerrainGeneratorInspector.webp",
+                    "cardTitle": "Chunk Loading",
+                    "cardImage": "/Generation/Chunks/ChunkLoader.webp",
                     "cardDescription": "This is the main interface for this Terrain Chunk loader. You can set the dimensions and vertex density of the chunk, the textures to be used, the noise settings to get the type of terrain you want and the Render Terrain points to load chunks in and out depending on your coordinates. This script will procedurally generate landmass around the player, apply the terrain layers based on vertex height and minimalise chunk edge unalignment.",
                     "cardHref": "#",
                     "cardHrefPage": ""
@@ -31,13 +31,6 @@
             "categoryDescription": "",
             "categoryStyle": "carousel",
             "cards": [
-                {
-                    "cardTitle": "Chunk Loading",
-                    "cardImage": "/Generation/Chunks/ChunkLoader.webp",
-                    "cardDescription": "This is a working Terrain generator using simple Perlin noise to create hills and valleys.",
-                    "cardHref": "#",
-                    "cardHrefPage": ""
-                },
                 {
                     "cardTitle": "Texture Mapping",
                     "cardImage": "/Generation/Chunks/TextureMappingExample.webp",

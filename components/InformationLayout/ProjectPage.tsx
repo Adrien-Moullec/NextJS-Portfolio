@@ -19,15 +19,12 @@ const basePath = process.env.NODE_ENV === 'production'
     ? '/NextJS-Portfolio'
     : '';
 
-interface ProjectCardLayoutProps {
-    categoryInterface: Category
-}
-
 interface PageLayoutProps {
     page: Page
+    splitCount: number
 }
 
-const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
+const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page, splitCount }) => {
     return (
         <div className="flex flex-col items-center text-white mb-5">
             <h1 className={TitleFont + " pb-10"}>{page.main.projectName}</h1>
@@ -36,20 +33,27 @@ const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
                 {page.game.gameBuild != "" && <Link href={"/Games/" + page.main.projectName}>Play Game</Link>}
                 <br />
             </div >
-            {page.categories.map((category, index) => (
-                <ProjectCardLayout key={index} categoryInterface={category} />
-            ))}
+            <div className={`grid grid-cols-${1}`}>
+                {page.categories.map((category, index) => (
+                    <div key={index} className="h-full">
+                        {ProjectCardLayout(category)}
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
-
-export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryInterface }) => {
+//squarelayout
+//carousel
+//picture
+//sideongrid
+function ProjectCardLayout(categoryInterface: Category) {
     let content;
     let layoutList = categoryInterface.categoryStyle.split("-")
     let layoutMode = (layoutList.length > 1 ? layoutList[1] : "")
 
     switch (layoutList[0]) {
-
+        case "":
         case "squarelayout": content = (
             <>
                 {CategoryTitleLayout(categoryInterface)}
@@ -89,18 +93,18 @@ export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryIn
         case "sideongrid":
             content = (
                 <div className={"flex flex-row" + (layoutMode == "2" ? "-reverse" : "") + " mt-20 mx-[15px]"}>
-                    <div className="w-1/2">
-                        <div className="flex flex-col">
-                            <h1 className={crimsonPro.className + ` text-4xl font-bold underline text-left w-full ml-[50px] mx-auto`}>
+                    <div className="w-1/2 bg-slate-400 rounded-xl border-1">
+                        <div className={`flex flex-col`}>
+                            <h1 className={crimsonPro.className + ` text-4xl font-bold underline text-left w-full ml-[5px] mx-auto`}>
                                 {categoryInterface.categoryTitle}
                             </h1>
-                            {DisplayParagraphs(categoryInterface.categoryDescription, "bg-slate-400 rounded-xl border-1", CategoryDescriptionFont,)}
+                            {DisplayParagraphs(categoryInterface.categoryDescription, "", CategoryDescriptionFont,)}
                         </div>
-                    </div>
-                    <div className="w-1/2">
+                    </div >
+                    <div className="w-1/2 mx-[5px]">
                         {PictureGrid(categoryInterface, Math.ceil(Math.sqrt(categoryInterface.cards.length)))}
                     </div>
-                </div>
+                </div >
             ); break;
 
         default: content = <h1>Unknown Style Input</h1>
@@ -108,6 +112,11 @@ export const ProjectCardLayout: React.FC<ProjectCardLayoutProps> = ({ categoryIn
 
     return (<>{content}</>)
 }
+//squarelayout
+//carousel
+//picture
+//sideongrid
+
 
 //content = (
 //    <>
@@ -137,16 +146,16 @@ function CategoryTitleLayout(categoryInterface: Category) {
 
 function PictureGrid(categoryInterface: Category, num: number) {
     return (
-        <div className={"grid grid-cols-" + num + " gap-[5px] mx-5"} >
+        <div className={`grid grid-cols-${num} gap-5`} >
             {
                 categoryInterface.cards.map((card, index) => (
-                    <div className="flex flex-col text-center w-full" key={index}>
-                        <h1 className="font-bold">{card.cardTitle}</h1>
+                    <div className="flex flex-col text-left w-full" key={index}>
                         <Image alt="project image"
                             src={basePath + card.cardImage}
                             width={500} height={500}
                             className={"w-full rounded-3xl"}
                         />
+                        <h1 className="font-bold">{card.cardTitle}</h1>
                     </div>
                 ))
             }

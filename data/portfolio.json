@@ -13,14 +13,49 @@
     },
     "categories": [
         {
-            "categoryTitle": "",
-            "categoryDescription": "",
-            "categoryStyle": "carousel",
+            "categoryTitle": "How this website works",
+            "categoryDescription": "This React project was created to learn more about HTML and have full control of the contents within a public website.\n\nEach project page reads a Json file and maps out the information to be easily interpreted.\n\nEach project's Json file has a title and a list of 'categories', where each list item describes one aspect of the project.\n\nThere is also an option to include game build data for anyone to experience the project first hand.",
+            "categoryStyle": "sideongrid",
             "cards": [
                 {
-                    "cardTitle": "Star Generation Menu",
-                    "cardImage": "/StarMap/Content/Introduction/PauseMenu.webp",
-                    "cardDescription": "This is the menu to change parameters for how pathfinding, star generation and inter-star paths spawn. You can select default values to reset everything and buttons to reset the whole stars or just the paths. Also there's audio control.",
+                    "cardTitle": "",
+                    "cardImage": "/Portfolio/Details/PageLayout2.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Layouts",
+            "categoryDescription": "",
+            "categoryStyle": "squarelayout",
+            "cards": [
+                {
+                    "cardTitle": "Picture",
+                    "cardImage": "/Portfolio/Layouts/Picture.webp",
+                    "cardDescription": "This features a large picture to show more important content.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Side-On Grid",
+                    "cardImage": "/Portfolio/Layouts/SideOnGrid.webp",
+                    "cardDescription": "The side grid layout has text and pictures on either side of the screen. This can be flipped for more variability.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Grid",
+                    "cardImage": "/Portfolio/Layouts/GridLayout.webp",
+                    "cardDescription": "This displays a list of content in a simple grid format.",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Carousel",
+                    "cardImage": "/Portfolio/Layouts/Carousel.webp",
+                    "cardDescription": "This allows the user to scroll through a list of items.",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 }

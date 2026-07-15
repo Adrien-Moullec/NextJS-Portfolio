@@ -13,14 +13,14 @@
     },
     "categories": [
         {
-            "categoryTitle": "",
-            "categoryDescription": "",
-            "categoryStyle": "flipflop",
+            "categoryTitle": "Key Behaviours",
+            "categoryDescription": "This project contains a selection of entities in groups with settings that can be adjusted to affect the population's overall behavioural patters. \n\n The default behaviour is Wander, which every entity does, which is a random movement direction constantly applied to each entity. Each behaviour can be stacked, and the given value assigned to each behaviour will affect how much it will affect the entity's course.\n\nEntities will prioritise heading back to the centre of the environment the further out of bounds they go, giving a gradual turnaround effect rather than sharp turns.",
+            "categoryStyle": "sideongrid",
             "cards": [
                 {
-                    "cardTitle": "Key Behaviours",
+                    "cardTitle": "",
                     "cardImage": "/OceanBoids/Behaviours/Boundary.webp",
-                    "cardDescription": "This project contains a selection of entities in groups with settings that can be adjusted to affect the population's overall behavioural patters. \n\n The default behaviour is Wander, which every entity does, which is a random movement direction constantly applied to each entity. Each behaviour can be stacked, and the given value assigned to each behaviour will affect how much it will affect the entity's course.\n\nEntities will prioritise heading back to the centre of the environment the further out of bounds they go, giving a gradual turnaround effect rather than sharp turns.",
+                    "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 }
@@ -69,14 +69,14 @@
             ]
         },
         {
-            "categoryTitle": "",
-            "categoryDescription": "",
-            "categoryStyle": "flipflop",
+            "categoryTitle": "Changing Behaviours",
+            "categoryDescription": "The menu allows the behaviours to be adjusted, as well as the ability to add behaviours to each entity. Each behaviour has a 0->1 value which will show more prominantly if they are greater than the other behaviours. \n\nIndependent of this are the velocities and turning speeds that impact how fluid the entities swim. The interaction range is the distance between entities that affect when certain behaviours are triggered.\n\nThere are also debug and boundary options that show when behaviours are in affect. Velocity debugs are handy for seeing pursue/evade behaviours because the end of these lines show the flee/chase positions.",
+            "categoryStyle": "sideongrid-2",
             "cards": [
                 {
-                    "cardTitle": "Changing Behaviours",
+                    "cardTitle": "",
                     "cardImage": "/OceanBoids/Options/ChangeBehaviours2.webp",
-                    "cardDescription": "The menu allows the behaviours to be adjusted, as well as the ability to add behaviours to each entity. Each behaviour has a 0->1 value which will show more prominantly if they are greater than the other behaviours. \n\nIndependent of this are the velocities and turning speeds that impact how fluid the entities swim. The interaction range is the distance between entities that affect when certain behaviours are triggered.\n\nThere are also debug and boundary options that show when behaviours are in affect. Velocity debugs are handy for seeing pursue/evade behaviours because the end of these lines show the flee/chase positions.",
+                    "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 }

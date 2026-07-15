@@ -83,14 +83,14 @@
             ]
         },
         {
-            "categoryTitle": "",
-            "categoryDescription": "",
-            "categoryStyle": "picture",
+            "categoryTitle": "Using C and MIDI files",
+            "categoryDescription": "To create a musical sequencer, musical notes were needed to work with. This project uses FluidSynth soundfont synthesizer, providing a wide range of musical instruments.\n\n In order to use midi instruments in Unity, an interpreter was needed. There were limited tools provided for Unity, so an interpreter was created instead in C using TinySoundFont. This is a tool that readily interprets soundfont files. This could then be used in a DLL package to be interpreted by Unity.\n\nIn conclusion the tracker sequences that hold musical information are stored in JSON files, whilst the MIDI notes are played between Unity and a C package reading a Soundfont file.",
+            "categoryStyle": "sideongrid-2",
             "cards": [
                 {
                     "cardTitle": "Treasure",
-                    "cardImage": "/TrackerSequencing/Chest.webp",
-                    "cardDescription": "/TrackerSequencing/audio/Treasure.mp3",
+                    "cardImage": "/TrackerSequencing/CExample.webp",
+                    "cardDescription": "",
                     "cardHref": "#",
                     "cardHrefPage": ""
                 }
