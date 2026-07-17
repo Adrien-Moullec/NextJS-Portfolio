@@ -86,7 +86,7 @@ function ProjectCardLayout(categoryInterface: Category) {
         case "flipflop":
         case "sideongrid":
             content = (
-                <div className={"flex flex-row" + (layoutMode == "2" ? "-reverse" : "") + " mt-20 mx-[15px]"}>
+                <div className={"flex flex-row" + (layoutMode == "2" ? "-reverse" : "") + " mt-20 mx-[50px]"}>
                     <div className="w-1/2 border-1 border-indigo-500 bg-gradient-to-tl from-slate-900 to-black rounded-xl">
                         <div className={`flex flex-col`}>
                             <h1 className={crimsonPro.className + ` text-4xl font-bold underline text-left w-full ml-[5px] mx-auto`}>
