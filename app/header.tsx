@@ -12,7 +12,7 @@ const basePath = process.env.NODE_ENV === 'production'
 export const Header = () => {
     return (
 
-        <header className="bg-linear-to-r from-black to-black h-[200px] border-1 flex flex-row text-white">
+        <header className="bg-linear-to-r from-black to-black h-[150px] border-1 flex flex-row text-white">
 
             <div id="Profile section"
                 className="flex flex-row items-center mx-auto gap-x-3 w-screen text-xl overflow-x-clip 

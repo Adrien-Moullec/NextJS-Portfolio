@@ -34,7 +34,7 @@ function CarouselCard(cardInterface: CardInterface) {
             <Link
                 id="Individual Card"
                 href={cardInterface.cardHref}
-                className={"text-center hover:underline "}
+                className={"hover:underline "}
                 style={{
                     overflow: 'hidden',
                     position: 'relative'
@@ -50,10 +50,10 @@ function CardLayout(cardInterface: CardInterface) {
     return (
         <Card className={`text-white bg-gradient-to-br from-black to-slate-900  overflow-hidden text-ellipsis border-indigo-700 border-3`}>
             <CardHeader>
-                <CardTitle className={`text-3xl`}>
+                <CardTitle className={`text-xl font-bold`}>
                     {cardInterface.cardTitle}
                 </CardTitle>
-                <CardDescription className={`text-white overflow-clip`}>
+                <CardDescription className={`text-white overflow-clip text-xs`}>
                     {DisplayParagraphs(cardInterface.cardDescription, "")}
                 </CardDescription>
                 <CardAction />

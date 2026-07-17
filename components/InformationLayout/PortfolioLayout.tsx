@@ -2,7 +2,7 @@ import React from "react";
 import { Page, Category } from "../Presets/ProjectCardInterfaces";
 import { TitleFont, CategoryDescriptionFont } from "../Presets/MyFonts";
 import Link from "next/link";
-import { crimsonPro } from "@/components/Presets/GoogleFonts"
+import { crimsonPro, lobster } from "@/components/Presets/GoogleFonts"
 import Image from "next/image"
 import DisplayParagraphs from "./DisplayParagraphs";
 const basePath = process.env.NODE_ENV === 'production'
@@ -20,9 +20,9 @@ export function Header(page: Page) {
     }
     return (
         < div className="w-5/6" >
-            <div className="flex flex-col items-center rounded-2xl border-indigo-700 border-8 bg-black" style={styling}>
-                <h1 className={TitleFont + " p-5 bg-gradient-to-br from-blue-950 to-slate-900 rounded-2xl my-5 border-1"}>{page.main.projectName}</h1>
-                {DisplayParagraphs(page.main.projectDescription, "bg-gradient-to-br from-blue-950 to-slate-800 rounded-md w-fit mx-[50px] mb-5", crimsonPro.className + " text-2xl items-center text-center w-4/5")}
+            <div className="flex flex-col items-center rounded-2xl border-black border-4 bg-black" style={styling}>
+                <h1 className={lobster.className + " text-6xl font-bold p-5 bg-gradient-to-br from-blue-950 to-black rounded-2xl my-5 border-1 border-black"}>{page.main.projectName}</h1>
+                {DisplayParagraphs(page.main.projectDescription, "bg-gradient-to-br from-blue-950 to-black rounded-md w-fit mx-[50px] mb-5 border-1 border-black", crimsonPro.className + " text-xl items-center text-center w-4/5")}
                 {DispayGameLinks(page)}
             </div>
         </div >
@@ -52,15 +52,15 @@ export function DispayGameLinks(page: Page) {
 }
 
 export function Divide(render: boolean) {
-    if (render) return <div className="items-center mx-10 bg-amber-50 rounded-4xl opacity-35" />
+    if (render) return <div className="items-center mx-10 h-0.5 bg-amber-50 rounded-4xl opacity-35" />
 }
 
 export function CategoryTitleLayout(categoryInterface: Category) {
     if (categoryInterface.categoryTitle || categoryInterface.categoryDescription) {
         return (
-            <div className={`flex flex-col mx-[50px] border-1 bg-gradient-to-tl from-slate-900 to-black rounded-2xl my-5`}>
+            <div className={`flex flex-col mx-[18px] border-1 bg-gradient-to-tl from-slate-900 to-black rounded-2xl my-5`}>
                 <div className="m-[5px]">
-                    <h1 className={crimsonPro.className + ` p-2 text-4xl font-bold underline text-left w-full`}>
+                    <h1 className={crimsonPro.className + ` p-1 text-2xl font-bold underline text-left w-full`}>
                         {categoryInterface.categoryTitle}
                     </h1>
                     {DisplayParagraphs(categoryInterface.categoryDescription, CategoryDescriptionFont + " w-full", "")}
@@ -73,13 +73,13 @@ export function CategoryTitleLayout(categoryInterface: Category) {
 export function PictureGrid(categoryInterface: Category) {
     return (
         <div
-            className={`grid gap-5`}
+            className={`grid gap-5 bg-gradient-to-tl from-slate-900 to-black rounded-2xl border-1 border-indigo-500`}
             style={{
                 gridTemplateColumns: `repeat(${Math.ceil(Math.sqrt(categoryInterface.cards.length))}, minmax(0, 1fr))`,
             }} >
             {
                 categoryInterface.cards.map((card, index) => (
-                    <div className="flex flex-col text-left w-full" key={index}>
+                    <div className="flex flex-col text-left w-full p-2" key={index}>
                         <Image alt="project image"
                             src={basePath + card.cardImage}
                             width={500} height={500}

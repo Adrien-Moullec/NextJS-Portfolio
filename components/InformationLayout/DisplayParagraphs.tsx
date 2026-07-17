@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { Button } from "../ui/button";
 
-function DisplayParagraphs(description: string = "", textAreaClassName: string = "", textClassName: string = "") {
+export function DisplayParagraphs(description: string = "", textAreaClassName: string = "", textClassName: string = "") {
     if (description != "") return (
         <div className={textAreaClassName}>
             {
@@ -19,14 +19,15 @@ function DisplayParagraphs(description: string = "", textAreaClassName: string =
     else return <></>
 }
 
-function DisplayText(text: string = "", textClassName: string = "", index: number = 0) {
+export function DisplayText(text: string = "", textClassName: string = "", index: number = 0) {
     return (
         <div key={index} className={textClassName + " w-fit m-[5px]"}>
             {text}
         </div>
     )
 }
-function DisplayAudio(text: string = "", index: number = 0) {
+
+export function DisplayAudio(text: string = "", index: number = 0) {
     const audioRef = useRef<HTMLAudioElement>(null);
     return (
         <div key={index}>
