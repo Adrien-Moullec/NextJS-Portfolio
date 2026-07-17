@@ -1,16 +1,12 @@
 "use client"
 import React from "react";
 import { useEffect } from "react";
-import { Page } from "../Presets/ProjectCardInterfaces";
-import { TitleDescription } from "../Presets/MyFonts";
+import { PageLayoutProps } from "../Presets/ProjectCardInterfaces";
+import { Header } from "./PortfolioLayout"
 
 const basePath = process.env.NODE_ENV === 'production'
     ? '/NextJS-Portfolio'
     : '';
-
-interface PageLayoutProps {
-    page: Page
-}
 
 const GameLayout: React.FC<PageLayoutProps> = ({ page }) => {
 
@@ -27,9 +23,10 @@ const GameLayout: React.FC<PageLayoutProps> = ({ page }) => {
     }, [])
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-white">
             <div className="flex flex-col items-center pt-10">
-                export default ProjectPageLayout;<div>
+                <> {Header(page)}</>
+                <div>
                     <div id="Game section" className="flex flex-row justify-center items-center w-screen">
                         <div className="w-1/16"></div>
                         <div
@@ -44,7 +41,7 @@ const GameLayout: React.FC<PageLayoutProps> = ({ page }) => {
                                 allowFullScreen />
 
                         </div>
-                        <div className={TitleDescription + " w-1/16 text-xl"}>
+                        <div className={" w-1/16 text-xl"}>
                             {page.game.gameControls.map((nextControl, index) => (
                                 <li key={index}>{nextControl}</li>
                             ))}

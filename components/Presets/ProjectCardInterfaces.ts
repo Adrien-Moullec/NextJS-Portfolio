@@ -30,3 +30,6 @@ export interface Page {
     game: GameData,
     categories: Category[]
 }
+export interface PageLayoutProps {
+    page: Page
+}

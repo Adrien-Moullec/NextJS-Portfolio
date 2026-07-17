@@ -48,7 +48,7 @@ function CarouselCard(cardInterface: CardInterface) {
 
 function CardLayout(cardInterface: CardInterface) {
     return (
-        <Card className={`text-white bg-black overflow-hidden text-ellipsis border-1`}>
+        <Card className={`text-white bg-gradient-to-br from-black to-slate-900  overflow-hidden text-ellipsis border-indigo-700 border-3`}>
             <CardHeader>
                 <CardTitle className={`text-3xl`}>
                     {cardInterface.cardTitle}
@@ -63,7 +63,7 @@ function CardLayout(cardInterface: CardInterface) {
                     <Image alt="project image"
                         src={basePath + cardInterface.cardImage}
                         width={50} height={50}
-                        className={"border-black border-3 rounded-md max-h-53 w-full overflow-clip"}
+                        className={" rounded-md max-h-53 w-full overflow-clip"}
                         style={{ objectFit: 'contain' }}
                     />) : null}
             </CardContent>

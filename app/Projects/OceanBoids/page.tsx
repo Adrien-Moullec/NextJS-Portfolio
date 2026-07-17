@@ -1,8 +1,7 @@
-import ProjectPageLayout from "@/components/InformationLayout/ProjectPage";
+
+import ProjectPageLayout from "@/components/InformationLayout/ProjectPage"
 import data from "@/data/oceanboids.json"
 
 export default function Home() {
-    return (
-        <ProjectPageLayout page={data} />
-    )
+    return <ProjectPageLayout page={data} />
 }
