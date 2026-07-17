@@ -1,6 +1,6 @@
 import React from "react";
 import { Page, Category } from "../Presets/ProjectCardInterfaces";
-import { TitleFont, CategoryDescriptionFont } from "../Presets/MyFonts";
+import { CategoryDescriptionFont } from "../Presets/MyFonts";
 import Link from "next/link";
 import { crimsonPro, lobster } from "@/components/Presets/GoogleFonts"
 import Image from "next/image"
