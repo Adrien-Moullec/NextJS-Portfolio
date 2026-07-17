@@ -17,25 +17,20 @@ const basePath = process.env.NODE_ENV === 'production'
     ? '/NextJS-Portfolio'
     : '';
 
-interface CardProps {
-    cardInterface: CardInterface
-}
-
-const CarouselCard: React.FC<CardProps> = ({ cardInterface }) => {
-    let content;
+function CarouselCard(cardInterface: CardInterface) {
 
     switch (cardInterface.cardHref) {
         case "":
-        case "#": content = (
+        case "#": return (
             <div style={{
                 overflow: 'hidden',
                 position: 'relative'
             }}>
-                <CardLayout cardInterface={cardInterface} />
+                {CardLayout(cardInterface)}
             </div>
-        ); break;
+        );
 
-        default: content = (
+        default: return (
             <Link
                 id="Individual Card"
                 href={cardInterface.cardHref}
@@ -45,18 +40,17 @@ const CarouselCard: React.FC<CardProps> = ({ cardInterface }) => {
                     position: 'relative'
                 }}
             >
-                <CardLayout cardInterface={cardInterface} />
+                {CardLayout(cardInterface)}
             </Link>
         )
     }
-    return (<>{content}</>)
 }
 
-const CardLayout: React.FC<CardProps> = ({ cardInterface }) => {
+function CardLayout(cardInterface: CardInterface) {
     return (
-        <Card className={`rounded-sm text-white bg-black overflow-hidden text-ellipsis `}>
+        <Card className={`text-white bg-black overflow-hidden text-ellipsis border-1`}>
             <CardHeader>
-                <CardTitle className={`text-3xl rounded-xl`}>
+                <CardTitle className={`text-3xl`}>
                     {cardInterface.cardTitle}
                 </CardTitle>
                 <CardDescription className={`text-white overflow-clip`}>
@@ -64,12 +58,12 @@ const CardLayout: React.FC<CardProps> = ({ cardInterface }) => {
                 </CardDescription>
                 <CardAction />
             </CardHeader>
-            <CardContent className="">
+            <CardContent>
                 {cardInterface.cardImage !== "" ? (
                     <Image alt="project image"
                         src={basePath + cardInterface.cardImage}
                         width={50} height={50}
-                        className={" border-black border-3 rounded-md max-h-53 w-full overflow-clip"}
+                        className={"border-black border-3 rounded-md max-h-53 w-full overflow-clip"}
                         style={{ objectFit: 'contain' }}
                     />) : null}
             </CardContent>
@@ -77,7 +71,5 @@ const CardLayout: React.FC<CardProps> = ({ cardInterface }) => {
         </Card>
     )
 }
-//h-${(cardInterface.cardTitle.length > 1 ? 20 : 0) + (cardInterface.cardDescription.length > 1 ? 30 : 0) + (cardInterface.cardImage.length > 1 ? 40 : 0)}
-// ${cardInterface.cardDescription.length > 1 ? "h-30" : ""}
 
 export default CarouselCard;

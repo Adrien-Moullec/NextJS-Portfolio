@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { Page, Category } from "../Presets/ProjectCardInterfaces";
-import { TitleFont, TitleDescription as TitleDescription, CategoryDescriptionFont } from "../Presets/MyFonts";
+import { TitleFont, CategoryDescriptionFont } from "../Presets/MyFonts";
 import CarouselCard from "./CarouselCard";
 import {
     Carousel,
@@ -12,9 +12,8 @@ import {
 } from "@/components/ui/carousel"
 import Link from "next/link";
 import { crimsonPro } from "@/components/Presets/GoogleFonts"
-import Image from "next/image";
+import Image from "next/image"
 import DisplayParagraphs from "./DisplayParagraphs";
-
 const basePath = process.env.NODE_ENV === 'production'
     ? '/NextJS-Portfolio'
     : '';
@@ -22,19 +21,17 @@ const basePath = process.env.NODE_ENV === 'production'
 interface PageLayoutProps {
     page: Page
 }
-
 const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
+
+    // style={styling}
     return (
         <div className="flex flex-col items-center text-white mb-5">
-            <h1 className={TitleFont + " pb-10"}>{page.main.projectName}</h1>
-            {DisplayParagraphs(page.main.projectDescription, "bg-slate-400 rounded-xl w-fit mx-[50px] border-1", TitleDescription + " items-center text-center w-4/5")}
-            <div className="my-5">
-                {page.game.gameBuild != "" && <Link href={"/Games/" + page.main.projectName}>Play Game</Link>}
-                <br />
-            </div >
+            {Header(page)}
             <div className={`grid grid-cols-${1}`}>
                 {page.categories.map((category, index) => (
-                    <div key={index} className="h-full">
+                    <div key={index} className="my-5">
+                        <div className="my-5" />
+                        {Divide(category.categoryTitle != "")}
                         {ProjectCardLayout(category)}
                     </div>
                 ))}
@@ -42,10 +39,52 @@ const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
         </div>
     )
 }
+
+function Header(page: Page) {
+    const styling = {
+        backgroundImage: `url('${page.main.projectImage}')`,
+        width: "100%",
+        height: "100%",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+    }
+    return (
+        < div className="w-5/6" >
+            <div className="flex flex-col items-center rounded-2xl border-4 bg-black border-indigo-300" style={styling}>
+                <h1 className={TitleFont + " p-5 bg-black rounded-2xl my-5"}>{page.main.projectName}</h1>
+                {DisplayParagraphs(page.main.projectDescription, "bg-slate-700 rounded-md w-fit mx-[50px] border-black border-1", crimsonPro.className + " text-2xl items-center text-center w-4/5")}
+                {DispayGameLinks(page)}
+            </div>
+        </div >
+    )
+}
+
+function DispayGameLinks(page: Page) {
+    if (page.game.gameIndex != "" || page.main.projectLink != "") return (
+        < div className="my-5 border-2 bg-black text-center rounded-md flex flex-col gap-1 text-xl" >
+            {
+                page.game.gameBuild != "" && <Link href={"/Games/" + page.main.projectName} className="mx-5 hover:underline">
+                    Play Game
+                </Link>
+            }{
+                page.main.projectLink != " " && <Link href={page.main.projectLink} className="mx-5 hover:underline">
+                    Project Files
+                </Link>
+            }
+        </div >
+    )
+    else return <div className="my-5" />
+}
 //squarelayout
 //carousel
 //picture
 //sideongrid
+function Divide(render: boolean) {
+    if (render) return <div className="items-center mx-10 bg-amber-50 rounded-4xl opacity-35 h-1" />
+    else return <></>
+}
+
 function ProjectCardLayout(categoryInterface: Category) {
     let content;
     const layoutList = categoryInterface.categoryStyle.split("-")
@@ -57,7 +96,11 @@ function ProjectCardLayout(categoryInterface: Category) {
             <>
                 {CategoryTitleLayout(categoryInterface)}
                 <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 mx-[50px]">
-                    {categoryInterface.cards.map((card, index) => (<CarouselCard key={index} cardInterface={card} />))}
+                    {categoryInterface.cards.map((card, index) =>
+                        <div key={index}>
+                            {CarouselCard(card)}
+                        </div>
+                    )}
                 </div>
             </>
         ); break;
@@ -70,7 +113,7 @@ function ProjectCardLayout(categoryInterface: Category) {
                         <CarouselContent className="gap-4" >
                             {categoryInterface.cards.map((card, index) => (
                                 <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5">
-                                    <CarouselCard cardInterface={card} />
+                                    {CarouselCard(card)}
                                 </CarouselItem>)
                             )}
                         </CarouselContent>
@@ -92,7 +135,7 @@ function ProjectCardLayout(categoryInterface: Category) {
         case "sideongrid":
             content = (
                 <div className={"flex flex-row" + (layoutMode == "2" ? "-reverse" : "") + " mt-20 mx-[15px]"}>
-                    <div className="w-1/2 bg-slate-400 rounded-xl border-1">
+                    <div className="w-1/2 bg-slate-700 rounded-xl border-1">
                         <div className={`flex flex-col`}>
                             <h1 className={crimsonPro.className + ` text-4xl font-bold underline text-left w-full ml-[5px] mx-auto`}>
                                 {categoryInterface.categoryTitle}
@@ -101,7 +144,7 @@ function ProjectCardLayout(categoryInterface: Category) {
                         </div>
                     </div >
                     <div className="w-1/2 mx-[5px]">
-                        {PictureGrid(categoryInterface, Math.ceil(Math.sqrt(categoryInterface.cards.length)))}
+                        {PictureGrid(categoryInterface, categoryInterface.cards.length)}
                     </div>
                 </div >
             ); break;
@@ -111,27 +154,11 @@ function ProjectCardLayout(categoryInterface: Category) {
 
     return (<>{content}</>)
 }
-//squarelayout
-//carousel
-//picture
-//sideongrid
 
-
-//content = (
-//    <>
-//        {CategoryTitleLayout(categoryInterface)}
-//        <div className="mx-auto gap-3">
-//            {categoryInterface.cards.map((card, index) => (
-//                <FlipFlopInformation key={index} card={card} index={index} />
-//            )
-//            )}
-//        </div>
-//    </>
-//); break;
 function CategoryTitleLayout(categoryInterface: Category) {
     if (categoryInterface.categoryTitle || categoryInterface.categoryDescription) {
         return (
-            <div className={`flex flex-col mx-[50px] bg-slate-700 rounded-2xl my-5`}>
+            <div className={`flex flex-col mx-[50px] border-1 border-black bg-slate-700 rounded-2xl my-5`}>
                 <div className="m-[5px]">
                     <h1 className={crimsonPro.className + ` text-4xl font-bold underline text-left w-full`}>
                         {categoryInterface.categoryTitle}
@@ -145,14 +172,18 @@ function CategoryTitleLayout(categoryInterface: Category) {
 
 function PictureGrid(categoryInterface: Category, num: number) {
     return (
-        <div className={`grid grid-cols-${num} gap-5`} >
+        <div
+            className={`grid gap-5`}
+            style={{
+                gridTemplateColumns: `repeat(${Math.ceil(Math.sqrt(num))}, minmax(0, 1fr))`,
+            }} >
             {
                 categoryInterface.cards.map((card, index) => (
                     <div className="flex flex-col text-left w-full" key={index}>
                         <Image alt="project image"
                             src={basePath + card.cardImage}
                             width={500} height={500}
-                            className={"w-full rounded-3xl"}
+                            className={"w-full rounded-md"}
                         />
                         <h1 className="font-bold">{card.cardTitle}</h1>
                     </div>

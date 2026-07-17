@@ -1,3 +1,10 @@
+
+export interface MainData {
+    projectName: string,
+    projectDescription: string,
+    projectLink: string,
+    projectImage: string,
+}
 export interface Category {
     categoryTitle: string,
     categoryDescription: string,
@@ -10,11 +17,6 @@ export interface Card {
     cardDescription: string,
     cardHref: string,
     cardHrefPage: string
-}
-export interface MainData {
-    projectName: string,
-    projectDescription: string,
-    projectImage: string,
 }
 export interface GameData {
     gameIndex: string,

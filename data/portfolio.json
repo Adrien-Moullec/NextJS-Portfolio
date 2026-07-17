@@ -3,6 +3,7 @@
     "main": {
         "projectName": "Portfolio",
         "projectDescription": "This is my Portfolio. This project refers to this website and the research I have put into it.",
+        "projectLink": "",
         "projectImage": ""
     },
     "game": {

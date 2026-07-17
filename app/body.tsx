@@ -5,10 +5,10 @@ type Props = {
 const Body = ({ children }: Props) => {
     return (
         <div className="bg-black">
-            <div className="bg-gradient-to-tl from-blue-950 to-slate-950 mx-[35px]">
-                <div className="h-20" />
+            <div className="bg-gradient-to-tl from-blue-900 to-indigo-800 mx-[35px]"> {/*SLATE*/}
+                <div className="h-15" />
                 {children}
-                <div className="h-20" />
+                <div className="h-15" />
             </div>
         </div>
     )

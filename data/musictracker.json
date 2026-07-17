@@ -3,6 +3,7 @@
     "main": {
         "projectName": "Music Tracker Sequencer",
         "projectDescription": "A dissertation on the legacy system music trackers, and how they can be incorporated in a modern creative industry.",
+        "projectLink": "",
         "projectImage": "/TrackerSequencing/JSONTrackerEditorEx.webp"
     },
     "game": {

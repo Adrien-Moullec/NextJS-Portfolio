@@ -3,6 +3,7 @@
     "main": {
         "projectName": "Paper Hearts",
         "projectDescription": "My final group assignment from the University of Gloucestershire. This game was created as a team by Folded-Realities, a fun adventure from the point of view of a small origami boy named Kuhaku trying to find his friends and reunite with his creator.",
+        "projectLink": "",
         "projectImage": "/PaperHearts/Bedroom.webp"
     },
     "game": {

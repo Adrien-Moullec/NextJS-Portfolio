@@ -3,6 +3,7 @@
     "main": {
         "projectName": "Ocean Boids",
         "projectDescription": "This project was all about boid behaviour and how entities behave with simple, stackable behaviours.",
+        "projectLink": "",
         "projectImage": ""
     },
     "game": {

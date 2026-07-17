@@ -3,8 +3,7 @@ import { useRef } from "react";
 import { Button } from "../ui/button";
 
 function DisplayParagraphs(description: string = "", textAreaClassName: string = "", textClassName: string = "") {
-
-    return (
+    if (description != "") return (
         <div className={textAreaClassName}>
             {
                 description.split("\n").map((text, index) => {
@@ -17,6 +16,7 @@ function DisplayParagraphs(description: string = "", textAreaClassName: string =
             }
         </div>
     );
+    else return <></>
 }
 
 function DisplayText(text: string = "", textClassName: string = "", index: number = 0) {

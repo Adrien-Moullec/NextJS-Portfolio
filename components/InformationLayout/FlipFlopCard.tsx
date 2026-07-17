@@ -1,4 +1,4 @@
-import { Card } from "../Presets/ProjectCardInterfaces";
+{/*import { Card } from "../Presets/ProjectCardInterfaces";
 import { CardDesc, CardTitle } from "../Presets/MyFonts";
 import Image from "next/image";
 import DisplayParagraphs from "./DisplayParagraphs";
@@ -42,3 +42,4 @@ const FlipFlopInformation: React.FC<CardProps> = ({ card, index }) => {
 }
 
 export default FlipFlopInformation;
+*/}

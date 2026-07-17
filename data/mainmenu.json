@@ -3,6 +3,7 @@
     "main": {
         "projectName": "MainMenu",
         "projectDescription": "This project was a level 5 project to demonstrate our level scripting skills such as settings and scene change. I wanted to make a main menu integrated with the environment to make the player feel more immersed.",
+        "projectLink": "",
         "projectImage": ""
     },
     "game": {

@@ -3,6 +3,7 @@
     "main": {
         "projectName": "Project List",
         "projectDescription": "This page contains a list of projects that I worked on.",
+        "projectLink": "",
         "projectImage": ""
     },
     "game": {

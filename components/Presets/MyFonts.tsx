@@ -2,7 +2,6 @@ import { crimsonPro, lobster } from "@/components/Presets/GoogleFonts"
 
 /* Top page fonts */
 export const TitleFont = lobster.className + " text-8xl font-bold";
-export const TitleDescription = crimsonPro.className + " text-xl";
 export const GameTitleFont = crimsonPro.className + " text-5xl font-bold underline";
 
 /* Category and card fonts */

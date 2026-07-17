@@ -3,7 +3,8 @@
     "main": {
         "projectName": "StarMap",
         "projectDescription": "This project is a showcase on different pathfinding algorithms in a randomly generated star map.",
-        "projectImage": "s"
+        "projectLink": "",
+        "projectImage": "/StarMap/Content/Generation/5EvilPaths.webp"
     },
     "game": {
         "gameIndex": "/StarMap/GameFiles/index.html",

@@ -1,3 +1,4 @@
+"use client"
 import data from "@/data/projectlist.json"
 import CarouselCard from "@/components/InformationLayout/CarouselCard";
 import {
@@ -10,7 +11,7 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="row-start-3 flex flex-wrap items-center justify-center bg-indigo-950">
+    <footer className="row-start-3 flex flex-wrap items-center justify-center bg-black border-2 border-white">
       <div className="m-4">
         <Carousel opts={{
           align: "start",
@@ -19,7 +20,7 @@ export const Footer = () => {
           <CarouselContent>
             {data.categories[0].cards.map((card, index) => (
               <CarouselItem key={index} className="basis-1/2 sm:basis-1/2 md:basis-1/4 lg:basis-1/5 ">
-                <CarouselCard cardInterface={card} />
+                {CarouselCard(card)}
               </CarouselItem>
             ))}
           </CarouselContent>
