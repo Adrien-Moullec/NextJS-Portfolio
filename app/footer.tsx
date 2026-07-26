@@ -1,5 +1,5 @@
 "use client"
-import data from "@/data/projectlist.json"
+import data from "@/data/PersonalInfo/projectlist.json"
 import CarouselCard from "@/components/InformationLayout/CarouselCard";
 import {
   Carousel,

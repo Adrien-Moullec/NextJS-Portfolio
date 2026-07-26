@@ -12,7 +12,7 @@ const basePath = process.env.NODE_ENV === 'production'
 export const Header = () => {
     return (
 
-        <header className="bg-linear-to-r from-black to-black h-[150px] border-1 flex flex-row text-white">
+        <header className="bg-linear-to-r from-black to-black h-[150px] flex flex-row text-white">
 
             <div id="Profile section"
                 className="flex flex-row items-center mx-auto gap-x-3 w-screen text-xl overflow-x-clip 
@@ -53,7 +53,7 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div id="Website Links" className="hidden md:flex flex-row items-center justify-center border-l-1 border-white mx-auto md:min-w-[500px] md:max-w-[1000px] ">
+            <div id="Website Links" className="hidden md:flex flex-row items-center justify-center border-white mx-auto md:min-w-[500px] md:max-w-[1000px] ">
                 <div className="mx-auto flex text-center flex-col text-2xl">
                     <Link className="hover:underline hover:underline-offset-4" href="/">
                         About Me
@@ -61,7 +61,7 @@ export const Header = () => {
                     <Link className="hover:underline hover:underline-offset-4" href="/Projects">
                         Projects
                     </Link>
-                    <Link className="hover:underline hover:underline-offset-4" href="/Projects/Portfolio">
+                    <Link className="hover:underline hover:underline-offset-4" href="/Projects/MainProjects/Portfolio">
                         About This Website
                     </Link>
                 </div>

@@ -5,7 +5,7 @@ type Props = {
 const Body = ({ children }: Props) => {
     return (
         <div className="bg-black">
-            <div className="bg-gradient-to-tl from-blue-900 to-indigo-800 mx-[35px]"> {/*SLATE*/}
+            <div className=" bg-gradient-to-l from-purple-500 to-indigo-600  mx-[35px]"> {/*SLATE*/}
                 <div className="h-15" />
                 {children}
                 <div className="h-15" />

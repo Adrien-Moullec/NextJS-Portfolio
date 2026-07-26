@@ -37,7 +37,7 @@ export const ProjectPageLayout: React.FC<PageLayoutProps> = ({ page }) => {
 //carousel
 //picture
 //sideongrid
-function ProjectCardLayout(categoryInterface: Category) {
+export function ProjectCardLayout(categoryInterface: Category) {
     let content;
     const layoutList = categoryInterface.categoryStyle.split("-")
     const layoutMode = (layoutList.length > 1 ? layoutList[1] : "")
@@ -100,6 +100,12 @@ function ProjectCardLayout(categoryInterface: Category) {
                     </div>
                 </div >
             ); break;
+
+        case "text": content = (
+            <div className="w-2/3 mx-auto flex flex-row">
+                {CategoryTitleLayout(categoryInterface, "text-center text-3xl")}
+            </div>
+        ); break;
 
         default: content = <h1>Unknown Style Input</h1>
     }

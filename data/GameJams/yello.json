@@ -3,7 +3,7 @@
     "main": {
         "projectName": "Y'ello!",
         "projectDescription": "This project was a small internal game jam for the start of our research year. The topic was 'Yellow' and we made a game about finding a phone amongst hundreds of generated yellow objects.",
-        "projectLink": "",
+        "projectLink": "https://uogresearchteam24.itch.io/yellow",
         "projectImage": "/Yello/House.webp"
     },
     "game": {

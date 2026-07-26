@@ -4,6 +4,22 @@
         "devEmail": "amoullec1@gmail.com",
         "devLinkedIn": "https://www.linkedin.com/in/adrien-moullec-b2b203386",
         "devGithub": "https://github.com/Adrien-Moullec",
-        "profileSummary": "A logical, task oriented individual, and loves problem-solving challenges. Has 4+ years of programming experience in Unity Engine and using Python. "
+        "profileSummary": "",
+        "categories": [
+            {
+                "categoryTitle": "About Me",
+                "categoryDescription": "I am a logical, task-oriented programmer with over four years of experience developing in Unity and Python. I enjoy designing systems and continuously improving my skills as a developer. I have experience working on solo and group long-term projects, and take pride in writing clean, maintainable code. I am always looking for opportunities to learn new skills and contribute to future software and game development projects.",
+                "categoryStyle": "text",
+                "cards": [
+                    {
+                        "cardTitle": "",
+                        "cardImage": "",
+                        "cardDescription": "",
+                        "cardHref": "#",
+                        "cardHrefPage": ""
+                    }
+                ]
+            }
+        ]
     }
 }

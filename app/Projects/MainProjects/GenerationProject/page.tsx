@@ -1,4 +1,4 @@
-import data from "@/data/starmap.json"
+import data from "@/data/Projects/generation.json"
 import { ProjectPageLayout } from "@/components/InformationLayout/ProjectPage";
 
 export default function Home() {

@@ -22,49 +22,42 @@
                     "cardTitle": "Paper Hearts",
                     "cardImage": "/PaperHearts/Bedroom.webp",
                     "cardDescription": "",
-                    "cardHref": "/Projects/PaperHearts",
+                    "cardHref": "/Projects/MainProjects/PaperHearts",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Music Tracker",
                     "cardImage": "/TrackerSequencing/JSONTrackerEditorEx.webp",
                     "cardDescription": "",
-                    "cardHref": "/Projects/MusicTracker",
+                    "cardHref": "/Projects/MainProjects/MusicTracker",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Website Portfolio",
                     "cardImage": "/Portfolio/NextJSLogo.webp",
                     "cardDescription": "",
-                    "cardHref": "/Projects/Portfolio",
+                    "cardHref": "/Projects/MainProjects/Portfolio",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "StarMaps",
                     "cardImage": "/StarMap/Content/Pathfinding/2QuickBacktrackGif.webp",
                     "cardDescription": "",
-                    "cardHref": "/Projects/StarMap",
-                    "cardHrefPage": ""
-                },
-                {
-                    "cardTitle": "Main Menu",
-                    "cardImage": "/MainMenu/PlayButton.webp",
-                    "cardDescription": "",
-                    "cardHref": "/Projects/MainMenu",
+                    "cardHref": "/Projects/MainProjects/StarMap",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Ocean Boids",
                     "cardImage": "/OceanBoids/TitleImageCrop.webp",
                     "cardDescription": "",
-                    "cardHref": "/Projects/OceanBoids",
+                    "cardHref": "/Projects/MainProjects/OceanBoids",
                     "cardHrefPage": ""
                 },
                 {
                     "cardTitle": "Procedural Generation",
                     "cardImage": "/Generation/Spline/Combination.webp",
                     "cardDescription": "",
-                    "cardHref": "/Projects/GenerationProject",
+                    "cardHref": "/Projects/MainProjects/GenerationProject",
                     "cardHrefPage": ""
                 }
             ]
@@ -79,6 +72,27 @@
                     "cardImage": "/Yello/House.webp",
                     "cardDescription": "",
                     "cardHref": "/Projects/GameJams/Yello",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "Other Projects",
+            "categoryDescription": "",
+            "categoryStyle": "squarelayout",
+            "cards": [
+                {
+                    "cardTitle": "Main Menu",
+                    "cardImage": "/MainMenu/PlayButton.webp",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/OtherProjects/MainMenu",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Alien Invader",
+                    "cardImage": "/AlienInvader/AlienInvaderCoverGame.webp",
+                    "cardDescription": "",
+                    "cardHref": "/Projects/OtherProjects/AlienInvader",
                     "cardHrefPage": ""
                 }
             ]

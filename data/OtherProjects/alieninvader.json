@@ -1,0 +1,66 @@
+{
+    "id": 3,
+    "main": {
+        "projectName": "Alien Invader",
+        "projectDescription": "A first year project using C++ and PlayBuffer game files to re-create a famous retro-game.",
+        "projectLink": "https://lunecrowhurst.itch.io/alien-invader-playbuffer",
+        "projectImage": "/AlienInvader/AlienInvaderCoverGame.webp"
+    },
+    "game": {
+        "gameIndex": "",
+        "gameBuild": "",
+        "gameDescription": "",
+        "gameControls": []
+    },
+    "categories": [
+        {
+            "categoryTitle": "About this project",
+            "categoryDescription": "This project uses C++ and the game-making tool Playbuffer. This game was used as an introduction to prepare for C++ in Unreal Engine in first year at University of Gloucestershire.\n\nThe game is a simple game loop between the main menu, difficulty options and the gameplay. The gameplay is simple left/right (move) and space (shoot) where the difficulty gradually increases with level progression and enemy defeats. The difficulty is indicated by the speed increase of musical tones as the enemy sprites speed up.\n\nAdditionally the aliens shoot bullets, red 'rogue' aliens at the top of the screen give additional points and there's the opportunity to gain a 'TRIPLE BULLET' powerup.",
+            "categoryStyle": "flipflop",
+            "cards": [
+                {
+                    "cardTitle": "Alien Invader - PlayBuffer sample",
+                    "cardImage": "/AlienInvader/AlienInvaderCoverGame.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        },
+        {
+            "categoryTitle": "",
+            "categoryDescription": "",
+            "categoryStyle": "squarelayout",
+            "cards": [
+                {
+                    "cardTitle": "Start Game",
+                    "cardImage": "/AlienInvader/Start.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Level Loop",
+                    "cardImage": "/AlienInvader/LevelLoop.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Triple Bullet",
+                    "cardImage": "/AlienInvader/TripleBullet.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                },
+                {
+                    "cardTitle": "Player Death",
+                    "cardImage": "/AlienInvader/PlayerDeath.webp",
+                    "cardDescription": "",
+                    "cardHref": "#",
+                    "cardHrefPage": ""
+                }
+            ]
+        }
+    ]
+}

@@ -55,12 +55,12 @@ export function Divide(render: boolean) {
     if (render) return <div className="items-center mx-10 h-0.5 bg-amber-50 rounded-4xl opacity-35" />
 }
 
-export function CategoryTitleLayout(categoryInterface: Category) {
+export function CategoryTitleLayout(categoryInterface: Category, titleCN: string = "text-left text-2xl") {
     if (categoryInterface.categoryTitle || categoryInterface.categoryDescription) {
         return (
-            <div className={`flex flex-col mx-[18px] border-1 bg-gradient-to-tl from-slate-900 to-black rounded-2xl my-5`}>
+            <div className={`flex flex-col mx-[18px] border-1 bg-gradient-to-b from-black to-indigo-950 rounded-xl my-5 `}>
                 <div className="m-[5px]">
-                    <h1 className={crimsonPro.className + ` p-1 text-2xl font-bold underline text-left w-full`}>
+                    <h1 className={crimsonPro.className + ` p-1 font-bold underline w-full ${titleCN}`}>
                         {categoryInterface.categoryTitle}
                     </h1>
                     {DisplayParagraphs(categoryInterface.categoryDescription, CategoryDescriptionFont + " w-full", "")}

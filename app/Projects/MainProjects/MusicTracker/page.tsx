@@ -1,4 +1,4 @@
-import data from "@/data/portfolio.json"
+import data from "@/data/Projects/musictracker.json"
 import { ProjectPageLayout } from "@/components/InformationLayout/ProjectPage";
 
 export default function Home() {

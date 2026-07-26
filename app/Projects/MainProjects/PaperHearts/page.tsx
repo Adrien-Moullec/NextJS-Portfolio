@@ -1,4 +1,4 @@
-import data from "@/data/PersonalInfo/projectlist.json"
+import data from "@/data/Projects/paperhearts.json"
 import { ProjectPageLayout } from "@/components/InformationLayout/ProjectPage";
 
 export default function Home() {
