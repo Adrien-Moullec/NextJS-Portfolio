@@ -31,7 +31,7 @@ export default function Home() {
 
 
 
-        <Image className="mx-auto mt-10" alt="profile" src={basePath + "Icons/Me.webp"} width={100} height={40} />
+        <Image className="mx-auto mt-10" alt="profile" src={basePath + "/Icons/Me.webp"} width={100} height={40} />
 
         {devInfo.devInfo.categories.map((card, index) =>
           <div key={index}>
